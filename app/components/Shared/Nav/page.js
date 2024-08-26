@@ -1,4 +1,7 @@
 import React from "react";
+import logo from "@/public/assets/logo/logo.gif";
+import Image from "next/image";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Nav = () => {
   return (
@@ -27,10 +30,10 @@ const Nav = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <a>Work</a>
               </li>
               <li>
-                <a>Parent</a>
+                <a>Solutions</a>
                 <ul className="p-2">
                   <li>
                     <a>Submenu 1</a>
@@ -41,20 +44,60 @@ const Nav = () => {
                 </ul>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>About</a>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a>Resources</a>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a>Careers</a>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="w-[400px]" href="/">
+            <Image src={logo} alt="Habson logo"></Image>
+          </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <a>Work</a>
             </li>
             <li>
               <details>
-                <summary>Parent</summary>
+                <summary>Solutions</summary>
+                <ul className="p-2">
+                  <li>
+                    <a>Brand Solutions</a>
+                  </li>
+                  <li>
+                    <a>Tech Solutions</a>
+                  </li>
+                  <li>
+                    <a>Media Solutions</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>About</summary>
                 <ul className="p-2">
                   <li>
                     <a>Submenu 1</a>
@@ -66,12 +109,25 @@ const Nav = () => {
               </details>
             </li>
             <li>
-              <a>Item 3</a>
+              <details>
+                <summary>Resources</summary>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <a>Careers</a>
             </li>
           </ul>
-        </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn rounded-badge bg-black text-white px-10">
+            Contact Us <FaArrowRightLong />
+          </a>
         </div>
       </div>
     </div>
