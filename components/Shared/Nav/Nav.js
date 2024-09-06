@@ -115,10 +115,10 @@ const Nav = () => {
                 <summary>Resources</summary>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <Link href={"/blogs"}>Blogs</Link>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <Link href={"/the-edge"}>The Edge</Link>
                   </li>
                 </ul>
               </details>

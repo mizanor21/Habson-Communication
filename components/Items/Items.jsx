@@ -924,7 +924,7 @@ const Items = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-20">
+    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-20">
       {items.map((item) => (
         <div key={item.id}>
           <Image
