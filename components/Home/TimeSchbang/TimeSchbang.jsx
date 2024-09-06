@@ -1,12 +1,12 @@
 import React from "react";
 import TimeImg from "@/public/assets/logo/star.png";
 import Image from "next/image";
-import "@/app/components/Home/TimeSchbang/TimeSchbang.css";
+import "./TimeSchbang.css";
 
 const TimeSchbang = () => {
   return (
     <div className="overflow-hidden whitespace-nowrap">
-      <div className="flex items-center gap-5 py-10 animate-marquee">
+      <div className="flex items-center gap-5 pt-10 animate-marquee">
         <Image src={TimeImg} alt="star images" className="w-10" />
         <h1
           style={{

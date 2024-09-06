@@ -2,6 +2,8 @@ import React from "react";
 import logo from "@/public/assets/logo/logo.gif";
 import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
+import Button from "../../Custom/Button";
 
 const Nav = () => {
   return (
@@ -30,7 +32,7 @@ const Nav = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Work</a>
+                <Link href={"/work"}>Work</Link>
               </li>
               <li>
                 <a>Solutions</a>
@@ -74,23 +76,23 @@ const Nav = () => {
             <Image src={logo} alt="Habson logo"></Image>
           </a>
         </div>
-        <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+        <div className="navbar-end hidden lg:flex ">
+          <ul className="menu menu-horizontal px-1 z-50">
             <li>
-              <a>Work</a>
+              <Link href={"/work"}>Work</Link>
             </li>
             <li>
               <details>
                 <summary>Solutions</summary>
-                <ul className="p-2">
+                <ul className="p-2 w-60">
                   <li>
-                    <a>Brand Solutions</a>
+                    <Link href={"/brand-solutions"}>Brand Solutions</Link>
                   </li>
                   <li>
-                    <a>Tech Solutions</a>
+                    <Link href={"media-solutions"}>Media Solutions</Link>
                   </li>
                   <li>
-                    <a>Media Solutions</a>
+                    <Link href={"tech-solutions"}>Tech Solutions</Link>
                   </li>
                 </ul>
               </details>
@@ -125,9 +127,11 @@ const Nav = () => {
               <a>Careers</a>
             </li>
           </ul>
-          <a className="btn rounded-badge bg-black text-white px-10">
-            Contact Us <FaArrowRightLong />
-          </a>
+          <Link href={"/contact"}>
+            <Button>
+              Contact Us <FaArrowRightLong />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

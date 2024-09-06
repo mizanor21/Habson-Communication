@@ -43,7 +43,7 @@ const Define = () => {
   };
 
   return (
-    <div style={styles} className="flex items-center my-10 lg:my-20">
+    <div style={styles} className="flex items-center my-10 lg:my-48">
       <div
         className="lg:container lg:mx-auto mx-3 "
         onMouseMove={handleMouseMove}
