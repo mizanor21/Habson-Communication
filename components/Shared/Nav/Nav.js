@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@/public/assets/logo/logo.gif";
+import logo from "@/public/assets/logo/HabsonLogo.gif";
 import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
@@ -100,12 +100,18 @@ const Nav = () => {
             <li>
               <details>
                 <summary>About</summary>
-                <ul className="p-2">
+                <ul className="p-2 w-56">
                   <li>
-                    <a>Submenu 1</a>
+                    <Link href={"how-we-work"}>How We Work</Link>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <Link href={"/news-center"}>News Center</Link>
+                  </li>
+                  <li>
+                    <Link href={"/our-partner"}>Our Partnership</Link>
+                  </li>
+                  <li>
+                    <Link href={"/csr"}>CSR</Link>
                   </li>
                 </ul>
               </details>
@@ -124,7 +130,7 @@ const Nav = () => {
               </details>
             </li>
             <li>
-              <a>Careers</a>
+              <Link href={"/career"}>Careers</Link>
             </li>
           </ul>
           <Link href={"/contact"}>

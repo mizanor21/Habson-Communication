@@ -2,14 +2,20 @@ import mongoose, { Schema } from "mongoose";
 
 const workSchema = new Schema(
   {
-    title: String,
-    description: String,
+    title: {
+      type: String,
+      required: [true, "Title is required"],
+    },
+    description: {
+      type: String,
+      required: [true, "Description is required"],
+    },
   },
   {
     timestamps: true,
   }
 );
 
-const Work = mongoose.model.Work || mongoose.model("Work", workSchema);
+const Work = mongoose.models.Work || mongoose.model("Work", workSchema);
 
 export default Work;

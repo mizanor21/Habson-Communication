@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-black ">
+    <div className="bg-black bg-dark">
       <div className="p-10 lg:p-20">
         <Image src={footerLogo} alt="Footer Logo" className="mb-10"></Image>
         <div>
