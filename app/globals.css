@@ -10,9 +10,5 @@
 
 body,
 div {
-    cursor: url(../public/assets/cursor/cursor-black.png), auto;
-}
-
-.bg-dark {
-    cursor: url(../public/assets/cursor/cursor-white.png), auto;
+    cursor: url(../public/assets/cursor/cursor.png), auto;
 }
