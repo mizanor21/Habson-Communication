@@ -70,21 +70,13 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="left-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg"
-                  className="object-cover w-full h-full"
-                  alt="slide-4"
-                />
-              </div>
-            </div>
-            <div className="item h-screen">
-              <div className="left-half">
-                <img
                   src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-1"
                 />
               </div>
             </div>
+
             <div className="item h-screen">
               <div className="left-half">
                 <img
@@ -103,6 +95,15 @@ const Slideshow = () => {
                 />
               </div>
             </div>
+            <div className="item h-screen">
+              <div className="left-half">
+                <img
+                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg"
+                  className="object-cover w-full h-full"
+                  alt="slide-4"
+                />
+              </div>
+            </div>
           </Slider>
 
           {/* Left Side Buttons */}
@@ -117,7 +118,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="right-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg"
+                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-4-reverse"
                 />
@@ -126,7 +127,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="right-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg"
+                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-1-reverse"
                 />
@@ -135,7 +136,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="right-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg"
+                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-4.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-2-reverse"
                 />
@@ -144,7 +145,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="right-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-4.jpg"
+                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-3-reverse"
                 />

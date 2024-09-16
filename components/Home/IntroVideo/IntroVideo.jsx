@@ -1,14 +1,13 @@
 "use client";
-import { useState, useEffect } from "react";
-import Video from "next-video";
-import intro from "@/videos/intro.mp4";
+import { useState, useEffect, useRef } from "react";
 
 const IntroVideo = () => {
+  const [isPlaying, setIsPlaying] = useState(true);
+  const playerRef = useRef(null);
   const [isScrolledUp, setIsScrolledUp] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Detect if the user has scrolled up and set the width to 100%
       if (window.scrollY > 50) {
         setIsScrolledUp(true);
       } else {
@@ -23,24 +22,57 @@ const IntroVideo = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Load the YouTube API script
+    const tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName("script")[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Initialize YouTube player once API is ready
+    window.onYouTubeIframeAPIReady = () => {
+      playerRef.current = new window.YT.Player("youtube-player", {
+        videoId: "uwfP_WdNK2E", // Video ID
+        playerVars: {
+          autoplay: 1,
+          mute: 1,
+          controls: 0, // Hide controls
+          loop: 1, // Loop the video
+          modestbranding: 1, // Minimize YouTube branding
+          rel: 0, // Prevent showing related videos
+        },
+        events: {
+          onReady: (event) => {
+            event.target.playVideo(); // Ensure video starts playing
+          },
+        },
+      });
+    };
+  }, []);
+
+  const handleVideoClick = () => {
+    const player = playerRef.current;
+    if (player) {
+      if (isPlaying) {
+        player.pauseVideo(); // Pause the video if it's playing
+      } else {
+        player.playVideo(); // Play and unmute the video if paused
+        player.unMute(); // Unmute the video when play is clicked
+      }
+      setIsPlaying(!isPlaying); // Toggle the play state
+    }
+  };
+
   return (
-    <div className="relative z-[9999] flex justify-center items-center bg-white">
+    <div className="bg-white flex justify-center relative z-[9999]">
       <div
-        className={`h-screen  transition-all duration-500 ease-in-out ${
+        className={`h-screen transition-all duration-500 ease-in-out ${
           isScrolledUp ? "w-[100%]" : "w-[90%]"
         }`}
+        onClick={handleVideoClick} // Handle video play/pause on click
       >
-        {/* <Video src={intro} autoPlay loop muted /> */}
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/uwfP_WdNK2E?si=6xeDD_wAdQ4kmk2w"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        {/* YouTube Player */}
+        <div id="youtube-player" className="w-full h-full"></div>
       </div>
     </div>
   );
