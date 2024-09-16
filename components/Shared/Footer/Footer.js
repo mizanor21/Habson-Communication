@@ -1,5 +1,5 @@
 import React from "react";
-import footerLogo from "@/public/assets/logo/logoFooter.png";
+import footerLogo from "@/public/assets/logo/logo.png";
 import Image from "next/image";
 import { ImFacebook2 } from "react-icons/im";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -10,7 +10,9 @@ const Footer = () => {
   return (
     <div className="bg-black bg-dark">
       <div className="p-10 lg:p-20">
-        <Image src={footerLogo} alt="Footer Logo" className="mb-10"></Image>
+        <div className="flex justify-center items-center">
+          <Image src={footerLogo} alt="Footer Logo" className="mb-10 "></Image>
+        </div>
         <div>
           <hr className="pb-10" />
         </div>

@@ -24,7 +24,7 @@ const Items = () => {
       serviceDetails:
         "Our team builds engaging websites with a focus on user experience, optimized performance, and scalability.",
       industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/Hxw3TZ7G/Screenshot-20.png",
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ const Items = () => {
       serviceDetails:
         "Our data-driven approach ensures that your brand is visible to your audience, driving engagement and growth.",
       industry: "Marketing",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/vZ8mhcv5/Screenshot-21.png",
     },
     {
       id: 3,
@@ -70,7 +70,7 @@ const Items = () => {
       serviceDetails:
         "We create stunning visuals that communicate your brand message effectively, from concept to final design.",
       industry: "Creative",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/Xq2P0HTj/Screenshot-27.png",
     },
     {
       id: 4,
@@ -92,7 +92,7 @@ const Items = () => {
       serviceDetails:
         "Our mobile app solutions prioritize usability, performance, and seamless experiences for your users.",
       industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/15fCqKkF/Screenshot-28.png",
     },
     {
       id: 5,
@@ -115,7 +115,7 @@ const Items = () => {
       serviceDetails:
         "We partner with you to develop actionable strategies that deliver measurable results for your business.",
       industry: "Business",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/1tmM500f/Screenshot-29.png",
     },
     {
       id: 6,
@@ -138,7 +138,7 @@ const Items = () => {
       serviceDetails:
         "Our cloud solutions help your business transition smoothly and securely to cloud-based infrastructure.",
       industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/KYJBf6L8/Screenshot-35.png",
     },
     {
       id: 7,
@@ -161,7 +161,7 @@ const Items = () => {
       serviceDetails:
         "We deliver feature-rich e-commerce platforms designed to scale with your business growth.",
       industry: "Retail",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/ZKpfHqqY/Screenshot-37.png",
     },
     {
       id: 8,
@@ -184,54 +184,9 @@ const Items = () => {
       serviceDetails:
         "Our content creation services help you tell your brand’s story in ways that captivate and convert your audience.",
       industry: "Creative",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/CLsGdn18/Screenshot-39.png",
     },
-    {
-      id: 9,
-      category: "Casestudy",
-      thumbnail: "cybersecurity-thumb.jpg",
-      title: "Advanced Security Solutions",
-      detailsTitle: "Protecting Your Digital Assets",
-      services: [
-        {
-          serviceName: "Threat Assessment",
-          description:
-            "Identifying potential risks and vulnerabilities within your systems.",
-        },
-        {
-          serviceName: "Security Implementation",
-          description:
-            "Deploying best-in-class security measures to safeguard your infrastructure.",
-        },
-      ],
-      serviceDetails:
-        "Our experts provide comprehensive cybersecurity solutions to protect your business from threats and attacks.",
-      industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 10,
-      category: "Casestudy",
-      thumbnail: "data-analytics-thumb.jpg",
-      title: "Data-Driven Insights",
-      detailsTitle: "Turning Data into Actionable Strategies",
-      services: [
-        {
-          serviceName: "Business Intelligence",
-          description:
-            "Transforming raw data into meaningful insights for better decision-making.",
-        },
-        {
-          serviceName: "Predictive Analytics",
-          description:
-            "Forecasting trends and behaviors using advanced analytics techniques.",
-        },
-      ],
-      serviceDetails:
-        "We harness data to provide deep insights that drive strategic growth and innovation.",
-      industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
+
     {
       id: 11,
       category: "Daily Creativity",
@@ -253,7 +208,7 @@ const Items = () => {
       serviceDetails:
         "Our HR solutions focus on aligning talent with your business goals to drive productivity and growth.",
       industry: "Business",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/T2mS707X/Screenshot-45.png",
     },
     {
       id: 12,
@@ -276,7 +231,7 @@ const Items = () => {
       serviceDetails:
         "We offer reliable and responsive IT support solutions to keep your business running smoothly.",
       industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/NfBNNc21/Screenshot-46.png",
     },
     {
       id: 13,
@@ -298,7 +253,7 @@ const Items = () => {
       serviceDetails:
         "Our project management services ensure timely delivery and exceed expectations through structured execution.",
       industry: "Business",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/4Ny8C1wd/Screenshot-47.png",
     },
     {
       id: 14,
@@ -321,7 +276,7 @@ const Items = () => {
       serviceDetails:
         "We develop custom software solutions that address your specific business challenges and drive growth.",
       industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/c4vckL4t/Screenshot-48.png",
     },
     {
       id: 15,
@@ -344,7 +299,7 @@ const Items = () => {
       serviceDetails:
         "Our digital transformation services help businesses leverage technology to innovate and compete in the digital age.",
       industry: "Business",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/QCyR7NjG/Screenshot-49.png",
     },
     {
       id: 16,
@@ -367,7 +322,7 @@ const Items = () => {
       serviceDetails:
         "We help businesses automate their processes, reducing costs and improving efficiency.",
       industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/XYVzvyfG/Screenshot-50.png",
     },
     {
       id: 17,
@@ -390,7 +345,7 @@ const Items = () => {
       serviceDetails:
         "We specialize in developing VR solutions that provide unique and immersive experiences for users.",
       industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/XJwfFs3V/Screenshot-51.png",
     },
     {
       id: 18,
@@ -414,7 +369,7 @@ const Items = () => {
       serviceDetails:
         "Our CRM solutions help businesses manage customer relationships more effectively and drive growth.",
       industry: "Business",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/76VCwdwT/Screenshot-52.png",
     },
     {
       id: 19,
@@ -437,7 +392,7 @@ const Items = () => {
       serviceDetails:
         "We develop AI solutions that empower businesses to innovate and compete more effectively.",
       industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/zX9fZ8Kc/Screenshot-54.png",
     },
     {
       id: 20,
@@ -460,467 +415,7 @@ const Items = () => {
       serviceDetails:
         "We offer blockchain development services that enable businesses to leverage the benefits of distributed ledger technology.",
       industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 21,
-      category: "Daily Creativity",
-      thumbnail: "iot-thumb.jpg",
-      title: "IoT Solutions for Smart Businesses",
-      detailsTitle: "Connecting Devices and Systems for Enhanced Operations",
-      services: [
-        {
-          serviceName: "IoT Development",
-          description:
-            "Developing IoT solutions that connect devices and enable real-time data exchange.",
-        },
-        {
-          serviceName: "Device Integration",
-          description:
-            "Integrating IoT devices with existing systems for seamless operations.",
-        },
-      ],
-      serviceDetails:
-        "Our IoT solutions help businesses optimize operations, reduce costs, and enhance customer experiences.",
-      industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 22,
-      category: "Daily Creativity",
-      thumbnail: "supply-chain-thumb.jpg",
-      title: "Supply Chain Management Solutions",
-      detailsTitle: "Optimizing Supply Chains for Efficiency and Resilience",
-      services: [
-        {
-          serviceName: "Supply Chain Optimization",
-          description:
-            "Improving supply chain operations through data-driven strategies.",
-        },
-        {
-          serviceName: "Logistics Management",
-          description:
-            "Streamlining logistics processes to enhance efficiency and reduce costs.",
-        },
-      ],
-      serviceDetails:
-        "We provide end-to-end supply chain solutions that help businesses improve efficiency and reduce costs.",
-      industry: "Business",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 23,
-      category: "Daily Creativity",
-      thumbnail: "erp-thumb.jpg",
-      title: "Custom ERP Solutions",
-      detailsTitle:
-        "Streamlining Business Operations with Tailored ERP Systems",
-      services: [
-        {
-          serviceName: "ERP Development",
-          description:
-            "Building custom ERP systems to streamline business processes.",
-        },
-        {
-          serviceName: "ERP Integration",
-          description:
-            "Integrating ERP systems with other business tools for seamless operations.",
-        },
-      ],
-      serviceDetails:
-        "Our ERP solutions help businesses manage their operations more efficiently and effectively.",
-      industry: "Business",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 24,
-      category: "Daily Creativity",
-      thumbnail: "bi-thumb.jpg",
-      title: "Business Intelligence Solutions",
-      detailsTitle: "Transforming Data into Actionable Insights",
-      services: [
-        {
-          serviceName: "BI Implementation",
-          description:
-            "Implementing business intelligence solutions to drive decision-making.",
-        },
-        {
-          serviceName: "Data Warehousing",
-          description:
-            "Developing data warehouses to store and manage large volumes of data.",
-        },
-      ],
-      serviceDetails:
-        "Our business intelligence solutions help businesses make data-driven decisions that drive growth.",
-      industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 25,
-      category: "Daily Creativity",
-      thumbnail: "customer-support-thumb.jpg",
-      title: "Customer Support Solutions",
-      detailsTitle: "Enhancing Customer Satisfaction with Reliable Support",
-      services: [
-        {
-          serviceName: "Help Desk Support",
-          description:
-            "Providing 24/7 support to resolve customer issues quickly and efficiently.",
-        },
-        {
-          serviceName: "Live Chat Solutions",
-          description:
-            "Implementing live chat systems to provide instant support to customers.",
-        },
-      ],
-      serviceDetails:
-        "Our customer support solutions help businesses improve customer satisfaction and loyalty.",
-      industry: "Business",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 26,
-      category: "Daily Creativity",
-      thumbnail: "market-research-thumb.jpg",
-      title: "Market Research & Analysis",
-      detailsTitle: "Understanding Market Trends and Consumer Behavior",
-      services: [
-        {
-          serviceName: "Market Research",
-          description:
-            "Conducting comprehensive market research to identify opportunities and challenges.",
-        },
-        {
-          serviceName: "Consumer Insights",
-          description:
-            "Analyzing consumer behavior to inform marketing and product development strategies.",
-        },
-      ],
-      serviceDetails:
-        "Our market research services provide valuable insights that help businesses stay ahead of the competition.",
-      industry: "Business",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 27,
-      category: "Daily Creativity",
-      thumbnail: "product-design-thumb.jpg",
-      title: "Product Design & Development",
-      detailsTitle: "Creating Innovative Products That Meet Market Needs",
-      services: [
-        {
-          serviceName: "Product Design",
-          description:
-            "Designing products that are both functional and aesthetically pleasing.",
-        },
-        {
-          serviceName: "Prototyping",
-          description:
-            "Developing prototypes to test and refine product designs before production.",
-        },
-      ],
-      serviceDetails:
-        "Our product design and development services help businesses create innovative products that meet market demands.",
-      industry: "Creative",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 28,
-      category: "Daily Creativity",
-      thumbnail: "enterprise-solutions-thumb.jpg",
-      title: "Enterprise Solutions",
-      detailsTitle: "Delivering Scalable Solutions for Large Organizations",
-      services: [
-        {
-          serviceName: "Enterprise Software Development",
-          description:
-            "Developing software solutions that meet the unique needs of large organizations.",
-        },
-        {
-          serviceName: "System Integration",
-          description:
-            "Integrating enterprise software with existing systems for seamless operations.",
-        },
-      ],
-      serviceDetails:
-        "Our enterprise solutions help large organizations streamline operations, improve efficiency, and reduce costs.",
-      industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 29,
-      category: "Daily Creativity",
-      thumbnail: "social-media-thumb.jpg",
-      title: "Social Media Marketing",
-      detailsTitle: "Building Strong Brands on Social Media",
-      services: [
-        {
-          serviceName: "Social Media Strategy",
-          description:
-            "Developing strategies to build and engage your audience on social media platforms.",
-        },
-        {
-          serviceName: "Content Creation",
-          description:
-            "Creating content that resonates with your audience and drives engagement.",
-        },
-      ],
-      serviceDetails:
-        "Our social media marketing services help businesses build strong brands and connect with their audience on social media.",
-      industry: "Marketing",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 30,
-      category: "Daily Creativity",
-      thumbnail: "digital-marketing-thumb.jpg",
-      title: "Digital Marketing Campaigns",
-      detailsTitle: "Driving Growth Through Digital Channels",
-      services: [
-        {
-          serviceName: "PPC Campaigns",
-          description:
-            "Managing pay-per-click campaigns to drive targeted traffic to your website.",
-        },
-        {
-          serviceName: "SEO Optimization",
-          description:
-            "Improving your website’s visibility on search engines through effective SEO strategies.",
-        },
-      ],
-      serviceDetails:
-        "Our digital marketing services help businesses reach their target audience, increase brand awareness, and drive growth.",
-      industry: "Marketing",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 31,
-      category: "Daily Creativity",
-      thumbnail: "branding-thumb.jpg",
-      title: "Branding & Identity Design",
-      detailsTitle: "Creating Memorable Brands That Stand Out",
-      services: [
-        {
-          serviceName: "Brand Strategy",
-          description:
-            "Developing brand strategies that communicate your unique value proposition.",
-        },
-        {
-          serviceName: "Logo Design",
-          description:
-            "Creating logos that are both memorable and representative of your brand.",
-        },
-      ],
-      serviceDetails:
-        "Our branding services help businesses create strong and memorable brands that resonate with their target audience.",
-      industry: "Creative",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 32,
-      category: "Daily Creativity",
-      thumbnail: "web-dev-thumb.jpg",
-      title: "Web Development",
-      detailsTitle: "Building High-Performance Websites",
-      services: [
-        {
-          serviceName: "Frontend Development",
-          description:
-            "Building responsive and interactive websites using HTML, CSS, and JavaScript.",
-        },
-        {
-          serviceName: "Backend Development",
-          description:
-            "Developing robust backend systems to power your website.",
-        },
-      ],
-      serviceDetails:
-        "Our web development services help businesses create high-performance websites that deliver a great user experience.",
-      industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 33,
-      category: "Daily Creativity",
-      thumbnail: "mobile-app-dev-thumb.jpg",
-      title: "Mobile App Development",
-      detailsTitle: "Creating Engaging Mobile Experiences",
-      services: [
-        {
-          serviceName: "iOS Development",
-          description:
-            "Building user-friendly and engaging iOS apps for the Apple ecosystem.",
-        },
-        {
-          serviceName: "Android Development",
-          description:
-            "Creating Android apps that are both functional and engaging.",
-        },
-      ],
-      serviceDetails:
-        "Our mobile app development services help businesses create engaging mobile experiences that drive growth.",
-      industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 34,
-      category: "Daily Creativity",
-      thumbnail: "ux-design-thumb.jpg",
-      title: "User Experience Design",
-      detailsTitle: "Creating Intuitive and Engaging User Experiences",
-      services: [
-        {
-          serviceName: "UI Design",
-          description:
-            "Designing user interfaces that are both visually appealing and easy to use.",
-        },
-        {
-          serviceName: "UX Research",
-          description:
-            "Conducting user research to inform design decisions and improve user experiences.",
-        },
-      ],
-      serviceDetails:
-        "Our user experience design services help businesses create intuitive and engaging user experiences that drive growth.",
-      industry: "Creative",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 35,
-      category: "Daily Creativity",
-      thumbnail: "cloud-solutions-thumb.jpg",
-      title: "Cloud Solutions",
-      detailsTitle: "Enabling Digital Transformation with Cloud Technologies",
-      services: [
-        {
-          serviceName: "Cloud Migration",
-          description:
-            "Helping businesses migrate to the cloud with minimal disruption.",
-        },
-        {
-          serviceName: "Cloud Management",
-          description:
-            "Providing ongoing cloud management and optimization services.",
-        },
-      ],
-      serviceDetails:
-        "Our cloud solutions help businesses leverage the power of cloud technologies to drive growth and innovation.",
-      industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 36,
-      category: "Daily Creativity",
-      thumbnail: "cyber-security-thumb.jpg",
-      title: "Cybersecurity Solutions",
-      detailsTitle: "Protecting Your Business from Cyber Threats",
-      services: [
-        {
-          serviceName: "Threat Detection",
-          description:
-            "Identifying and mitigating cyber threats before they can cause damage.",
-        },
-        {
-          serviceName: "Incident Response",
-          description:
-            "Providing rapid response to security incidents to minimize damage.",
-        },
-      ],
-      serviceDetails:
-        "Our cybersecurity solutions help businesses protect their data and systems from cyber threats.",
-      industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 37,
-      category: "Daily Creativity",
-      thumbnail: "data-analytics-thumb.jpg",
-      title: "Data Analytics & Insights",
-      detailsTitle: "Turning Data into Actionable Insights",
-      services: [
-        {
-          serviceName: "Data Analysis",
-          description: "Analyzing data to identify trends and opportunities.",
-        },
-        {
-          serviceName: "Predictive Analytics",
-          description:
-            "Using predictive analytics to forecast future trends and behaviors.",
-        },
-      ],
-      serviceDetails:
-        "Our data analytics services help businesses make data-driven decisions that drive growth.",
-      industry: "Technology",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 38,
-      category: "Daily Creativity",
-      thumbnail: "digital-transformation-thumb.jpg",
-      title: "Digital Transformation Services",
-      detailsTitle: "Helping Businesses Embrace Digital Innovation",
-      services: [
-        {
-          serviceName: "Digital Strategy",
-          description:
-            "Developing digital strategies that align with your business goals.",
-        },
-        {
-          serviceName: "Technology Implementation",
-          description:
-            "Implementing cutting-edge technologies to drive digital innovation.",
-        },
-      ],
-      serviceDetails:
-        "Our digital transformation services help businesses leverage technology to drive growth and innovation.",
-      industry: "Business",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 39,
-      category: "Daily Creativity",
-      thumbnail: "financial-services-thumb.jpg",
-      title: "Financial Services",
-      detailsTitle: "Providing Financial Solutions for Businesses",
-      services: [
-        {
-          serviceName: "Financial Planning",
-          description:
-            "Helping businesses develop and implement financial plans.",
-        },
-        {
-          serviceName: "Investment Management",
-          description:
-            "Providing investment management services to help businesses grow.",
-        },
-      ],
-      serviceDetails:
-        "Our financial services help businesses manage their finances and achieve their financial goals.",
-      industry: "Business",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
-    },
-    {
-      id: 40,
-      category: "Daily Creativity",
-      thumbnail: "marketing-thumb.jpg",
-      title: "Marketing Strategy",
-      detailsTitle: "Developing Effective Marketing Strategies",
-      services: [
-        {
-          serviceName: "Market Research",
-          description:
-            "Conducting market research to inform marketing strategies.",
-        },
-        {
-          serviceName: "Campaign Management",
-          description:
-            "Managing marketing campaigns to drive brand awareness and engagement.",
-        },
-      ],
-      serviceDetails:
-        "Our marketing strategy services help businesses develop and implement effective marketing strategies.",
-      industry: "Marketing",
-      img: "https://i.postimg.cc/RZwSMndR/img1.png",
+      img: "https://i.postimg.cc/zvzxGsWm/Screenshot-58.png",
     },
   ];
   return (
@@ -932,7 +427,7 @@ const Items = () => {
             alt=""
             width={500}
             height={100}
-            className="rounded-xl"
+            className="rounded-xl h-64"
           />
           <h2 className="text-md font-bold mt-3">{item.title}</h2>
           <p className="text-[22px]">{item.detailsTitle}</p>

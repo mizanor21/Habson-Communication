@@ -24,11 +24,6 @@ const ContactUsImg = () => {
       image:
         "https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6461036875a21d411d460535_c1544e153590993.Y3JvcCw0NzY1LDM3MjcsMCw1MTg-p-800.webp",
     },
-    {
-      id: 3,
-      image:
-        "https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6461036730fbaaf79ef080dd_df202594712385.Y3JvcCwyNzQ4LDIxNTAsMjM4LDA-p-800.webp",
-    },
   ];
 
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@/public/assets/logo/HabsonLogo.gif";
+import logo from "@/public/assets/logo/livingLogo.gif";
 import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
@@ -72,9 +72,9 @@ const Nav = () => {
               </li>
             </ul>
           </div>
-          <a className="w-[400px]" href="/">
-            <Image src={logo} alt="Habson logo"></Image>
-          </a>
+          <Link className="w-48" href="/">
+            <Image src={logo} className="" alt="Habson logo"></Image>
+          </Link>
         </div>
         <div className="navbar-end hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 z-50">

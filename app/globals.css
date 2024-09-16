@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection {
-    background-color: #0065b2;
-    color: white;
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ee397b #f1f1f1;
 }
 
+::selection {
+    background-color: #125b5c;
+    color: white;
+}
 
 body,
 div {
