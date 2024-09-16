@@ -63,7 +63,7 @@ const Slideshow = () => {
 
   return (
     <div>
-      <div className="relative h-screen w-screen overflow-hidden bg-[#110101] sl">
+      <div className="relative h-screen w-screen overflow-hidden bg-[#110101] z-[9999]">
         {/* Left Slideshow (Top-Down) */}
         <div className="absolute inset-0 z-10 slideshow slideshow-left">
           <Slider {...settingsLeft} ref={sliderLeftRef}>

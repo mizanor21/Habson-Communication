@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <TimeSchbang />
+      {/* <TimeSchbang /> */}
       <IntroVideo />
       <Define />
       <Slideshow />

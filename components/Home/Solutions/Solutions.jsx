@@ -67,11 +67,11 @@ const Solutions = () => {
     },
   ];
   return (
-    <div className="flex overflow-scroll">
+    <div className="flex overflow-scroll bg-white relative z-[9999]">
       {sections.map((section, sectionIndex) => (
         <div
           key={sectionIndex}
-          className={`hover-container ${section.id} h-screen border-r-2 hover:text-white group`}
+          className={`hover-container ${section?.id} h-screen border-r-2 hover:text-white group`}
         >
           <div className="text-center w-[550px] h-full flex items-center justify-center">
             <div className="px-5 lg:px-20">

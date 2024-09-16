@@ -1,8 +1,9 @@
 import React from "react";
+import TimeSchbang from "../TimeSchbang/TimeSchbang";
 
 const Hero = () => {
   return (
-    <div className=" w-full bg-white  p-4 font-[Inter]">
+    <div className=" w-full bg-white  p-4 font-[Inter] sticky top-0 z-[9999]">
       <div className="container mx-auto">
         <h1 className="text-3xl lg:text-6xl font-bold">
           Your Creative, Media & Technology Transformation Partner
@@ -12,8 +13,8 @@ const Hero = () => {
           for 300+ brands worldwide, 8 years and counting!
         </p>
       </div>
+      <TimeSchbang />
     </div>
-    
   );
 };
 
