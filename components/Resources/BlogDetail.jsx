@@ -78,11 +78,11 @@ const BlogDetail = () => {
                   reputation. Simply put - an employer brand.{" "}
                 </li>
                 <li>
-                  Think of it as your organisation's personality, its vibe, and
-                  its standing in the job market. It's the shaping of your
-                  reputation as an employer. Your employer brand makes you stand
-                  out in the crowd, like a peacock strutting its feathers in a
-                  flock of pigeons.
+                  Think of it as your organisation&apos;s personality, its vibe,
+                  and its standing in the job market. It&apos;s the shaping of
+                  your reputation as an employer. Your employer brand makes you
+                  stand out in the crowd, like a peacock strutting its feathers
+                  in a flock of pigeons.
                 </li>
               </ul>
 
@@ -93,18 +93,18 @@ const BlogDetail = () => {
                 <li>
                   In this cut-throat world of business, where talent is the
                   ultimate currency, the concept of employer branding reigns
-                  supreme. But it's not just about looking pretty; it's about
-                  showcasing your culture, values, and USPs. And if your
-                  question still is, “Will this be applicable to my brand?” The
-                  answer, in 99% of cases, is a resounding yes.
+                  supreme. But it&apos;s not just about looking pretty;
+                  it&apos;s about showcasing your culture, values, and USPs. And
+                  if your question still is, “Will this be applicable to my
+                  brand?” The answer, in 99% of cases, is a resounding yes.
                 </li>
                 <li>How we did it for our brands.</li>
                 <li>
-                  Let's rewind back a year for an illustrative case. Consider
-                  professional services, like a law firm, where the reputation
-                  often leans towards being conservative, with intense work
-                  environments, characterised by strict dress codes, and
-                  less-than-ideal working hours.
+                  Let&apos;s rewind back a year for an illustrative case.
+                  Consider professional services, like a law firm, where the
+                  reputation often leans towards being conservative, with
+                  intense work environments, characterised by strict dress
+                  codes, and less-than-ideal working hours.
                 </li>
               </ul>
 
@@ -118,7 +118,7 @@ const BlogDetail = () => {
                     <p>
                       We embarked on transforming their perception with a robust
                       and imaginative employer branding strategy. We unveiled an
-                      exclusive glimpse into the lives of Pioneer Legal's
+                      exclusive glimpse into the lives of Pioneer Legal&apos;s
                       employees. We highlighted details like their relaxed dress
                       code, vibrant work culture, promising career prospects in
                       the legal field, and their transparent and efficient
@@ -129,12 +129,12 @@ const BlogDetail = () => {
                     <h1 className="font-bold text-[15px] pb-5">‍The Impact </h1>
                     <p>
                       These revelations came to life through elaborate LinkedIn
-                      articles and Instagram posts, showcasing how this wasn't
-                      just another law firm, but a place where professional
-                      growth meets work-life balance. Our strategy not only
-                      attracted but also retained some of the finest legal
-                      talent in the industry, reshaping the mettle of Pioneer
-                      Legal's workforce.
+                      articles and Instagram posts, showcasing how this
+                      wasn&apos;t just another law firm, but a place where
+                      professional growth meets work-life balance. Our strategy
+                      not only attracted but also retained some of the finest
+                      legal talent in the industry, reshaping the mettle of
+                      Pioneer Legal&apos;s workforce.
                     </p>
                   </li>
                 </ul>
@@ -145,8 +145,9 @@ const BlogDetail = () => {
 
               <ul className=" space-y-8 mb-8">
                 <li>
-                  If this example hasn't quite sealed the deal for you, let's
-                  explore another one where we tackled a common issue.
+                  If this example hasn&apos;t quite sealed the deal for you,
+                  let&apos;s explore another one where we tackled a common
+                  issue.
                 </li>
                 <ul className="space-y-8">
                   <li>
@@ -174,7 +175,7 @@ const BlogDetail = () => {
                         We fostered a vibrant learning community organising web
                         conferences and in-person meet and greets, where both
                         seasoned and new exporters could uncover the secrets of
-                        AGS' global platform.{" "}
+                        AGS global platform.{" "}
                       </p>
                     </li>
                     <li>
@@ -210,19 +211,20 @@ const BlogDetail = () => {
                     </h1>
                     <p>
                       We formulated a concise employer branding strategy that
-                      encapsulated HCCB's dynamic culture and THRIVE philosophy.
-                      We ensured that these narratives spanned across all
-                      echelons - from the corporate office to the factory floor,
-                      offering a holistic picture of HCCB as an employer.
+                      encapsulated HCCB&apos;s dynamic culture and THRIVE
+                      philosophy. We ensured that these narratives spanned
+                      across all echelons - from the corporate office to the
+                      factory floor, offering a holistic picture of HCCB as an
+                      employer.
                     </p>
                   </li>
                   <li>
                     The intentional placement of content and banners across the
-                    website reinforces HCCB's employer brand, while also
+                    website reinforces HCCB&apos;s employer brand, while also
                     creating a seamless user experience for potential employees.
                     The easy navigation and captivating content fostered a
-                    deeper understanding and connection with HCCB's employer
-                    brand.
+                    deeper understanding and connection with HCCB&apos;s
+                    employer brand.
                   </li>
                 </ul>
               </ul>
@@ -231,16 +233,16 @@ const BlogDetail = () => {
               </p>
               <ul className=" space-y-8 mb-8">
                 <li>
-                  Employer branding is no longer a luxury; it's a strategic
-                  imperative. It's the difference between being just another
-                  option or being the top choice.
+                  Employer branding is no longer a luxury; it&apos;s a strategic
+                  imperative. It&apos;s the difference between being just
+                  another option or being the top choice.
                 </li>
                 <li>
-                  If you're ready to step onto that stage and dazzle potential
-                  talent, we’re here to help. We've captained the employer
-                  branding ship, and are eager to guide your company towards
-                  becoming the dream workplace. The future is promising, and we
-                  could be your ticket to centre stage!
+                  If you&apos;re ready to step onto that stage and dazzle
+                  potential talent, we’re here to help. We&apos;ve captained the
+                  employer branding ship, and are eager to guide your company
+                  towards becoming the dream workplace. The future is promising,
+                  and we could be your ticket to centre stage!
                 </li>
               </ul>
 
