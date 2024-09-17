@@ -4,7 +4,7 @@ import BlurIn from "@/components/magicui/blur-in";
 
 const Hero = () => {
   return (
-    <div className=" w-full bg-white  py-4 font-[Inter] sticky top-0 z-[9999]">
+    <div className=" w-full bg-white  py-4 font-[Inter]">
       <div className="container mx-auto">
         <BlurIn
           className="text-3xl lg:text-6xl font-bold"
