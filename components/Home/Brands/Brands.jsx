@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Marquee from "@/components/magicui/marquee";
+import "./Brands.css";
 
 const reviews = [
   {
@@ -40,8 +40,8 @@ const reviews = [
   },
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+// Duplicate the reviews to create a seamless loop
+const duplicatedReviews = [...reviews, ...reviews];
 
 const ReviewCard = ({ img, name, username, body }) => {
   return (
@@ -76,17 +76,24 @@ const ReviewCard = ({ img, name, username, body }) => {
 
 const Brands = () => {
   return (
-    <div className="bg-white z-[9999] relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-b-[20px] border bg-background md:shadow-xl">
-      <Marquee pauseOnHover loop className="[--duration:20s]">
-        {firstRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
-        ))}
-      </Marquee>
-      <Marquee reverse pauseOnHover loop className="[--duration:20s]">
-        {secondRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
-        ))}
-      </Marquee>
+    <div className="bg-white rounded-b-[40px] z-[9999] relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden border bg-background md:shadow-xl">
+      {/* Continuous Marquee */}
+      <div className="marquee-container">
+        <div className="marquee-content">
+          {duplicatedReviews.map((review, index) => (
+            <ReviewCard key={index} {...review} />
+          ))}
+        </div>
+      </div>
+      {/* Reverse Marquee */}
+      <div className="marquee-container mt-10">
+        <div className="marquee-content reverse">
+          {duplicatedReviews.map((review, index) => (
+            <ReviewCard key={index} {...review} />
+          ))}
+        </div>
+      </div>
+      {/* Shadow Gradient on the sides */}
       <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
       <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
     </div>
