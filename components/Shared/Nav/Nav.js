@@ -1,9 +1,10 @@
 import React from "react";
-import logo from "@/public/assets/logo/livingLogo.gif";
+import logo from "@/public/assets/logo/logo.png";
 import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 import Button from "../../Custom/Button";
+import WordRotate from "@/components/magicui/word-rotate";
 
 const Nav = () => {
   return (
@@ -72,8 +73,23 @@ const Nav = () => {
               </li>
             </ul>
           </div>
-          <Link className="w-48" href="/">
-            <Image src={logo} className="" alt="Habson logo"></Image>
+          <Link className=" flex items-end gap-2" href="/">
+            <Image src={logo} className="w-20" alt="Living Brands logo"></Image>
+            <WordRotate
+              className="text-lg font-bold"
+              words={[
+                "Brands",
+                "Tech",
+                "Media",
+                "Production",
+                "Influencer",
+                "Talent management",
+                "IT",
+                "UI/UX",
+                "SEO",
+                "Chatbots",
+              ]}
+            />
           </Link>
         </div>
         <div className="navbar-end hidden lg:flex ">
@@ -84,7 +100,7 @@ const Nav = () => {
             <li>
               <details>
                 <summary>Solutions</summary>
-                <ul className="p-2 w-60">
+                <ul className="p-2 w-60 relative bg-white z-[10]">
                   <li>
                     <Link href={"/brand-solutions"}>Brand Solutions</Link>
                   </li>

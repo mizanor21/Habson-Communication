@@ -8,16 +8,16 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-black sticky bottom-0">
-      <div className="p-10 lg:p-20">
+    <div className="bg-black ">
+      <div className="p-10 lg:p-20 grid grid-cols-1 gap-y-10">
         <div className="flex justify-center items-center">
-          <Image src={footerLogo} alt="Footer Logo" className="mb-10 "></Image>
+          <Image src={footerLogo} alt="Footer Logo" className=""></Image>
         </div>
-        <div>
-          <hr className="pb-10" />
+        <div className="">
+          <hr />
         </div>
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-3">
+        <div className="lg:container lg:mx-auto lg:flex justify-between items-center ">
+          <div className="flex justify-center gap-3">
             <a href="#">
               <ImFacebook2 className="text-white text-3xl" />
             </a>
@@ -31,7 +31,7 @@ const Footer = () => {
               <FaLinkedin />
             </a>
           </div>
-          <div className="flex gap-5 text-sm">
+          <div className="flex justify-center gap-5 text-sm text-center py-5 md:py-0">
             <a href="#" className="text-white">
               About
             </a>
@@ -39,17 +39,17 @@ const Footer = () => {
               Contact
             </a>
             <a href="#" className="text-white">
-              Case Studies
-            </a>
-            <a href="#" className="text-white">
               Blog Privacy
             </a>
           </div>
-          <div className="text-white text-sm">
-            <p className="text-end">Proudly created in India.</p>
+          <div className="text-white text-sm text-center">
+            <p className="lg:text-end">Proudly created in India.</p>
             <p>All Right Reserved, All Wrong Reversed.</p>
           </div>
         </div>
+      </div>
+      <div>
+        <small></small>
       </div>
     </div>
   );
