@@ -2,17 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
-    scrollbar-width: thin;
-    /* scrollbar-color: #ee397b #f1f1f1; */
+  scrollbar-width: thin;
+  /* scrollbar-color: #ee397b #f1f1f1; */
 }
 
 ::selection {
-    background-color: #125b5c;
-    color: white;
+  background-color: #125b5c;
+  color: white;
 }
 
 body,
 div {
-    cursor: url(../public/assets/cursor/cursor.png), auto;
+  cursor: url(../public/assets/cursor/cursor.png), auto;
 }
