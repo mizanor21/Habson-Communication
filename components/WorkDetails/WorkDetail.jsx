@@ -45,27 +45,27 @@ const WorkDetail = () => {
             Parksons Cartamundi aimed to launch their new card game by merging
             the passion of cricket fans with the excitement of card playing. As
             the merchandise sponsor of the Mumbai Indians, they wanted to
-            capture Mumbai's vibrant culture and the competitive spirit of both
-            games.
+            capture Mumbai&apos;s vibrant culture and the competitive spirit of
+            both games.
           </p>{" "}
           <br />
           <p className="text-lg leading-snug">
-            We created the ad film "Asli Fan Khelta Hai!" to celebrate the joy
-            of playing and the spirit of Mumbai Indians supporters. The film
-            follows a dedicated fan navigating Mumbai, encountering fellow
+            We created the ad film &quot;Asli Fan Khelta Hai!&quot; to celebrate
+            the joy of playing and the spirit of Mumbai Indians supporters. The
+            film follows a dedicated fan navigating Mumbai, encountering fellow
             enthusiasts like taxi drivers, fishermen, dabbawalas, and gully
             cricket players. Each scene showcases how their shared love for
-            cricket and cards unites them, highlighting Mumbai's diverse and
-            energetic fan culture.
+            cricket and cards unites them, highlighting Mumbai&apos;s diverse
+            and energetic fan culture.
           </p>
           <br />
           <p className="text-lg leading-snug">
-            The campaign successfully launched Parksons Cartamundi's card game,
-            resonating deeply with audiences. "Asli Fan Khelta Hai!" celebrated
-            Mumbai’s passionate fan culture, showing how playing cards can unite
-            people across boundaries. This strengthened the brand's connection
-            with the Mumbai Indians fan base, creating a memorable and impactful
-            brand experience.
+            The campaign successfully launched Parksons Cartamundi&apos;s card
+            game, resonating deeply with audiences. &quot;Asli Fan Khelta
+            Hai!&quot; celebrated Mumbai’s passionate fan culture, showing how
+            playing cards can unite people across boundaries. This strengthened
+            the brand&apos;s connection with the Mumbai Indians fan base,
+            creating a memorable and impactful brand experience.
           </p>
           <br />
         </div>
