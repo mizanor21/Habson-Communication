@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Items from "../Items/Items";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const BrandSolutions = () => {
   const [open, setOpen] = useState(null);
@@ -8,6 +9,50 @@ const BrandSolutions = () => {
   const toggle = (index) => {
     setOpen(open === index ? null : index);
   };
+
+  // Array of items with dynamic titles and contents
+  const data = [
+    {
+      title: "Social Media Management",
+      content:
+        "We create data-driven social media strategies that go beyond vanity metrics. By focusing on building genuine connections, we transform your online presence into a thriving community.",
+    },
+    {
+      title: "Content and Copywriting",
+      content:
+        "Our wordsmiths craft compelling, customer-centric content that drives results. We prioritize clarity, impact, and empathy over empty buzzwords.",
+    },
+    {
+      title: "Graphic Design and Illustration",
+      content:
+        "In today's visual-first world, we create captivating content that grabs attention and embodies your brand's essence.",
+    },
+    {
+      title: "Video Editing and Animation",
+      content:
+        "We create captivating 2D and 3D animations and video edits optimized for maximum social impact. Our team blends artistry and technology to craft visually stunning and engaging content that resonates with audiences, drives engagement, and delivers results.",
+    },
+    {
+      title: "Film Production, AVs and Product Photography",
+      content:
+        "Our in-house production studio offers a full spectrum of creative services, from script-to-screen. Our talented team of filmmakers, photographers, and editors produce a wide range of content, including feature films, commercials, brand films, and product photography.",
+    },
+    {
+      title: "Campaign Planning",
+      content:
+        "Beyond daily content, we specialize in creating unforgettable experiences. Our end-to-end digital services transform client visions into reality, exceeding expectations at every turn.",
+    },
+    {
+      title: "Influencer Management & ORM",
+      content:
+        "We forge powerful partnerships with top-tier influencers and thought leaders to amplify your brand's reach and drive meaningful engagement. By leveraging their social influence, we create impactful campaigns that resonate with your target audience and boost brand recall. Our strong media relationships ensure widespread coverage and positive press for your brand. To protect and enhance your online reputation, our dedicated ORM team uses advanced listening tools and media contacts to manage online conversations effectively.",
+    },
+    {
+      title: "New Brand Launch and Rebranding",
+      content:
+        "Our branding division crafts enduring brand identities. We delve deep into your business, understanding your audience and goals to develop a comprehensive brand ecosystem. From designing your brand’s logo to building a brand persona - this includes everything! ",
+    },
+  ];
 
   return (
     <section className="container mx-auto px-4 py-12 bg-white">
@@ -17,17 +62,18 @@ const BrandSolutions = () => {
           <h2 className="text-6xl text-black font-bold mb-10">
             Brand Solutions
           </h2>
-          <p className="text-lg font-semibold  text-black mb-10">
-            Our Strategists, Designers, Video Editors and Animators provide you
-            with holistic solutions to grow your digital presence and achieve
-            your business goals through both day-to-day content and integrated
-            flagship campaigns.
+          <p className="text-lg font-normal  text-black mb-10">
+            From crafting compelling daily content to executing high-impact
+            flagship campaigns, we provide a comprehensive range of digital
+            services tailored to your unique business objectives. We combine
+            strategic thinking, creative design, engaging video production, and
+            dynamic animation to create a cohesive digital presence that drives
+            tangible results.
           </p>
           <p className="font-bold text-xl text-black mb-10">
             Proud to work with the biggest brands in India & Abroad
           </p>
           <div className="mt-6 grid grid-cols-3 gap-4 mb-10">
-            {/* Brand Logos */}
             <img
               src="https://i.postimg.cc/XYnP8q4S/l-1.png"
               alt="P&G"
@@ -41,7 +87,7 @@ const BrandSolutions = () => {
             <img
               src="https://i.postimg.cc/28RM1Tt5/l-12.png"
               alt="Garnier Men"
-              className="h-20 object-contain"
+              className="h-10 object-contain"
             />
             <img
               src="https://i.postimg.cc/SQzHQHD5/l-13.png"
@@ -51,59 +97,51 @@ const BrandSolutions = () => {
             <img
               src="https://i.postimg.cc/RhfYPnW9/l-14.png"
               alt="Jio"
-              className="h-20 object-contain"
+              className="h-10 object-contain"
             />
             <img
               src="https://i.postimg.cc/76jcMNYm/l-17.png"
               alt="uno"
-              className="h-16 object-contain"
+              className="h-10 object-contain"
             />
             <img
               src="https://i.postimg.cc/mDPJHnRP/l-18.png"
               alt="Godrej"
-              className="h-16 object-contain mb-12"
+              className="h-10 object-contain mb-12"
             />
             <img
               src="https://i.postimg.cc/HLZFjmGG/l-2.png"
               alt="Ashok Leyland"
-              className="h-16 object-contain"
+              className="h-10 object-contain"
             />
             <img
               src="https://i.postimg.cc/BnCr9DMn/l-23.png"
               alt="domino's"
-              className="h-16 object-contain"
+              className="h-10 object-contain"
             />
           </div>
         </div>
 
         {/* Right Side - Accordion */}
         <div className="space-y-4">
-          {[
-            "Social Media Management",
-            "Original Content and Copywriting",
-            "Graphic Design, Iconography and Illustrations",
-            "Video Editing and Animation",
-            "Film Production, AVs and Product Photography",
-            "Campaign Planning",
-            "Schbang Fluence & ORM",
-            "Print, OOH, Mainline Advertising",
-            "New Brand Launch and Rebranding",
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="collapse-arrow border-b border-gray-300"
-            >
+          {data.map((item, index) => (
+            <div key={index} className="border-b border-gray-300">
               <button
-                className=" collapse-title w-full text-left py-4 font-semibold text-black "
+                className="w-full flex justify-between items-center py-4 font-extrabold text-black text-left"
                 onClick={() => toggle(index)}
               >
-                {item}
+                {item.title}
+                {open === index ? (
+                  <FaChevronUp className="ml-2 text-gray-500" />
+                ) : (
+                  <FaChevronDown className="ml-2 text-gray-500" />
+                )}
               </button>
 
               {open === index && (
-                <div className=" collapse-content py-2 text-black">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Mauris ac neque at dolor auctor fringilla.
+                <div className="py-2 text-black">
+                  {/* Dynamic content based on the selected item */}
+                  {item.content}
                 </div>
               )}
             </div>
