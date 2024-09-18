@@ -103,7 +103,7 @@ const Nav = () => {
           About <GoChevronDown className="ml-1 font-bold " />
         </span>
 
-        <ul className="py-5 px-6 absolute lg:left-[-1100px] lg:w-[1530px] overflow-hidden  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
+        <ul className="py-5 px-6 absolute lg:left-[-1020px] lg:w-[1530px] overflow-hidden  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
           <div className="flex justify-center gap-44 py-5">
             <div className="grid grid-col-1 ">
               <li className="font-bold text-2xl">
