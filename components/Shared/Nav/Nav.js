@@ -21,27 +21,38 @@ const Nav = () => {
           Solution <GoChevronDown className="ml-1 font-bold " />
         </span>
 
-        <ul className="  py-10 absolute lg:left-[-1000px] lg:w-[1530px] overflow-hidden  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
-          <div className="flex justify-center gap-[500px]">
-            <div className="grid grid-col-1 px-10">
+        <ul className=" py-10 absolute lg:left-[-930px] lg:w-[1530px] overflow-hidden  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
+          <div className="flex justify-center gap-28">
+            <div className="flex-1 px-10 ">
               <Link href="/brand-solutions">
-                <li className="font-bold text-2xl">Brand Solution</li>
+                <li className="font-bold text-3xl">Brand Solution</li>
               </Link>
               <Link href="/media-solutions">
-                <li className="font-bold text-2xl">Media Solution</li>
+                <li className="font-bold text-3xl mt-5">Media Solution</li>
               </Link>
               <Link href="/tech-solutions">
-                <li className="font-bold text-2xl">Tech Solution</li>
+                <li className="font-bold text-3xl mt-5">Tech Solution</li>
               </Link>
             </div>
-            <div className="w-[100%]">
-              <Link href={"/about-details"} className="">
-                <img
-                  className="w-[100%] h-[40vh] rounded-sm"
-                  src="https://i.postimg.cc/8PDs8ccw/kgrit-U3-IYXE-HD-1.jpg"
-                  alt="Shoes"
-                />
-              </Link>
+            <div className="flex gap-8">
+              <div className="w-[100%]">
+                <Link href={"/about-details"} className="">
+                  <img
+                    className="w-[100%]  rounded-xl "
+                    src="https://i.postimg.cc/8PDs8ccw/kgrit-U3-IYXE-HD-1.jpg"
+                    alt="Shoes"
+                  />
+                </Link>
+              </div>
+              <div className="w-[100%]">
+                <Link href={"/about-details"} className="">
+                  <img
+                    className="w-[100%]  rounded-xl"
+                    src="https://i.postimg.cc/K88zzWnM/1.jpg"
+                    alt="Shoes"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </ul>
@@ -92,43 +103,43 @@ const Nav = () => {
           About <GoChevronDown className="ml-1 font-bold " />
         </span>
 
-        <ul className="  py-10 px-10 absolute lg:left-[-1100px] lg:w-[1530px] overflow-hidden  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
-          <div className="flex justify-center gap-72 py-10">
-            <div className="grid grid-col-1 gap-5">
-              <li className="font-bold text-xl">
+        <ul className="py-5 px-6 absolute lg:left-[-1100px] lg:w-[1530px] overflow-hidden  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
+          <div className="flex justify-center gap-44 py-5">
+            <div className="grid grid-col-1 ">
+              <li className="font-bold text-2xl">
                 Flame Awards 2024 - LB and Habson Static
               </li>
 
-              <li className="font-bold text-xl">
+              <li className="font-bold text-2xl">
                 A Magnificent Masterstroke!(LB & Habson Logo)
               </li>
 
-              <li className="font-bold text-xl">
+              <li className="font-bold text-2xl">
                 Ten Awards Five golds, Three silvers, Two bronzes
               </li>
 
-              <li className="font-bold text-xl">Flame Awards Asia 2024</li>
+              <li className="font-bold text-2xl">Flame Awards Asia 2024</li>
 
-              <li className="font-bold text-xl">
+              <li className="font-bold text-2xl">
                 Digital Marketing Awards 2022 - Living Brands
               </li>
 
-              <li className="font-bold text-xl">
+              <li className="font-bold text-2xl">
                 Pusti Home Chef Best Digital Campaign by New Agency (Silver)
               </li>
 
-              <li className="font-bold text-xl">
+              <li className="font-bold text-2xl">
                 Commward 2022 - Habson Communication
               </li>
 
-              <li className="font-bold text-xl">
+              <li className="font-bold text-2xl">
                 PUMA Flagship Store Launch Best Outdoor Campaign (Bronze)
               </li>
             </div>
-            <div className="w-[100%]">
+            <div className="">
               <Link href={"/about-details"} className="">
                 <img
-                  className="w-full h-[40vh] rounded-sm"
+                  className="w-full h-[500px] rounded-xl"
                   src="https://i.postimg.cc/brZ136ZB/Whats-App-Image-2024-09-17-at-12-59-57.jpg"
                   alt="Shoes"
                 />
@@ -138,7 +149,7 @@ const Nav = () => {
         </ul>
       </li>
 
-      {/* Blog small device */}
+      {/* resource small device */}
       <li className="lg:hidden border-b border-teal-700">
         <details className="dropdown border-none">
           <summary className="cursor-pointer list-none">Blogs</summary>
@@ -153,7 +164,7 @@ const Nav = () => {
         </details>
       </li>
 
-      {/* Blogs */}
+      {/* Resource */}
       <li className="relative group hidden lg:block">
         <span className="cursor-pointer flex items-center text-[#125b5c]">
           Resources <GoChevronDown className="ml-1 font-bold " />
@@ -161,23 +172,34 @@ const Nav = () => {
 
         <ul className="  py-10 px-10 absolute lg:left-[-1100px] lg:w-[1530px] overflow-hidden  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
           <div className="flex justify-center gap-72 py-10">
-            <div className="grid grid-col-1 gap-5">
+            <div className="">
               <Link href="/blogs">
-                <li className="font-bold text-xl">Blogs</li>
+                <li className="font-bold text-3xl">Blogs</li>
               </Link>
 
               <Link href="/the-edge">
-                <li className="font-bold text-xl">The Edge</li>
+                <li className="font-bold text-3xl mt-5">The Edge</li>
               </Link>
             </div>
-            <div className="w-[100%]">
-              <Link href={"/"} className="">
-                <img
-                  className="w-[80%] h-[40vh] rounded-sm"
-                  src="https://i.postimg.cc/brZ136ZB/Whats-App-Image-2024-09-17-at-12-59-57.jpg"
-                  alt="Shoes"
-                />
-              </Link>
+            <div className="flex gap-8">
+              <div className="w-[100%]">
+                <Link href={"/"} className="">
+                  <img
+                    className="w-[100%]  rounded-xl "
+                    src="https://i.postimg.cc/NjPfhR6C/Gujn-Dntu-TI-HD.jpg"
+                    alt="Shoes"
+                  />
+                </Link>
+              </div>
+              <div className="w-[100%]">
+                <Link href={"/"} className="">
+                  <img
+                    className="w-[100%]  rounded-xl"
+                    src="https://i.postimg.cc/yYxcxKwF/RJx-It-SXXC6-U-HD.jpg"
+                    alt="Shoes"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </ul>
