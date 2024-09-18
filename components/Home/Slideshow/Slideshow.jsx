@@ -19,8 +19,8 @@ const Slideshow = () => {
         sliderRightRef.current.slickPrev(); // Sync reverse slider
       } else {
         // Scroll up
-        sliderLeftRef.current.slickPrev();
-        sliderRightRef.current.slickNext(); // Sync reverse slider
+        // sliderLeftRef.current.slickPrev();
+        // sliderRightRef.current.slickNext(); // Sync reverse slider
       }
     };
 
@@ -49,7 +49,7 @@ const Slideshow = () => {
     infinite: true,
     dots: false,
     speed: 1000,
-    cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
+    // cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
   };
 
   const settingsRight = {
@@ -58,7 +58,7 @@ const Slideshow = () => {
     arrows: false,
     infinite: true,
     speed: 950,
-    cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
+    // cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
   };
 
   return (
@@ -70,7 +70,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="left-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg"
+                  src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-1"
                 />
@@ -80,7 +80,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="left-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg"
+                  src="https://i.postimg.cc/g2bv6z1C/4.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-2"
                 />
@@ -89,7 +89,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="left-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-4.jpg"
+                  src="https://i.postimg.cc/sxt5msxZ/3.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-3"
                 />
@@ -98,7 +98,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="left-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg"
+                  src="https://i.postimg.cc/X7CfJG1K/2.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-4"
                 />
@@ -118,7 +118,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="right-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg"
+                  src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-4-reverse"
                 />
@@ -127,7 +127,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="right-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg"
+                  src="https://i.postimg.cc/X7CfJG1K/2.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-1-reverse"
                 />
@@ -136,7 +136,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="right-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-4.jpg"
+                  src="https://i.postimg.cc/sxt5msxZ/3.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-2-reverse"
                 />
@@ -145,7 +145,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="right-half">
                 <img
-                  src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg"
+                  src="https://i.postimg.cc/g2bv6z1C/4.jpg"
                   className="object-cover w-full h-full"
                   alt="slide-3-reverse"
                 />
