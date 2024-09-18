@@ -5,10 +5,12 @@ import DynamicCard from "@/components/Career/DynamicCard";
 
 const Career = () => {
   return (
-    <div className="container mx-auto">
-      <CareerSection />
+    <div>
+      <div className="container mx-auto">
+        <CareerSection />
 
-      <VideoSection />
+        <VideoSection />
+      </div>
       <DynamicCard />
     </div>
   );

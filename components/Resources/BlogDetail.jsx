@@ -51,7 +51,7 @@ const BlogDetail = () => {
             </div>
 
             <img
-              src="https://cdn.prod.website-files.com/64117da520cdfb7ab62144a5/6539e9edf1b0c2065c194fce_unnamed-p-1600.png"
+              src="https://i.postimg.cc/K88zzWnM/1.jpg"
               className="object-cover  w-full h-[560px] justify-center rounded-3xl "
             ></img>
 
