@@ -372,19 +372,19 @@ const BlogItems = () => {
   ];
   return (
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-20">
-      { blogitems.map((item) => (
-        <Link href='/blog-details'>
-            <div key={item.id}>
-          <Image
-            src={item.img}
-            alt=""
-            width={500}
-            height={100}
-            className="rounded-xl h-64"
-          />
-          <h2 className="text-md font-bold mt-3">{item.title}</h2>
-          <p className="text-[22px]">{item.detailsTitle}</p>
-        </div>
+      {blogitems.map((item) => (
+        <Link key={item.id} href="/blog-details">
+          <div>
+            <Image
+              src={item.img}
+              alt=""
+              width={500}
+              height={100}
+              className="rounded-xl h-64"
+            />
+            <h2 className="text-md font-bold mt-3">{item.title}</h2>
+            <p className="text-[22px]">{item.detailsTitle}</p>
+          </div>
         </Link>
       ))}
     </div>
