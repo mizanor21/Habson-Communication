@@ -60,7 +60,7 @@ const TechSolutions = () => {
         {/* Left Side */}
         <div>
           <h2 className="text-6xl text-black font-bold mb-10">
-            Brand Solutions
+            Tech Solutions
           </h2>
           <p className="text-lg font-normal  text-black mb-10">
             From crafting compelling daily content to executing high-impact
