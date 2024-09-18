@@ -7,14 +7,14 @@ const TimeSchbang = () => {
   const items = Array.from({ length: 200 }, (_, i) => i);
 
   return (
-    <div className="overflow-hidden whitespace-nowrap">
+    <div className="overflow-hidden whitespace-nowrap ">
       <div className="flex items-center gap-5 pt-10 animate-marquee">
         {items.map((_, index) => (
           <React.Fragment key={index}>
             <Image
               src={TimeImg}
               alt="star images"
-              className="w-10 animate-spin"
+              className="w-10 animate-spin "
             />
             <h1
               className="font-sans"
@@ -22,7 +22,7 @@ const TimeSchbang = () => {
                 fontSize: "30px",
                 fontWeight: 900,
                 color: "transparent",
-                WebkitTextStroke: "1px black",
+                WebkitTextStroke: "1px #125b5c",
               }}
             >
               IT&apos;S TIME TO CREATE A LIVING BRANDS
@@ -43,7 +43,7 @@ const TimeSchbang = () => {
                 fontSize: "30px",
                 fontWeight: 900,
                 color: "transparent",
-                WebkitTextStroke: "1px black",
+                WebkitTextStroke: "1px #125b5c",
               }}
             >
               IT&apos;S TIME TO CREATE A LIVING BRANDS

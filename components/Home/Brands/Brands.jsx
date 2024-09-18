@@ -1,82 +1,107 @@
 import { cn } from "@/lib/utils";
 import "./Brands.css";
+import Image from "next/image";
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    img: "https://i.postimg.cc/XYnP8q4S/l-1.png",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    img: "https://i.postimg.cc/VLqTnnyW/l-10.png",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    img: "https://i.postimg.cc/28RM1Tt5/l-12.png",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
+    img: "https://i.postimg.cc/SQzHQHD5/l-13.png",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
+    img: "https://i.postimg.cc/RhfYPnW9/l-14.png",
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
+    img: "https://i.postimg.cc/76jcMNYm/l-17.png",
+  },
+
+  {
+    img: "https://i.postimg.cc/mDPJHnRP/l-18.png",
+  },
+  {
+    img: "https://i.postimg.cc/HLZFjmGG/l-2.png",
+  },
+  {
+    img: "https://i.postimg.cc/HLsfpxh4/l-21.png",
+  },
+];
+
+const Brands2 = [
+  {
+    img: "https://i.postimg.cc/BnCr9DMn/l-23.png",
+  },
+  {
+    img: "https://i.postimg.cc/dVFbxnRf/l-24.png",
+  },
+  {
+    img: "https://i.postimg.cc/zXTm74hW/l-25.png",
+  },
+  {
+    img: "https://i.postimg.cc/Hn7zYDmt/l-8.png",
+  },
+
+  {
+    img: "https://i.postimg.cc/T2zMrTKf/l-26.png",
+  },
+  {
+    img: "https://i.postimg.cc/nVjfjXc3/l-3.png",
+  },
+  {
+    img: "https://i.postimg.cc/3Rq9QrsR/l-5.png",
+  },
+  {
+    img: "https://i.postimg.cc/s1dc16DC/l-6.png",
+  },
+  {
+    img: "https://i.postimg.cc/d13nfZSp/l-7.png",
   },
 ];
 
 // Duplicate the reviews to create a seamless loop
 const duplicatedReviews = [...reviews, ...reviews];
 
-const ReviewCard = ({ img, name, username, body }) => {
+const ReviewCard = ({ img, name, body }) => {
   return (
-    <figure
-      className={cn(
-        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-        // light styles
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
-      )}
-    >
-      <div className="flex flex-row items-center gap-2">
-        <img
-          className="rounded-full"
-          width="32"
-          height="32"
-          alt={name}
-          src={img}
-        />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
-            {name}
-          </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
-        </div>
-      </div>
+    <figure className={cn("relative cursor-pointer overflow-hidden")}>
+      <div className="flex flex-row items-center gap-5"></div>
       <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <Image
+        className="h-16 w-auto object-cover"
+        width="200"
+        height="100"
+        alt={name}
+        src={img}
+      />
+    </figure>
+  );
+};
+
+const BrandsCard2 = ({ img, name, body }) => {
+  return (
+    <figure className={cn("relative cursor-pointer overflow-hidden")}>
+      <div className="flex flex-row items-center gap-5"></div>
+      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <Image
+        className="h-16 w-auto object-cover"
+        width="200"
+        height="100"
+        alt={name}
+        src={img}
+      />
     </figure>
   );
 };
 
 const Brands = () => {
   return (
-    <div className="bg-white rounded-b-[40px] z-[9999] relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden border bg-background md:shadow-xl">
+    <div className="bg-white z-[9999] relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden border bg-background md:shadow-xl">
       {/* Continuous Marquee */}
       <div className="marquee-container">
         <div className="marquee-content">
@@ -89,7 +114,7 @@ const Brands = () => {
       <div className="marquee-container mt-10">
         <div className="marquee-content reverse">
           {duplicatedReviews.map((review, index) => (
-            <ReviewCard key={index} {...review} />
+            <BrandsCard2 key={index} {...review} />
           ))}
         </div>
       </div>

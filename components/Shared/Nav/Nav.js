@@ -73,10 +73,11 @@ const Nav = () => {
               </li>
             </ul>
           </div>
-          <Link className=" flex items-end gap-2" href="/">
-            <Image src={logo} className="w-20" alt="Living Brands logo"></Image>
+          <Link className=" flex items-end gap-1 text-[#125b5c]" href="/">
+            <Image src={logo} className="w-16" alt="Living Brands logo"></Image>
+            <h1 className="text-4xl animate-pulse font-bold mb-2">.</h1>
             <WordRotate
-              className="text-lg font-bold"
+              className="text-lg font-bold p-0 m-0"
               words={[
                 "Brands",
                 "Tech",
