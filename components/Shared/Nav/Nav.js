@@ -8,7 +8,7 @@ import WordRotate from "@/components/magicui/word-rotate";
 
 const Nav = () => {
   return (
-    <div className="bg-base-100">
+    <div className="bg-base-100 text-[#125b5c]">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">

@@ -56,11 +56,15 @@ const data = [
 ];
 
 const Card = ({ imageUrl, title, description }) => (
-  <div className="bg-white shadow-md rounded-lg overflow-hidden w-96 h-full mb-10 hover:bg-[#f5f5f5] ">
+  <div className="bg-white shadow-md rounded-lg overflow-hidden h-full mb-10 hover:bg-[#f5f5f5] ">
     <img src={imageUrl} alt={title} className="" />
     <div className="p-6  ">
-      <h2 className="text-3xl font-bold mb-2 text-center text-black mb-5">{title}</h2>
-      <p className="text-gray-600  font-semibold text-lg text-center">{description}</p>
+      <h2 className="text-3xl font-bold mb-2 text-center text-black mb-5">
+        {title}
+      </h2>
+      <p className="text-gray-600  font-semibold text-lg text-center">
+        {description}
+      </p>
     </div>
   </div>
 );
@@ -69,16 +73,16 @@ const DynamicCard = () => {
   return (
     <div className="p-16">
       <div className="container mx-auto px-16 ">
-      <div className="bg-white text-center py-16">
-      <h1 className="text-3xl font-semibold tracking-tighter text-black ">
-      Have you got what it takes to #CreateASchbang?
-      </h1>
-      <p className="text-xl text-gray-700 mb-5">
-      Check out our core principles. If they align with your values, do apply..
-      </p>
-    
-    </div>
-        <div className="grid grid-cols-1 md:grid-cols-3">
+        <div className="bg-white text-center py-16">
+          <h1 className="text-3xl font-semibold tracking-tighter text-black ">
+            Have you got what it takes to #CreateASchbang?
+          </h1>
+          <p className="text-xl text-gray-700 mb-5">
+            Check out our core principles. If they align with your values, do
+            apply..
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {data.map((item) => (
             <Card
               key={item.id}
