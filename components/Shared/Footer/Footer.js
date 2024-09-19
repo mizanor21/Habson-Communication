@@ -5,6 +5,8 @@ import { ImFacebook2 } from "react-icons/im";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
+import { FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -17,34 +19,44 @@ const Footer = () => {
           <hr />
         </div>
         <div className="lg:container lg:mx-auto lg:flex justify-between items-center ">
-          <div className="flex justify-center gap-3">
-            <a href="#">
-              <ImFacebook2 className="text-white text-3xl" />
-            </a>
-            <a href="#">
-              <FaInstagramSquare className="text-white text-4xl" />
-            </a>
-            <a href="#">
-              <FaYoutube className="text-white text-4xl" />
-            </a>
-            <a href="#" className="text-white text-4xl">
+          <div className="flex text-white justify-center items-center gap-2 text-3xl">
+            <Link
+              href="https://www.facebook.com/Livingbrands.co"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook />
+            </Link>
+            <Link
+              href="https://www.instagram.com/livingbrands.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagramSquare />
+            </Link>
+            <Link
+              href="https://www.youtube.com/@LivingBrandsBD/videos"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/livingbrandsbyhabson/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin />
-            </a>
+            </Link>
           </div>
-          <div className="flex justify-center gap-5 text-sm text-center py-5 md:py-0">
-            <a href="#" className="text-white">
-              About
-            </a>
-            <a href="#" className="text-white">
-              Contact
-            </a>
-            <a href="#" className="text-white">
-              Blog Privacy
-            </a>
-          </div>
+
           <div className="text-white text-sm text-center">
-            <p className="lg:text-end">Proudly created in India.</p>
-            <p>All Right Reserved, All Wrong Reversed.</p>
+            <p className="lg:text-end text-sm">
+              Hosue: 230, New D.O.H.S Lake Road, Lane-16, Mohakhali, Dhaka-1206.
+            </p>
+            <p className="lg:text-end text-sm">
+              Living Brands All Rights Reserved
+            </p>
           </div>
         </div>
       </div>
