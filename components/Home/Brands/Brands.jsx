@@ -33,39 +33,50 @@ const reviews = [
   },
 ];
 
-const Brands2 = [
+const brands2 = [
   {
-    img: "https://i.postimg.cc/BnCr9DMn/l-23.png",
+    brand2img: "https://i.postimg.cc/BnCr9DMn/l-23.png",
   },
   {
-    img: "https://i.postimg.cc/dVFbxnRf/l-24.png",
+    brand2img: "https://i.postimg.cc/dVFbxnRf/l-24.png",
   },
   {
-    img: "https://i.postimg.cc/zXTm74hW/l-25.png",
+    brand2img: "https://i.postimg.cc/zXTm74hW/l-25.png",
   },
   {
-    img: "https://i.postimg.cc/Hn7zYDmt/l-8.png",
+    brand2img: "https://i.postimg.cc/Hn7zYDmt/l-8.png",
   },
 
   {
-    img: "https://i.postimg.cc/T2zMrTKf/l-26.png",
+    brand2img: "https://i.postimg.cc/T2zMrTKf/l-26.png",
   },
   {
-    img: "https://i.postimg.cc/nVjfjXc3/l-3.png",
+    brand2img: "https://i.postimg.cc/nVjfjXc3/l-3.png",
   },
   {
-    img: "https://i.postimg.cc/3Rq9QrsR/l-5.png",
+    brand2img: "https://i.postimg.cc/3Rq9QrsR/l-5.png",
   },
   {
-    img: "https://i.postimg.cc/s1dc16DC/l-6.png",
+    brand2img: "https://i.postimg.cc/s1dc16DC/l-6.png",
   },
   {
-    img: "https://i.postimg.cc/d13nfZSp/l-7.png",
+    brand2img: "https://i.postimg.cc/d13nfZSp/l-7.png",
   },
 ];
 
 // Duplicate the reviews to create a seamless loop
-const duplicatedReviews = [...reviews, ...reviews];
+const duplicatedReviews = [
+  ...reviews,
+  ...reviews,
+  ...reviews,
+  ...reviews,
+  ...reviews,
+  ...reviews,
+  ...reviews,
+  ...reviews,
+  ...reviews,
+  ...reviews,
+];
 
 const ReviewCard = ({ img, name, body }) => {
   return (
@@ -73,7 +84,7 @@ const ReviewCard = ({ img, name, body }) => {
       <div className="flex flex-row items-center gap-5"></div>
       <blockquote className="mt-2 text-sm">{body}</blockquote>
       <Image
-        className="h-16 w-auto object-cover"
+        className="h-12 w-auto object-cover saturate-0 hover:saturate-100"
         width="200"
         height="100"
         alt={name}
@@ -83,17 +94,31 @@ const ReviewCard = ({ img, name, body }) => {
   );
 };
 
-const BrandsCard2 = ({ img, name, body }) => {
+const duplicatedBrands2 = [
+  ...brands2,
+  ...brands2,
+  ...brands2,
+  ...brands2,
+  ...brands2,
+  ...brands2,
+  ...brands2,
+  ...brands2,
+  ...brands2,
+  ...brands2,
+  ...brands2,
+  ...brands2,
+];
+const BrandsCard2 = ({ brand2img, name, body }) => {
   return (
     <figure className={cn("relative cursor-pointer overflow-hidden")}>
       <div className="flex flex-row items-center gap-5"></div>
       <blockquote className="mt-2 text-sm">{body}</blockquote>
       <Image
-        className="h-16 w-auto object-cover"
+        className="h-12 w-auto object-cover saturate-0 hover:saturate-100"
         width="200"
         height="100"
         alt={name}
-        src={img}
+        src={brand2img}
       />
     </figure>
   );
@@ -101,7 +126,7 @@ const BrandsCard2 = ({ img, name, body }) => {
 
 const Brands = () => {
   return (
-    <div className="bg-white z-[9999] relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden border bg-background md:shadow-xl">
+    <div className="container mx-auto bg-white z-[9999] relative flex h-[300px] lg:h-[450px] w-full flex-col items-center justify-center overflow-hidden">
       {/* Continuous Marquee */}
       <div className="marquee-container">
         <div className="marquee-content">
@@ -113,8 +138,8 @@ const Brands = () => {
       {/* Reverse Marquee */}
       <div className="marquee-container mt-10">
         <div className="marquee-content reverse">
-          {duplicatedReviews.map((review, index) => (
-            <BrandsCard2 key={index} {...review} />
+          {duplicatedBrands2.map((brand2, index) => (
+            <BrandsCard2 key={index} {...brand2} />
           ))}
         </div>
       </div>
