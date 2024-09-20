@@ -262,7 +262,7 @@ const Nav = () => {
           </div>
         </div>
         <div className=" hidden lg:flex ">
-          <ul className="menu menu-horizontal z-50">{navItems}</ul>
+          <ul className="menu menu-horizontal">{navItems}</ul>
           <Link href={"/contact"}>
             <Button>
               Contact Us <FaArrowRightLong />
