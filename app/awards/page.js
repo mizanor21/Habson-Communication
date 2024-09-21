@@ -1,7 +1,7 @@
 const page = () => {
   return (
     <div className="container mx-auto my-10">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
         <div>
           <img src="https://i.postimg.cc/P5XY7rvD/Whats-App-Image-2024-09-17-at-13-19-50.jpg"></img>
         </div>

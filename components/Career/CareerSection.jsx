@@ -11,7 +11,7 @@ const CareerSection = () => {
         to be part of the team!
       </p>
       <button className="inline-flex  px-20 py-3 bg-[#125b5c] text-white border border-[#125b5c] rounded-full text-lg hover:bg-black hover:text-white transition-all">
-        See All Openings <span className="ml-2">→</span>
+        See All Openings <span className="ml-2 text-2xl">→</span>
       </button>
     </div>
   );
