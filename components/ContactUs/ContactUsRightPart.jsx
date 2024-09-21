@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUsRightPart = () => {
   return (
-    <div className="font-sora mb-16 lg:pl-28">
+    <div className=" mb-16">
       <div>
         <p className="text-base my-2 text-[#125b5c]">GOT AN IDEA?</p>
         <h1 className="text-3xl font-bold my-2 text-[#125b5c]">
