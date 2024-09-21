@@ -89,7 +89,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="left-half">
                 <img
-                  src="https://i.postimg.cc/sxt5msxZ/3.jpg"
+                  src="https://i.postimg.cc/WzW1pVyH/chips.png"
                   className="object-cover w-full h-full"
                   alt="slide-3"
                 />
@@ -108,7 +108,7 @@ const Slideshow = () => {
 
           {/* Left Side Buttons */}
           <div className="absolute bottom-10  left-5 z-20">
-            <FaCircleArrowRight className="text-4xl  text-white" />
+            <FaCircleArrowRight className="text-3xl lg:text-6xl  text-white" />
           </div>
         </div>
 
@@ -136,7 +136,7 @@ const Slideshow = () => {
             <div className="item h-screen">
               <div className="right-half">
                 <img
-                  src="https://i.postimg.cc/sxt5msxZ/3.jpg"
+                  src="https://i.postimg.cc/WzW1pVyH/chips.png"
                   className="object-cover w-full h-full"
                   alt="slide-2-reverse"
                 />
