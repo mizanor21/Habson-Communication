@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Items from "../Items/Items";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import Image from "next/image";
 
 const MediaSolutions = () => {
   const [open, setOpen] = useState(null);
@@ -35,11 +36,11 @@ const MediaSolutions = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-12 bg-white">
+    <section className="px-[5%] py-12 bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 lg:mb-20">
         {/* Left Side */}
         <div>
-          <h2 className="text-6xl text-black font-bold mb-10">
+          <h2 className="text-6xl text-[#125b5c] font-bold mb-10">
             Media Solutions
           </h2>
           <p className="text-lg font-normal  text-black mb-10">
@@ -47,51 +48,67 @@ const MediaSolutions = () => {
             managing paid marketing strategies to increase your brand awareness,
             market share and business revenue.
           </p>
-          <p className="font-bold text-xl text-black mb-10">
+          <p className="font-bold text-xl text-[#125b5c] mb-10">
             Proud to be collaborating with media industry leaders to power
             growth for brands!
           </p>
           <div className="mt-6 grid grid-cols-3 gap-4 mb-10">
             {/* Media Logos */}
-            <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477c05f6f9e81c9d0f82322_62691149902f536a63a89ae2_Brigade-Web-Meta-Business-Partner-1-1.png"
+            <Image
+              width={200}
+              height={200}
+              src="https://i.postimg.cc/dVFbxnRf/l-24.png"
               alt="Meta"
-              className="h-14 object-contain mb-12"
+              className="h-24 object-contain mb-12"
             />
-            <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/646742411d41344dd4fe9e4f_6.webp"
+            <Image
+              width={200}
+              height={200}
+              src="https://i.postimg.cc/s1dc16DC/l-6.png"
               alt="Google Partner"
               className="h-24 object-contain"
             />
-            <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/64674240ce6535840fe75043_3.webp"
+            <Image
+              width={200}
+              height={200}
+              src="https://i.postimg.cc/zXTm74hW/l-25.png"
               alt="Adobe"
-              className="h-28 object-contain"
+              className="h-24 object-contain"
             />
-            <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/646742411d41344dd4fe9e5a_7.webp"
+            <Image
+              width={200}
+              height={200}
+              src="https://i.postimg.cc/BnCr9DMn/l-23.png"
               alt="ONDC"
               className="h-24  mb-12"
             />
-            <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477bd521f0ee28256a9fcd2_HubSpot-certified-partner-2-p-500.webp"
+            <Image
+              width={200}
+              height={200}
+              src="https://i.postimg.cc/VLqTnnyW/l-10.png"
               alt="Hubspot"
-              className="h-16 object-contain"
+              className="h-24 object-contain"
             />
-            <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477c0fb107ad31b724643eb_629a40dc3e59ee069da94c82-p-500.png"
+            <Image
+              width={200}
+              height={200}
+              src="https://i.postimg.cc/RhfYPnW9/l-14.png"
               alt=""
-              className="h-16 object-contain"
+              className="h-24 object-contain"
             />
-            <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477bdd4ebdcee2b99b714e2_download-removebg-preview%20(1).png"
+            <Image
+              width={200}
+              height={200}
+              src="https://i.postimg.cc/SQzHQHD5/l-13.png"
               alt=""
-              className="h-16 object-contain mb-12"
+              className="h-24 object-contain mb-12"
             />
-            <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477c190c05b4c36d20363b0_SimilarWeb_logo.svg-p-500.webp"
+            <Image
+              width={200}
+              height={200}
+              src="https://i.postimg.cc/76jcMNYm/l-17.png"
               alt=""
-              className="h-10 object-contain"
+              className="h-24 object-contain"
             />
           </div>
         </div>
@@ -101,7 +118,7 @@ const MediaSolutions = () => {
           {data.map((item, index) => (
             <div key={index} className="border-b border-gray-300">
               <button
-                className="w-full flex justify-between items-center py-4 font-extrabold text-black text-left"
+                className="w-full flex justify-between items-center py-4 font-extrabold text-[#125b5c] text-left"
                 onClick={() => toggle(index)}
               >
                 {item.title}
