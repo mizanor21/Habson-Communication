@@ -49,7 +49,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className=" relative  w-[500px] overflow-hidden border hover:-translate-y-5 duration-300 mt-5"
+      className=" relative  w-[500px] overflow-hidden border hover:-translate-y-5 duration-300 mt-5 bg-white  hover:bg-neutral-50"
     >
       <div>
         <img
@@ -58,7 +58,7 @@ const Card = ({ card }) => {
           alt={card.title}
         />
       </div>
-      <div className="p-[2rem] bg-white hover:bg-neutral-50 ">
+      <div className="p-[2rem]  ">
         <div className="text-center">
           <h2 className="text-[24px] font-extrabold group-hover:text-black">
             {card.title}
