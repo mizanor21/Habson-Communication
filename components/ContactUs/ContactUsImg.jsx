@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const ContactUsImg = () => {
@@ -34,7 +35,13 @@ const ContactUsImg = () => {
         {cards.map((card) => (
           <div key={card.id}>
             <div className="w-full  mx-auto">
-              <img src={card.image} className=" w-full h-full "></img>
+              <Image
+                src={card.image}
+                alt=""
+                width={400}
+                height={500}
+                className=" w-full h-full "
+              ></Image>
             </div>
           </div>
         ))}
