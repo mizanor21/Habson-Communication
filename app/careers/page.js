@@ -3,12 +3,11 @@
 import CareerSection from "@/components/Career/CareerSection";
 import VideoSection from "@/components/Career/VideoSection";
 import { motion, useTransform, useScroll } from "framer-motion";
-import Image from "next/image";
 import { useRef } from "react";
 
 const Example = () => {
   return (
-    <div className="container mx-auto">
+    <div className="px-[5%]">
       <CareerSection></CareerSection>
       <VideoSection></VideoSection>
       <HorizontalScrollCarousel />
@@ -22,13 +21,13 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-white my-20">
+    <section ref={targetRef} className="relative h-[800vh] bg-white my-20">
       <div className="my-20">
         <h1 className="text-[24px] font-bold text-center ">
-          Have you got what it takes to #CreateASchbang?
+          Have you got what it takes to #CreateALivingBrands?
         </h1>
         <p className="text-[20px] font-normal text-center">
           Check out our core principles. If they align with your values, do
@@ -50,24 +49,24 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative  w-[500px] overflow-hidden  hover:-translate-y-5 duration-300 border mt-10"
+      className=" relative  w-[500px] overflow-hidden border hover:-translate-y-5 duration-300 mt-5"
     >
       <div>
-        <Image
-          width={400}
-          height={500}
+        <img
           className="w-full h-[500px] object-cover"
           src={card.imageUrl}
           alt={card.title}
         />
       </div>
-      <div className="text-center p-[2rem] bg-white hover:bg-neutral-50">
-        <h2 className="text-[24px] font-extrabold group-hover:text-black">
-          {card.title}
-        </h2>
-        <p className="text-[16px] group-hover:text-black py-4">
-          {card.description}
-        </p>
+      <div className="p-[2rem] bg-white hover:bg-neutral-50 ">
+        <div className="text-center">
+          <h2 className="text-[24px] font-extrabold group-hover:text-black">
+            {card.title}
+          </h2>
+          <p className="text-[16px] group-hover:text-black py-4">
+            {card.description}
+          </p>
+        </div>
       </div>
     </div>
   );
@@ -78,47 +77,45 @@ export default Example;
 const cards = [
   {
     id: 1,
-    imageUrl: "https://i.postimg.cc/4yhyDCnT/5-1.png", // Replace with the correct image URL or import
-    title: "Client's Business Wins, We Win.",
+    imageUrl: "https://i.postimg.cc/bJyprFm5/Artboard-1.png",
+    title: "Our Growth is Fueled by Our Clients' Growth",
     description:
-      "Fundamentally, we will always be a services-first company that ensures our clients’ businesses fit their definition of success. As Schbangers, we must deliver the whole Schbang by pushing ourselves and those around us to work in the best interests of our partners",
+      "Our core purpose is to be an unparalleled service provider, dedicated to aligning our clients' goals with their ultimate vision of success. At Living Brands, we commit to delivering exceptional value by inspiring ourselves and our colleagues to prioritize the needs of our partners.",
   },
   {
     id: 2,
-    imageUrl: "https://i.postimg.cc/R0XWfQ22/2.png",
-    title: "Our Word is our Bond.",
-    description: `We work in fast and complex environments where we deal with multiple stakeholders to deliver speed, agility, and results to our clients. It is integral to hold ourselves accountable for our promises and strive to deliver on those promises without fail.`,
+    imageUrl: "https://i.postimg.cc/xdS0DdMn/orange.png",
+    title: "Commitment Defines Our Work Ethic",
+    description: `Operating within fast-paced, intricate environments, we manage multiple relationships to provide rapid, flexible outcomes for our clients. We are steadfast in honoring our commitments.`,
   },
   {
     id: 3,
-    imageUrl: "https://i.postimg.cc/rpFSvmTX/8.png",
-    title: "Creativity is Sacred, Aesthetics are God.",
-    description: `We create path-breaking work that challenges the status quo and positively impacts our clients’ businesses. We make sure how we communicate, and design helps our brand stand out.
-  .`,
+    imageUrl: "https://i.postimg.cc/HL4TpC95/purple.png",
+    title: "Creativity is The Soul of Our Work, Aesthetics, Its Expression",
+    description: `We produce groundbreaking work that challenges conventional norms and significantly enhances our clients' businesses. Our communication and design strategies ensure our brand stands out in the market.`,
   },
   {
     id: 4,
-    imageUrl: "https://i.postimg.cc/0N86bHXp/3.png",
-    title: "Partnerships with Win-Win Attitude.",
-    description: `We view all our stakeholders as equal partners and approach all partnerships with a win-win attitude to ensure both parties succeed.`,
+    imageUrl: "https://i.postimg.cc/fTJWYpMn/yellow.png",
+    title: "Collaborative Win-win Relationships",
+    description: `We cultivate partnerships founded on mutual respect and shared objectives, ensuring the success of all stakeholders involved.`,
   },
   {
     id: 5,
-    imageUrl: "https://i.postimg.cc/qBYCjwgT/1.png",
-    title: "Be Culturally Relevant, Always.",
-    description: `We exist to make brands culturally relevant by being consumer-centric, ensuring seamless communication, and providing top-notch consumer experiences.`,
+    imageUrl: "https://i.postimg.cc/sgWVNWBT/red.png",
+    title: "Cultural Relevance is Our Cornerstone",
+    description: `Our purpose is to align brands with consumer culture through deep consumer understanding, effective communication, and exceptional experiences.`,
   },
   {
     id: 6,
     imageUrl: "https://i.postimg.cc/7Y0Mzd9c/6-1.png",
-    title: "Technology to Simplify..",
-    description: `We believe any technology’s governing principle is to simplify the consumer’s life and provide immersive user experiences. Therefore, technology to simplify is our guiding light to create effortless and effective outputs for our clients.
-  `,
+    title: "Technology for Ease",
+    description: `Our core belief is that technology should enhance lives by simplifying processes and delivering engaging experiences. We harness this principle to create streamlined, impactful solutions for our clients.`,
   },
   {
     id: 7,
-    imageUrl: "https://i.postimg.cc/T3jL2X0d/4.png",
-    title: "Think. Plan. And then execute fearlessly.",
-    description: `Raw energy is powerful, but raw energy channeled correctly is advantageous. We internalize this to think deeply, plan purposefully, and execute fearlessly.`,
+    imageUrl: "https://i.postimg.cc/0N86bHXp/3.png",
+    title: "Brainstorm, Strategize, Execute. ",
+    description: `Unleashed power is formidable, but its true potential lies in control. This inspires us to think profoundly, strategize astutely, and act boldly.`,
   },
 ];
