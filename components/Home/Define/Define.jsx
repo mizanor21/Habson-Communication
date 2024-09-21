@@ -39,27 +39,26 @@ const Define = () => {
     backgroundImage: `url(/assets/define/about-bg.png)`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    fontFamily: "Open Sans, sans-serif",
     backgroundPosition: "center",
   };
 
   return (
-    <div className="py-10 lg:py-[10%] bg-white relative z-[9999]">
-      <div style={styles} className="flex items-center    ">
-        <div
-          className="lg:container lg:mx-auto mx-3 "
-          onMouseMove={handleMouseMove}
-        >
+    <div className="bg-white font-thin  py-10 lg:py-[10%]  relative z-[9999]">
+      <div className="flex px-[5%]">
+        <div className="mx-3 " onMouseMove={handleMouseMove}>
           <div className="flex justify-center items-center rounded-badge">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div
+              className="grid grid-cols-1 lg:grid-cols-3 gap-4"
+              style={styles}
+            >
               <div className="col-span-1">
-                <h2 className="text-2xl lg:text-5xl font-bold lg:pr-5 mb-2">
+                <h2 className="text-2xl lg:text-[50px] font-bold lg:pr-5 mb-2 text-[#185C5D]">
                   What defines us
                 </h2>
                 <div className="flex">
                   <Image
                     src={arrowIcon}
-                    className="w-36 lg:w-44 transition-transform duration-300"
+                    className="w-36 lg:w-64 transition-transform duration-300"
                     alt=""
                     ref={arrowRef}
                   />
@@ -70,7 +69,7 @@ const Define = () => {
                   We&apos;re brand architects, crafting narratives with
                   precision, fueled by innovation and seamless integration.
                 </p>
-                <p className="my-5 lg:my-12 text-gray-500 font-semibold">
+                <p className="my-5 lg:my-12 text-base opacity-60 font-semibold tracking-wider">
                   “Living Brands” is fueled by an unquenchable drive to make
                   your brand a global force. We believe in the power of
                   collaboration, bringing together the best creative minds,
