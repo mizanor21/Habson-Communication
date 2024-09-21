@@ -55,11 +55,11 @@ const TechSolutions = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-12 bg-white">
+    <section className="px-[5%] py-12 bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 lg:mb-20">
         {/* Left Side */}
         <div>
-          <h2 className="text-6xl text-black font-bold mb-10">
+          <h2 className="text-6xl text-[#125b5c] font-bold mb-10">
             Tech Solutions
           </h2>
           <p className="text-lg font-normal  text-black mb-10">
@@ -70,7 +70,7 @@ const TechSolutions = () => {
             dynamic animation to create a cohesive digital presence that drives
             tangible results.
           </p>
-          <p className="font-bold text-xl text-black mb-10">
+          <p className="font-bold text-xl text-[#125b5c] mb-10">
             Proud to work with the biggest brands in India & Abroad
           </p>
           <div className="mt-6 grid grid-cols-3 gap-4 mb-10">
@@ -123,7 +123,7 @@ const TechSolutions = () => {
           {data.map((item, index) => (
             <div key={index} className="border-b border-gray-300">
               <button
-                className="w-full flex justify-between items-center py-4 font-extrabold text-black text-left"
+                className="w-full flex justify-between items-center py-4 font-extrabold text-[#125b5c] text-left"
                 onClick={() => toggle(index)}
               >
                 {item.title}

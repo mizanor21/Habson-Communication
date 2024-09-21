@@ -371,16 +371,16 @@ const Items = () => {
     },
   ];
   return (
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-20">
+    <div className="px[5%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-20">
       {items.map((item) => (
         <Link key={item.id} href="/work-details">
           <div>
             <Image
               src={item.img}
               alt=""
-              width={500}
+              width={600}
               height={100}
-              className="rounded-xl h-64"
+              className="rounded-xl h-68"
             />
             <h2 className="text-md font-bold mt-3">{item.title}</h2>
             <p className="text-[22px]">{item.detailsTitle}</p>

@@ -55,7 +55,7 @@ const BrandSolutions = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-12 bg-white">
+    <section className=" px-[5%] py-12 bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 lg:mb-20">
         {/* Left Side */}
         <div>
