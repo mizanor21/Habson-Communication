@@ -365,10 +365,10 @@ const Nav = () => {
             <div className="min-w-72">
               <div className="py-10">
                 <h2 className="text-2xl lg:text-2xl font-medium hover:ml-2 duration-200  hover:text-gray-500 mb-5 lg:max-w-[800px]">
-                  Living Brands & Habson's remarkable performance at the Flame
-                  Awards Asia 2024, securing ten awards including five golds,
-                  showcases their exceptional creativity and dedication to
-                  excellence.
+                  Living Brands & Habson&apos;s remarkable performance at the
+                  Flame Awards Asia 2024, securing ten awards including five
+                  golds, showcases their exceptional creativity and dedication
+                  to excellence.
                 </h2>
               </div>
             </div>
