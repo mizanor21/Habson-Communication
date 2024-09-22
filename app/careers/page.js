@@ -49,7 +49,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className=" relative  w-[500px] overflow-hidden border hover:-translate-y-5 duration-300 mt-5 shadow-sm bg-white  hover:bg-neutral-50"
+      className=" relative  w-[500px] overflow-hidden border hover:-translate-y-5 duration-300 mt-5 shadow-lg bg-white  hover:bg-neutral-50"
     >
       <div>
         <img
