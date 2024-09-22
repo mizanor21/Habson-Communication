@@ -4,7 +4,7 @@ const MarketingGlossary = () => {
   return (
     <div>
       {" "}
-      <div className="container mx-auto mt-32">
+      <div className="mt-32">
         <div className="grid gap-5 mb-8 sm:grid-cols-1 md:grid-cols-2 ">
           <div className="flex justify-center items-center">
             <img
@@ -14,8 +14,8 @@ const MarketingGlossary = () => {
             />
           </div>
           <div>
-            <h1 className="text-xl font-bold mt-1  md:text-3Xl lg:text-5xl mb-8">
-              Schbang’s Marketing Glossary
+            <h1 className="text-xl font-bold mt-1  md:text-3Xl lg:text-5xl text-[#125b5c] mb-8">
+              Living Brand&apos;s Marketing Glossary
             </h1>
             <p className="text-base	">
               We work in a constantly changing field. As both consumers and the
@@ -33,8 +33,8 @@ const MarketingGlossary = () => {
               SEO, paid media, video editing, animation and more.
             </p>
 
-            <button className="border  hidden md:block p-3 px-14 rounded-full overflow-hidden transition-transform duration-300 hover:cursor-pointer   text-sm hover:bg-white hover:text-black border-black text-white  bg-black mt-5">
-              Access Schbang’s Glossary →
+            <button className="border  hidden md:block p-3 px-14 rounded-full overflow-hidden transition-transform duration-300 hover:cursor-pointer   text-sm hover:bg-white hover:text-black border-black text-white  bg-[#125b5c] mt-5">
+              Access Living Brand&apos;s Glossary →
             </button>
           </div>
         </div>
