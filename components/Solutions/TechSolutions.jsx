@@ -62,7 +62,7 @@ const TechSolutions = () => {
           <h2 className="text-6xl text-[#125b5c] font-bold mb-10">
             Tech Solutions
           </h2>
-          <p className="text-lg font-normal  text-black mb-10">
+          <p className="text-lg font-normal  text-black mb-10 text-justify">
             From crafting compelling daily content to executing high-impact
             flagship campaigns, we provide a comprehensive range of digital
             services tailored to your unique business objectives. We combine
@@ -76,17 +76,17 @@ const TechSolutions = () => {
           <div className="mt-6 grid grid-cols-3 gap-4 mb-10">
             {/* Media Logos */}
             <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477c05f6f9e81c9d0f82322_62691149902f536a63a89ae2_Brigade-Web-Meta-Business-Partner-1-1.png"
+              src="https://i.postimg.cc/dVFbxnRf/l-24.png"
               alt="Meta"
               className="h-14 object-contain mb-12"
             />
             <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/646742411d41344dd4fe9e4f_6.webp"
+              src="https://i.postimg.cc/T2zMrTKf/l-26.png"
               alt="Google Partner"
               className="h-24 object-contain"
             />
             <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/64674240ce6535840fe75043_3.webp"
+              src="https://i.postimg.cc/nVjfjXc3/l-3.png"
               alt="Adobe"
               className="h-28 object-contain"
             />

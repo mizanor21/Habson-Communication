@@ -110,7 +110,7 @@ const Nav = () => {
                         className="w-20"
                         alt="Living Brands logo"
                       ></Image>
-                      <h1 className="text-4xl animate-pulse font-bold mb-2">
+                      <h1 className="text-4xl animate-pulse font-bold mb-3">
                         .
                       </h1>
                       <WordRotate
@@ -121,7 +121,7 @@ const Nav = () => {
                           "Media",
                           "Production",
                           "Influencer",
-                          "Talent management",
+                          "Talent Management",
                           "IT",
                           "UI/UX",
                           "SEO",

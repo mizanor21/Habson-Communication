@@ -12,8 +12,8 @@ const BotArmy = () => {
             <p className="text-base">
               We strongly believe that AI won’t replace human beings but people
               using AI will certainly get ahead in the race. So we created an
-              army of 20 custom AI Bots to help Schbangers mine insights,
-              brainstorm campaign ideas, and refine their content.
+              army of 20 custom AI Bots to help Living Brand&apos;s mine
+              insights, brainstorm campaign ideas, and refine their content.
             </p>
             <br />
             <p className="text-base">

@@ -52,63 +52,65 @@ const MediaSolutions = () => {
             Proud to be collaborating with media industry leaders to power
             growth for brands!
           </p>
-          <div className="mt-6 grid grid-cols-3 gap-4 mb-10">
+          <div className="mt-6 grid grid-cols-3 gap-4 gap-y-10 mb-10">
             {/* Media Logos */}
             <Image
               width={200}
               height={200}
               src="https://i.postimg.cc/dVFbxnRf/l-24.png"
               alt="Meta"
-              className="h-24 object-contain mb-12"
+              className="h-16 object-contain"
             />
             <Image
               width={200}
               height={200}
               src="https://i.postimg.cc/s1dc16DC/l-6.png"
               alt="Google Partner"
-              className="h-24 object-contain"
+              className="h-16 object-contain"
             />
             <Image
               width={200}
               height={200}
               src="https://i.postimg.cc/zXTm74hW/l-25.png"
               alt="Adobe"
-              className="h-24 object-contain"
+              className="h-16 object-contain"
             />
-            <Image
-              width={200}
-              height={200}
-              src="https://i.postimg.cc/BnCr9DMn/l-23.png"
-              alt="ONDC"
-              className="h-24  mb-12"
-            />
+
             <Image
               width={200}
               height={200}
               src="https://i.postimg.cc/VLqTnnyW/l-10.png"
               alt="Hubspot"
-              className="h-24 object-contain"
+              className="h-16 object-contain"
             />
             <Image
               width={200}
               height={200}
               src="https://i.postimg.cc/RhfYPnW9/l-14.png"
               alt=""
-              className="h-24 object-contain"
+              className="h-16 object-contain"
+            />
+
+            <Image
+              width={200}
+              height={200}
+              src="https://i.postimg.cc/76jcMNYm/l-17.png"
+              alt=""
+              className="h-16 object-contain"
             />
             <Image
               width={200}
               height={200}
               src="https://i.postimg.cc/SQzHQHD5/l-13.png"
               alt=""
-              className="h-24 object-contain mb-12"
+              className="h-16 object-contain "
             />
             <Image
-              width={200}
+              width={100}
               height={200}
-              src="https://i.postimg.cc/76jcMNYm/l-17.png"
-              alt=""
-              className="h-24 object-contain"
+              src="https://i.postimg.cc/BnCr9DMn/l-23.png"
+              alt="ONDC"
+              className="h-16 "
             />
           </div>
         </div>
