@@ -60,7 +60,7 @@ const Card = ({ card }) => {
       </div>
       <div className="p-[2rem]  ">
         <div className="text-center">
-          <h2 className="text-[24px] font-extrabold group-hover:text-black">
+          <h2 className="text-[24px] font-extrabold  text-[#185C5D]">
             {card.title}
           </h2>
           <p className="text-[16px] group-hover:text-black py-4">

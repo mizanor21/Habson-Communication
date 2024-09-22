@@ -18,7 +18,7 @@ const ContactUsRightPart = () => {
       </div>
       <div>
         <label>
-          <p className="text-xl mt-12">Your Name</p>
+          <p className="text-xl mt-12 mb-8">Your Name</p>
           <span className="mb-1 "></span>
           <input
             type="text"
@@ -26,7 +26,7 @@ const ContactUsRightPart = () => {
           />
         </label>
         <label>
-          <p className="text-xl mt-12">Your Organization&apos;s Name</p>
+          <p className="text-xl mt-12 mb-8">Your Organization&apos;s Name</p>
           <span className="mb-1"></span>
           <input
             type="text"
@@ -34,7 +34,7 @@ const ContactUsRightPart = () => {
           />
         </label>
         <label>
-          <p className="text-xl mt-12">Your Email</p>
+          <p className="text-xl mt-12 mb-8">Your Email</p>
           <span className="mb-1"></span>
           <input
             type="text"
@@ -42,7 +42,7 @@ const ContactUsRightPart = () => {
           />
         </label>
         <label>
-          <p className="text-xl mt-12">Your Number</p>
+          <p className="text-xl mt-12 mb-8">Your Number</p>
           <span className="mb-1"></span>
           <input
             type="text"
@@ -50,14 +50,16 @@ const ContactUsRightPart = () => {
           />
         </label>
         <label>
-          <p className="text-xl mt-12">Website/Social Media Link</p>
+          <p className="text-xl mt-12 mb-8">Website/Social Media Link</p>
           <span className="mb-1"></span>
           <input
             type="text"
             className=" w-full border-b border-black focus:outline-none h-10 text-Xl"
           />
         </label>
-        <p className="text-xl mt-12">Which services are you interested in?</p>
+        <p className="text-xl mt-12 mb-8">
+          Which services are you interested in?
+        </p>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
           Branding
         </button>

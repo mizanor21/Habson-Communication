@@ -6,6 +6,8 @@ import Slideshow from "@/components/Home/Slideshow/Slideshow";
 import IntroVideo from "@/components/Home/IntroVideo/IntroVideo";
 import Brands from "@/components/Home/Brands/Brands";
 import Video from "@/components/Home/IntroVideo/Video";
+import Elevate from "@/components/Home/Elavate/Elavate";
+import Journey from "@/components/Home/Journey/Journey";
 
 export default function Home() {
   return (
@@ -14,9 +16,11 @@ export default function Home() {
       <TimeSchbang />
       {/* <Video /> */}
       <IntroVideo />
+      <Elevate></Elevate>
       <Define />
       <Slideshow />
       <Solutions />
+      <Journey></Journey>
       <Brands />
     </main>
   );

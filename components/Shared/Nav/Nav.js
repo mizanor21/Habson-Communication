@@ -47,12 +47,6 @@ const Nav = () => {
     {
       src: "https://i.postimg.cc/ydkH14dY/award.jpg",
     },
-    {
-      src: "https://i.postimg.cc/3J73Gqf9/award1.jpg",
-    },
-    {
-      src: "https://i.postimg.cc/4N5sQ1rG/award2.jpg",
-    },
   ];
 
   const ResourcesData = [
@@ -65,7 +59,7 @@ const Nav = () => {
   ];
 
   return (
-    <div className="navber pd px-[5%]">
+    <div className="navber pd px-[5%] lg:mt-2">
       {/* Logo and side menu */}
       <div className="navber-logo">
         <div className="">
@@ -317,7 +311,7 @@ const Nav = () => {
           onMouseEnter={() => setIsHoveredSolutions(true)}
           onMouseLeave={() => setIsHoveredSolutions(false)}
         >
-          <div className="card_container bg-white mt-10 flex gap-5 px-[5%] pt-5 pb-10">
+          <div className="card_container bg-white mt-10 flex gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
             <div className="min-w-72">
               <h2 className="mb-4">
                 <Link
@@ -377,16 +371,43 @@ const Nav = () => {
                   Valuable Awards
                 </Link>
               </h2>
+              <div className="py-10">
+                <h2 className="text-2xl lg:text-xl font-medium hover:ml-2 duration-200  hover:text-gray-500 mb-5">
+                  Flame Awards 2024 - LB and Habson Static
+                </h2>
+                <h2 className="text-2xl lg:text-xl font-medium hover:ml-2 duration-200  hover:text-gray-500 mb-5">
+                  A Magnificent Masterstroke! (LB & Habson Logo)
+                </h2>
+                <h2 className="text-2xl lg:text-xl font-medium hover:ml-2 duration-200  hover:text-gray-500 mb-5">
+                  Ten Awards Five golds, Three silvers, Two bronzes
+                </h2>
+                <h2 className="text-2xl lg:text-xl font-medium hover:ml-2 duration-200  hover:text-gray-500 mb-5">
+                  Flame Awards Asia 2024
+                </h2>
+                <h2 className="text-2xl lg:text-xl font-medium hover:ml-2 duration-200  hover:text-gray-500 mb-5">
+                  Digital Marketing Awards 2022 - Living Brands
+                </h2>
+                <h2 className="text-2xl lg:text-xl font-medium hover:ml-2 duration-200  hover:text-gray-500 mb-5">
+                  Pusti Home Chef  Best Digital Campaign by New Agency (Silver) 
+                </h2>
+
+                <h2 className="text-2xl lg:text-xl font-medium hover:ml-2 duration-200  hover:text-gray-500 mb-5">
+                  Commward 2022 - Habson Communication
+                </h2>
+                <h2 className="text-2xl lg:text-xl font-medium hover:ml-2 duration-200  hover:text-gray-500 mb-5">
+                  PUMA Flagship Store Launch Best Outdoor Campaign (Bronze)
+                </h2>
+              </div>
             </div>
             {AboutData.map((item, index) => (
               <Link
                 href={"/awards"}
                 key={index}
-                className="card cursor-pointer"
+                className="card cursor-pointer ml-auto"
               >
-                <div className="card_image">
+                <div className="card_image ">
                   <Image
-                    className="rounded-2xl h-[550px]"
+                    className="rounded-2xl h-[550px] "
                     src={item?.src}
                     alt={index}
                     width={400}
@@ -405,7 +426,7 @@ const Nav = () => {
           onMouseEnter={() => setIsHoveredResources(true)}
           onMouseLeave={() => setIsHoveredResources(false)}
         >
-          <div className="card_container bg-white mt-10 flex gap-5 px-[5%] pt-5 pb-10">
+          <div className="card_container bg-white mt-10 flex gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
             <div className="min-w-72 ">
               <h2 className="mb-4 ">
                 <Link

@@ -25,7 +25,10 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[800vh] bg-white my-20">
+    <section
+      ref={targetRef}
+      className="relative h-[800vh] bg-white my-20 hidden md:block"
+    >
       <div className="sticky top-10 flex  items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           <div className="flex overflow-scroll bg-white relative z-[9999]">
@@ -51,6 +54,28 @@ const HorizontalScrollCarousel = () => {
             ))}
           </div>
         </motion.div>
+      </div>
+
+      {/* Mobile */}
+      <div className="md:hidden bg-white relative z-[9999]">
+        {sections.map((section, sectionIndex) => (
+          <div
+            key={sectionIndex}
+            className={`hover-container ${section?.id} h-screen border-r-2 hover:text-white group`}
+          >
+            <div className="text-center w-[550px] h-full flex items-center justify-center">
+              <div className="px-5 lg:px-20">
+                <h3 className="text-4xl  uppercase font-bold text-gray-300 group-hover:text-white transition-colors duration-300 mb-5">
+                  {section?.title}
+                </h3>
+                <p className="carousel-p hidden-on-hover">{section?.content}</p>
+                <div className="flex justify-center pt-5 lg:pt-20">
+                  <BsArrowRight className="text-2xl lg:text-5xl carousel-p text-[#125b5c] p-2 hidden-on-hover  bg-white rounded-full" />
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

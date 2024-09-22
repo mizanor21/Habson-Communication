@@ -16,7 +16,8 @@ const ContactUsImg = () => {
   const cards = [
     {
       id: 1,
-      image: "https://i.postimg.cc/R0ZLLczk/contact1.png",
+      image:
+        "https://i.postimg.cc/nhyVhZXh/Whats-App-Image-2024-09-22-at-16-57-08.jpg",
     },
 
     {
