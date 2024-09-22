@@ -386,11 +386,11 @@ const Nav = () => {
               >
                 <div className="card_image">
                   <Image
-                    className="rounded-2xl "
+                    className="rounded-2xl h-[550px]"
                     src={item?.src}
                     alt={index}
                     width={400}
-                    height={400}
+                    height={300}
                   />
                 </div>
               </Link>
