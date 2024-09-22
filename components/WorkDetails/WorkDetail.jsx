@@ -2,10 +2,10 @@ import React from "react";
 
 const WorkDetail = () => {
   return (
-    <div className="flex flex-col px-4 lg:px-[100px] font-[sora] text-[#125b5c]">
-      <div className="w-full flex flex-col gap-3  justify-start mt-16">
-        <p className="text-[19px] text-gray-700">Casestudy</p>
-        <h1 className="font-bold text-6xl font-[Inter]">
+    <div className="flex flex-col px-4 lg:px-[100px]  font-[Inter]">
+      <div className="w-full flex flex-col gap-3 text-[#125b5c]  justify-start mt-16">
+        <p className="text-[19px]">Casestudy</p>
+        <h1 className="font-bold text-5xl ">
           Pusti Chinigura Rice X Nusrat Faria I Eid Campaign I Living Brands
         </h1>
       </div>
@@ -19,7 +19,7 @@ const WorkDetail = () => {
       <div className="flex justify-between mb-20">
         <div className=" w-[30%] flex flex-col gap-10">
           <div className="flex flex-col gap-4">
-            <h1 className="font-bold text-4xl">Services</h1>
+            <h1 className="font-bold text-4xl text-[#125b5c]">Services</h1>
             <ul className="list-none space-y-4 text-lg">
               <li className="cursor-pointer">Film & Video</li>
               <li className="cursor-pointer">
@@ -31,7 +31,7 @@ const WorkDetail = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-4">
-            <h1 className="font-bold text-4xl">Industry</h1>
+            <h1 className="font-bold text-4xl text-[#125b5c]">Industry</h1>
             <ul className="list-none space-y-4 text-lg">
               <li className="cursor-pointer">Other Industries</li>
             </ul>
@@ -43,12 +43,13 @@ const WorkDetail = () => {
             Pusti Chigura Rice brings you something truly special! We&apos;re
             thrilled to present our latest campaign featuring the glamorous
             Nusrat Faria, who’s here to make your Eid celebrations even more
-            delightful. 🍚✨ In this exclusive OVC (Online Video Commercial),
-            Nusrat Faria, a beloved actress and style icon, invites you to share
-            your very own Eid special recipes made with Pusti Chigura Rice.
-            Whether it’s a family favorite passed down through generations or a
-            modern twist on a classic dish, we want to see what makes your Eid
-            spread extraordinary!
+            delightful. <br />
+            <br /> In this exclusive OVC (Online Video Commercial), Nusrat
+            Faria, a beloved actress and style icon, invites you to share your
+            very own Eid special recipes made with Pusti Chigura Rice. <br />{" "}
+            <br /> Whether it’s a family favorite passed down through
+            generations or a modern twist on a classic dish, we want to see what
+            makes your Eid spread extraordinary!
           </p>{" "}
           <br />
         </div>
