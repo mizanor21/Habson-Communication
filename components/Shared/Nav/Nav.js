@@ -87,7 +87,7 @@ const Nav = () => {
                   "Media",
                   "Production",
                   "Influencer",
-                  "Talent management",
+                  "Talent Management",
                   "IT",
                   "UI/UX",
                   "SEO",
