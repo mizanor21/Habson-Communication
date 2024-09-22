@@ -32,7 +32,7 @@ const IntroVideo = () => {
     // Initialize YouTube player once API is ready
     window.onYouTubeIframeAPIReady = () => {
       playerRef.current = new window.YT.Player("youtube-player", {
-        videoId: "uwfP_WdNK2E", // Video ID
+        videoId: "H0UCO51SXjbc16B_", // Video ID
         playerVars: {
           autoplay: 1,
           mute: 1,
