@@ -85,6 +85,23 @@
     display: none;
 }
 
+@keyframes customPulse {
+
+
+    100% {
+        transform: scale(1);
+    }
+
+    0% {
+        transform: scale(1.2);
+    }
+}
+
+.custom-pulse {
+    animation: customPulse 1s infinite;
+}
+
+
 /* -------------- For Mobile device------------- */
 
 @media (max-width: 600px) {
