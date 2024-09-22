@@ -2,9 +2,9 @@ import React from "react";
 
 const BlogDetail = () => {
   return (
-    <div>
-      <div className="px-[84px]">
-        <h1 className="font-sora text-5xl font-bold pt-28 pb-5">
+    <div className="mb-10 lg:mb-20 font-[Inter]">
+      <div className="px-[5%] lg:px-[15%]">
+        <h1 className=" text-5xl font-bold pt-28 pb-5 text-[#125b5c]">
           Why Bother with Employer Branding?
         </h1>
 
@@ -52,10 +52,10 @@ const BlogDetail = () => {
 
             <img
               src="https://i.postimg.cc/K88zzWnM/1.jpg"
-              className="object-cover  w-full h-[560px] justify-center rounded-3xl "
+              className="object-cover  w-full h-[660px] justify-center rounded-3xl "
             ></img>
 
-            <div className="mt-5 px-32">
+            <div className="mt-10 px-5 lg:px-24">
               <ul className=" space-y-8 mb-8">
                 <li>
                   Everyone knows who a{" "}
@@ -86,7 +86,7 @@ const BlogDetail = () => {
                 </li>
               </ul>
 
-              <p className="font-sora text-5xl font-bold py-5">
+              <p className=" text-5xl text-[#125b5c] font-bold py-5">
                 Playing the employer branding game
               </p>
               <ul className=" space-y-8 mb-8">
@@ -108,7 +108,7 @@ const BlogDetail = () => {
                 </li>
               </ul>
 
-              <p className="font-sora text-4xl font-bold py-5">
+              <p className=" text-4xl text-[#125b5c] font-bold py-5">
                 Our Innovative Approach to Pioneer Legal
               </p>
               <ul className=" space-y-8 mb-8">
@@ -139,7 +139,7 @@ const BlogDetail = () => {
                   </li>
                 </ul>
               </ul>
-              <p className="font-sora text-4xl font-bold py-5">
+              <p className="text-[#125b5c] text-4xl font-bold py-5">
                 From India to the World: Amazon Global Selling
               </p>
 
@@ -192,7 +192,7 @@ const BlogDetail = () => {
                   </ul>
                 </ul>
               </ul>
-              <p className="font-sora text-4xl font-bold py-5">
+              <p className="text-[#125b5c] text-4xl font-bold py-5">
                 Making Hindustan Coca-Cola Beverages Great Again
               </p>
 
@@ -228,7 +228,7 @@ const BlogDetail = () => {
                   </li>
                 </ul>
               </ul>
-              <p className="font-sora text-4xl font-bold py-5">
+              <p className="text-[#125b5c] text-4xl font-bold py-5">
                 Taking the leap
               </p>
               <ul className=" space-y-8 mb-8">

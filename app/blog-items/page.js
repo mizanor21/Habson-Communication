@@ -382,8 +382,7 @@ const BlogItems = () => {
               height={100}
               className="rounded-xl h-64"
             />
-            <h2 className="text-md font-bold mt-3">{item.title}</h2>
-            <p className="text-[22px]">{item.detailsTitle}</p>
+            <p className="text-[18px] mt-2">{item.detailsTitle}</p>
           </div>
         </Link>
       ))}
