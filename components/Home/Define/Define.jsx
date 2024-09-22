@@ -81,8 +81,7 @@ const Define = () => {
                 </p>
                 <div>
                   <Link
-                    href="https://www.google.com/maps/place/Living+Brands,+House+230+Road+16,+Dhaka+1212/data=!4m2!3m1!1s0x3755c700426d1655:0x8a70d2c34d6aae47?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjEzNS4xMDIYACDXggMqUSw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICQkQ%3D&g_st=aw"
-                    target="_blank"
+                    href="/careers"
                     className="bg-[#185C5D] btn hover:bg-[#1d7374] rounded-full px-8 py-4 mt-5 text-white"
                   >
                     <span>Discover Our Dynamic Culture</span>

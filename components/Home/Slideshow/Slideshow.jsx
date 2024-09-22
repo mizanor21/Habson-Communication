@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./slideshow.css";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { BsArrowRight } from "react-icons/bs";
 
 const Slideshow = () => {
   const sliderLeftRef = useRef(null);
@@ -108,7 +109,10 @@ const Slideshow = () => {
 
           {/* Left Side Buttons */}
           <div className="absolute bottom-10  left-5 z-20">
-            <FaCircleArrowRight className="text-3xl lg:text-6xl  text-white" />
+            <BsArrowRight className="text-3xl lg:text-6xl  text-[125b5c] bg-white p-3 rounded-full" />
+            {/* <div className="flex justify-center">
+              <BsArrowRight className="text-2xl lg:text-5xl carousel-p text-[#125b5c] p-2 hidden-on-hover  bg-white rounded-full" />
+            </div> */}
           </div>
         </div>
 
