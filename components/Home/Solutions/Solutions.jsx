@@ -2,15 +2,12 @@
 
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-
 import "./solutions.css";
-// import { FaCircleArrowRight } from "react-icons/fa6";
 import { BsArrowRight } from "react-icons/bs";
-import Image from "next/image";
 
 const Solutions = () => {
   return (
-    <div className="px-[5%]">
+    <div className="">
       <HorizontalScrollCarousel />
     </div>
   );
@@ -25,81 +22,63 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <section
-      ref={targetRef}
-      className="relative h-[800vh] bg-white my-20 hidden md:block"
-    >
-      <div className="sticky top-10 flex  items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
-          <div className="flex overflow-scroll bg-white relative z-[9999]">
-            {sections.map((section, sectionIndex) => (
-              <div
-                key={sectionIndex}
-                className={`hover-container ${section?.id} h-screen border-r-2 hover:text-white group`}
-              >
-                <div className="text-center w-[550px] h-full flex items-center justify-center">
-                  <div className="px-5 lg:px-20">
-                    <h3 className="text-4xl  uppercase font-bold text-gray-300 group-hover:text-white transition-colors duration-300 mb-5">
-                      {section?.title}
-                    </h3>
-                    <p className="carousel-p hidden-on-hover">
-                      {section?.content}
-                    </p>
-                    <div className="flex justify-center pt-5 lg:pt-20">
-                      <BsArrowRight className="text-2xl lg:text-5xl carousel-p text-[#125b5c] p-2 hidden-on-hover  bg-white rounded-full" />
+    <>
+      <section
+        ref={targetRef}
+        className="relative z-[110] bg-white h-[800vh] py-20 hidden md:block"
+      >
+        <div className="sticky top-10 flex  items-center overflow-hidden">
+          <motion.div style={{ x }} className="flex gap-4">
+            <div className="flex overflow-scroll bg-white relative">
+              {sections.map((section, sectionIndex) => (
+                <div
+                  key={sectionIndex}
+                  className={`hover-container ${section?.id} h-screen border-r-2 hover:text-white group`}
+                >
+                  <div className="text-center w-[550px] h-full flex items-center justify-center">
+                    <div className="px-5 lg:px-20">
+                      <h3 className="text-4xl  uppercase font-bold text-gray-300 group-hover:text-white transition-colors duration-300 mb-5">
+                        {section?.title}
+                      </h3>
+                      <p className="carousel-p hidden-on-hover">
+                        {section?.content}
+                      </p>
+                      <div className="flex justify-center pt-5 lg:pt-20">
+                        <BsArrowRight className="text-2xl lg:text-5xl carousel-p text-[#125b5c] p-2 hidden-on-hover  bg-white rounded-full" />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-      </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Mobile */}
-      <div className="md:hidden bg-white relative z-[9999]">
-        {sections.map((section, sectionIndex) => (
-          <div
-            key={sectionIndex}
-            className={`hover-container ${section?.id} h-screen border-r-2 hover:text-white group`}
-          >
-            <div className="text-center w-[550px] h-full flex items-center justify-center">
-              <div className="px-5 lg:px-20">
-                <h3 className="text-4xl  uppercase font-bold text-gray-300 group-hover:text-white transition-colors duration-300 mb-5">
-                  {section?.title}
-                </h3>
-                <p className="carousel-p hidden-on-hover">{section?.content}</p>
-                <div className="flex justify-center pt-5 lg:pt-20">
-                  <BsArrowRight className="text-2xl lg:text-5xl carousel-p text-[#125b5c] p-2 hidden-on-hover  bg-white rounded-full" />
+      <div className="flex md:hidden">
+        <div className=" bg-white relative z-[9999] mt-8">
+          {sections.map((section, sectionIndex) => (
+            <div
+              key={sectionIndex}
+              className={`hover-container ${section?.id}   hover:text-white group`}
+            >
+              <div className="h-full md:flex items-center justify-center border-b border-black">
+                <div className="px-2">
+                  <h3 className="text-xl font-bold text-black  group-hover:text-white transition-colors duration-300 mb-5 mt-2">
+                    {section?.title}
+                  </h3>
+                  <p>{section?.content}</p>
+                  <BsArrowRight className="text-[40px] my-6 bg-[#125b5c] p-2 rounded-full text-white" />
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </section>
+    </>
   );
 };
-
-// const Card = ({ section }) => {
-//   return (
-//     <div
-//       className={`hover-container ${section?.id} h-screen border-r-2 hover:text-white group`}
-//     >
-//       <div className="text-center w-[550px] h-full flex items-center justify-center">
-//         <div className="px-5 lg:px-20">
-//           <h3 className="text-4xl  uppercase font-bold text-gray-300 group-hover:text-white transition-colors duration-300 mb-5">
-//             {section?.title}
-//           </h3>
-//           <p className="carousel-p hidden-on-hover">{section?.content}</p>
-//           <div className="flex justify-center pt-5 lg:pt-20">
-//             <FaCircleArrowRight className="text-2xl lg:text-5xl carousel-p text-white hidden-on-hover " />
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 
 export default Solutions;
 

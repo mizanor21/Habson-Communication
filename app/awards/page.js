@@ -21,18 +21,36 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-60%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-white my-20">
-      <h2 className="text-4xl text-[#125b5c] font-bold ">
-        Our Valuable Awards
-      </h2>
-      <div className="sticky top-0 flex  items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
-          {cards.map((card) => {
-            return <Card card={card} key={card.id} />;
-          })}
-        </motion.div>
+    <>
+      <section
+        ref={targetRef}
+        className="hidden md:block bg-white relative z-[110] rounded-[70px] h-[300vh]   my-20"
+      >
+        <h2 className="text-2xl md:text-4xl text-[#125b5c] font-bold ">
+          Our Valuable Awards
+        </h2>
+        <div className="sticky top-0 flex  items-center overflow-hidden">
+          <motion.div style={{ x }} className="flex gap-4">
+            {cards.map((card) => {
+              return <Card card={card} key={card.id} />;
+            })}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* mobile device */}
+      <div className="md:hidden bg-white">
+        {cards.map((item) => (
+          <div key={""} id={item.id}>
+            <img
+              className="w-full h-[400px] mt-5 rounded"
+              src={item.imageUrl}
+              alt={item.title}
+            />
+          </div>
+        ))}
       </div>
-    </section>
+    </>
   );
 };
 
@@ -40,7 +58,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative  w-[500px] overflow-hidden  hover:-translate-y-5 duration-300 border mt-10"
+      className="group relative bg-white w-[500px] overflow-hidden  hover:-translate-y-5 duration-300 border mt-10"
     >
       <div>
         <img

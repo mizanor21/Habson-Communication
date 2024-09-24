@@ -4,7 +4,7 @@ const TheEdge1 = () => {
   return (
     <div>
       <div className="text-justify mb-10">
-        <h1 className="text-5xl text-[#125b5c] font-bold mb-8">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl text-[#125b5c] font-bold mb-8">
           Welcome to the Edge!
         </h1>
         <p className="text-lg ">

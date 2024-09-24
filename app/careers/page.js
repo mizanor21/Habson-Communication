@@ -7,10 +7,12 @@ import { useRef } from "react";
 
 const Example = () => {
   return (
-    <div className="px-[5%]">
-      <CareerSection></CareerSection>
-      <VideoSection></VideoSection>
-      <HorizontalScrollCarousel />
+    <div className="relative bg-white z-[110] rounded-[60px]">
+      <div className="px-[5%] ">
+        <CareerSection></CareerSection>
+        <VideoSection></VideoSection>
+        <HorizontalScrollCarousel />
+      </div>
     </div>
   );
 };
@@ -24,48 +26,74 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[800vh] bg-white my-20">
-      <div className="my-20">
-        <h1 className="text-[24px] font-bold text-center ">
-          Have you got what it takes to #CreateALivingBrands?
-        </h1>
-        <p className="text-[20px] font-normal text-center">
-          Check out our core principles. If they align with your values, do
-          apply..
-        </p>
+    <div>
+      <section ref={targetRef} className=" relative h-[800vh] bg-white my-20">
+        <div className="my-20">
+          <h1 className="text-[24px] font-bold text-center ">
+            Have you got what it takes to #CreateALivingBrands?
+          </h1>
+          <p className="text-[20px] font-normal text-center">
+            Check out our core principles. If they align with your values, do
+            apply..
+          </p>
+        </div>
+        <div className="sticky top-10 flex  items-center overflow-hidden">
+          <motion.div style={{ x }} className="flex gap-4">
+            {cards.map((card) => {
+              return <Card card={card} key={card.id} />;
+            })}
+          </motion.div>
+        </div>
+      </section>
+      {/* small device */}
+      <div className="md:hidden">
+        {cards.map((item, i) => (
+          <div key={i}>
+            <div>
+              <img
+                className="w-full h-[400px]"
+                src={item.imageUrl}
+                alt={item.title}
+              />
+            </div>
+            <div className="mt-4 mb-14">
+              <div className="">
+                <h2 className="text-[22px] font-extrabold  text-[#185C5D]">
+                  {item.title}
+                </h2>
+                <p className="text-[16px] py-4">{item.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-      <div className="sticky top-10 flex  items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
-          {cards.map((card) => {
-            return <Card card={card} key={card.id} />;
-          })}
-        </motion.div>
-      </div>
-    </section>
+    </div>
   );
 };
 
 const Card = ({ card }) => {
   return (
-    <div
-      key={card.id}
-      className=" relative  w-[500px] overflow-hidden border hover:-translate-y-5 duration-300 mt-5 shadow-lg bg-white  hover:bg-neutral-50"
-    >
-      <div>
-        <img
-          className="w-full h-[500px] object-cover"
-          src={card.imageUrl}
-          alt={card.title}
-        />
-      </div>
-      <div className="p-[2rem]  ">
-        <div className="text-center">
-          <h2 className="text-[24px] font-extrabold  text-[#185C5D]">
-            {card.title}
-          </h2>
-          <p className="text-[16px] group-hover:text-black py-4">
-            {card.description}
-          </p>
+    <div>
+      <div
+        key={card.id}
+        className=" relative  w-[500px] overflow-hidden border hover:-translate-y-5 duration-300 mt-5 shadow-lg bg-white  hover:bg-neutral-50"
+      >
+        <div>
+          <img
+            className="w-full h-[500px] object-cover"
+            src={card.imageUrl}
+            alt={card.title}
+          />
+        </div>
+        <div className="p-[2rem]  ">
+          <div className="text-center">
+            <h2 className="text-[24px] font-extrabold  text-[#185C5D]">
+              {card.title}
+            </h2>
+            <p className="text-[16px] group-hover:text-black py-4">
+              {card.description}
+            </p>
+          </div>
         </div>
       </div>
     </div>

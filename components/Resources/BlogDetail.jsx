@@ -2,20 +2,20 @@ import React from "react";
 
 const BlogDetail = () => {
   return (
-    <div className="mb-10 lg:mb-20 font-[Inter]">
+    <div className="font-[Inter]">
       <div className="px-[5%] lg:px-[15%]">
-        <h1 className=" text-5xl font-bold pt-28 pb-5 text-[#125b5c]">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold pt-28 pb-5 text-[#125b5c]">
           Why Bother with Employer Branding?
         </h1>
 
         <div>
           <div>
-            <div className="flex justify-between py-8">
+            <div className="md:flex justify-between py-8">
               <div>
                 <p className="text-sm">October 25, 2023 • 3 minutes</p>
               </div>
 
-              <div className="flex justify-between space-x-2">
+              <div className="flex md:justify-between space-x-2 mt-5 md:mt-0">
                 <button className="flex items-center justify-center text-black bg-[#F4F4F4] bg-transparent border border-[#F4F4F4] rounded-full w-7 h-7">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -52,10 +52,10 @@ const BlogDetail = () => {
 
             <img
               src="https://i.postimg.cc/K88zzWnM/1.jpg"
-              className="object-cover  w-full h-[660px] justify-center rounded-3xl "
+              className="object-cover  w-full h-60 md:h-[660px] justify-center rounded-3xl "
             ></img>
 
-            <div className="mt-10 px-5 lg:px-24">
+            <div className="mt-10 px-2 lg:px-24">
               <ul className=" space-y-8 mb-8">
                 <li>
                   Everyone knows who a{" "}
@@ -86,7 +86,7 @@ const BlogDetail = () => {
                 </li>
               </ul>
 
-              <p className=" text-5xl text-[#125b5c] font-bold py-5">
+              <p className="text-2xl md:text-4xl lg:text-5xl text-[#125b5c] font-bold py-5">
                 Playing the employer branding game
               </p>
               <ul className=" space-y-8 mb-8">
@@ -108,7 +108,7 @@ const BlogDetail = () => {
                 </li>
               </ul>
 
-              <p className=" text-4xl text-[#125b5c] font-bold py-5">
+              <p className=" text-2xl md:text-4xl text-[#125b5c] font-bold py-5">
                 Our Innovative Approach to Pioneer Legal
               </p>
               <ul className=" space-y-8 mb-8">
@@ -139,7 +139,7 @@ const BlogDetail = () => {
                   </li>
                 </ul>
               </ul>
-              <p className="text-[#125b5c] text-4xl font-bold py-5">
+              <p className="text-[#125b5c] text-2xl md:text-4xl font-bold py-5">
                 From India to the World: Amazon Global Selling
               </p>
 
@@ -192,7 +192,7 @@ const BlogDetail = () => {
                   </ul>
                 </ul>
               </ul>
-              <p className="text-[#125b5c] text-4xl font-bold py-5">
+              <p className="text-[#125b5c] text-2xl text-2xl md:text-4xl font-bold py-5">
                 Making Hindustan Coca-Cola Beverages Great Again
               </p>
 
@@ -228,7 +228,7 @@ const BlogDetail = () => {
                   </li>
                 </ul>
               </ul>
-              <p className="text-[#125b5c] text-4xl font-bold py-5">
+              <p className="text-[#125b5c] text-2xl md:text-4xl font-bold py-5">
                 Taking the leap
               </p>
               <ul className=" space-y-8 mb-8">
@@ -247,8 +247,8 @@ const BlogDetail = () => {
               </ul>
 
               <div>
-                <h1 className="font-bold text-[20px]">Share this post </h1>
-                <div className="flex justify-start space-x-2">
+                <h1 className="font-bold text-[24px]">Share this post </h1>
+                <div className="flex justify-start space-x-2 mt-5">
                   <button className="flex items-center justify-center text-black bg-[#F4F4F4] bg-transparent border border-[#F4F4F4] rounded-full w-7 h-7">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

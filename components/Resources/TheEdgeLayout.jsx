@@ -5,7 +5,7 @@ import MarketingGlossary from "./MarketingGlossary";
 
 const TheEdgeLayout = () => {
   return (
-    <div className="px-[5%] mt-32 mb-32 ">
+    <div className="px-[5%] bg-white relative z-[110] py-32 rounded-[70px]">
       <TheEdge1></TheEdge1>
       <BotArmy></BotArmy>
       <MarketingGlossary></MarketingGlossary>

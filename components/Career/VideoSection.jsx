@@ -2,7 +2,7 @@
 
 const VideoSection = () => {
   return (
-    <div className="video-container w-full h-screen">
+    <div className="video-container w-full h-60 md:h-screen">
       <iframe
         width="100%"
         height="100%"

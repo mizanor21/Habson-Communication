@@ -371,7 +371,7 @@ const Items = () => {
     },
   ];
   return (
-    <div className="px[5%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-20">
+    <div className="px[5%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-8 md:gap-y-20">
       {items.map((item) => (
         <Link key={item.id} href="/work-details">
           <div>
@@ -382,8 +382,12 @@ const Items = () => {
               height={100}
               className="rounded-xl h-68"
             />
-            <h2 className="text-md font-bold mt-3">{item.title}</h2>
-            <p className="text-[22px]">{item.detailsTitle}</p>
+            <h2 className="text-md lg:text-lg font-extrabold mt-3">
+              {item.title}
+            </h2>
+            <p className="text-[20px] font-semibold opacity-80 md:text-[24px] mt-3">
+              {item.detailsTitle}
+            </p>
           </div>
         </Link>
       ))}

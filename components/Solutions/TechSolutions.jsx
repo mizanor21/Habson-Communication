@@ -56,11 +56,11 @@ const TechSolutions = () => {
   ];
 
   return (
-    <section className="px-[5%] py-12 bg-white">
+    <section className="px-[5%] py-12 bg-white relative z-[110] rounded-[70px]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 lg:mb-20">
         {/* Left Side */}
         <div>
-          <h2 className="text-6xl text-[#125b5c] font-bold mb-10">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl text-[#125b5c] font-bold mb-10">
             Tech Solutions
           </h2>
           <p className="text-lg font-normal  text-black mb-10 text-justify">
@@ -74,7 +74,7 @@ const TechSolutions = () => {
           <p className="font-bold text-xl text-[#125b5c] mb-10">
             Proud to work with the biggest brands in India & Abroad
           </p>
-          <div className="mt-6 grid grid-cols-3 gap-4 mb-10">
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-16 md:gap-4 items-center mb-10 gap-y-5 px-7 md:px-0">
             {/* Media Logos */}
             <Image
               width={200}

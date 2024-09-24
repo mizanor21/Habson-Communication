@@ -3,7 +3,7 @@ import React from "react";
 const CareerSection = () => {
   return (
     <div className="bg-white  py-10 mt-14">
-      <h1 className="text-5xl tracking-tighter font-bold text-[#125b5c] mb-5">
+      <h1 className="text-3xl md:text-2xl lg:text-5xl tracking-tighter font-bold text-[#125b5c] mb-5">
         Career
       </h1>
       <p className="text-xl tracking-tighter text-black mb-8">

@@ -64,9 +64,9 @@ const IntroVideo = () => {
   };
 
   return (
-    <div className="bg-white flex justify-center relative z-[9999] px-4 md:px-0">
+    <div className="bg-white flex justify-center relative z-[110] px-4 md:px-0">
       <div
-        className={`h-screen transition-all duration-500 ease-in-out ${
+        className={`md:h-screen transition-all duration-500 ease-in-out ${
           isScrolledUp ? "w-[100%]" : "w-[90%]"
         }`}
         onClick={handleVideoClick} // Handle video play/pause on click

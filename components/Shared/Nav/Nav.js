@@ -61,7 +61,7 @@ const Nav = () => {
   return (
     <div className="navber pd px-[5%] lg:mt-2">
       {/* Logo and side menu */}
-      <div className="navber-logo">
+      <div className="navber-logo z-[115]">
         <div className="">
           <div className="w-[100%]">
             <Link className=" flex items-end gap-1 text-[#125b5c]" href="/">
@@ -307,7 +307,7 @@ const Nav = () => {
       {/* Dropdown services card section */}
       {isHoveredSolutions && (
         <div
-          className="card-containers min-w-screen z-[105] mt-1"
+          className="card-containers min-w-screen z-[115] mt-1"
           onMouseEnter={() => setIsHoveredSolutions(true)}
           onMouseLeave={() => setIsHoveredSolutions(false)}
         >
@@ -357,7 +357,7 @@ const Nav = () => {
 
       {isHoveredAbout && (
         <div
-          className="card-containers min-w-screen z-[105] mt-1"
+          className="card-containers min-w-screen z-[115] mt-1"
           onMouseEnter={() => setIsHoveredAbout(true)}
           onMouseLeave={() => setIsHoveredAbout(false)}
         >
@@ -395,7 +395,7 @@ const Nav = () => {
 
       {isHoveredResources && (
         <div
-          className="card-containers min-w-screen z-[105] mt-1"
+          className="card-containers min-w-screen z-[115] mt-1"
           onMouseEnter={() => setIsHoveredResources(true)}
           onMouseLeave={() => setIsHoveredResources(false)}
         >

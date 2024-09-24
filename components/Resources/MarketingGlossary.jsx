@@ -4,7 +4,7 @@ const MarketingGlossary = () => {
   return (
     <div>
       {" "}
-      <div className="mt-32">
+      <div className="mt-16 md:mt-32">
         <div className="grid gap-5 mb-8 sm:grid-cols-1 md:grid-cols-2 ">
           <div className="flex justify-center items-center">
             <img
@@ -14,7 +14,7 @@ const MarketingGlossary = () => {
             />
           </div>
           <div>
-            <h1 className="text-xl font-bold mt-1  md:text-3Xl lg:text-5xl text-[#125b5c] mb-8">
+            <h1 className="text-2xl font-bold mt-1  md:text-3Xl lg:text-5xl text-[#125b5c] mb-8">
               Living Brand&apos;s Marketing Glossary
             </h1>
             <p className="text-base	">

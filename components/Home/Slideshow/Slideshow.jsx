@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "./slideshow.css";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { BsArrowRight } from "react-icons/bs";
+import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 
 const Slideshow = () => {
   const sliderLeftRef = useRef(null);
@@ -62,100 +63,170 @@ const Slideshow = () => {
     // cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
   };
 
+  // small device slider
+  const sliderRef = useRef(null);
+
+  const smallSlider = {
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    speed: 500,
+    arrows: false,
+    rtl: true,
+    pauseOnHover: false,
+  };
+
+  const handleNextClick = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
+
   return (
     <div>
-      <div className="relative h-screen w-screen overflow-hidden bg-[#110101] z-[9999]">
-        {/* Left Slideshow (Top-Down) */}
-        <div className="absolute inset-0 z-10 slideshow slideshow-left">
-          <Slider {...settingsLeft} ref={sliderLeftRef}>
-            <div className="item h-screen">
-              <div className="left-half">
-                <img
-                  src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
-                  className="object-cover w-full h-full"
-                  alt="slide-1"
-                />
+      <div className="hidden md:block">
+        <div className="relative z-[110] h-screen w-screen overflow-hidden bg-[#110101] ">
+          {/* Left Slideshow (Top-Down) */}
+          <div className="absolute inset-0 z-10 slideshow slideshow-left">
+            <Slider {...settingsLeft} ref={sliderLeftRef}>
+              <div className="item h-screen">
+                <div className="left-half">
+                  <img
+                    src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
+                    className="object-cover w-full h-full"
+                    alt="slide-1"
+                  />
+                </div>
               </div>
-            </div>
 
-            <div className="item h-screen">
-              <div className="left-half">
-                <img
-                  src="https://i.postimg.cc/g2bv6z1C/4.jpg"
-                  className="object-cover w-full h-full"
-                  alt="slide-2"
-                />
+              <div className="item h-screen">
+                <div className="left-half">
+                  <img
+                    src="https://i.postimg.cc/g2bv6z1C/4.jpg"
+                    className="object-cover w-full h-full"
+                    alt="slide-2"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="item h-screen">
-              <div className="left-half">
-                <img
-                  src="https://i.postimg.cc/WzW1pVyH/chips.png"
-                  className="object-cover w-full h-full"
-                  alt="slide-3"
-                />
+              <div className="item h-screen">
+                <div className="left-half">
+                  <img
+                    src="https://i.postimg.cc/WzW1pVyH/chips.png"
+                    className="object-cover w-full h-full"
+                    alt="slide-3"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="item h-screen">
-              <div className="left-half">
-                <img
-                  src="https://i.postimg.cc/X7CfJG1K/2.jpg"
-                  className="object-cover w-full h-full"
-                  alt="slide-4"
-                />
+              <div className="item h-screen">
+                <div className="left-half">
+                  <img
+                    src="https://i.postimg.cc/X7CfJG1K/2.jpg"
+                    className="object-cover w-full h-full"
+                    alt="slide-4"
+                  />
+                </div>
               </div>
-            </div>
-          </Slider>
+            </Slider>
 
-          {/* Left Side Buttons */}
-          <div className="absolute bottom-10  left-5 z-20">
-            <BsArrowRight className="text-3xl lg:text-6xl  text-[125b5c] bg-white p-3 rounded-full" />
-            {/* <div className="flex justify-center">
+            {/* Left Side Buttons */}
+            <div className="absolute bottom-10  left-5 z-20">
+              <BsArrowRight className="text-3xl lg:text-6xl  text-[125b5c] bg-white p-3 rounded-full" />
+              {/* <div className="flex justify-center">
               <BsArrowRight className="text-2xl lg:text-5xl carousel-p text-[#125b5c] p-2 hidden-on-hover  bg-white rounded-full" />
             </div> */}
+            </div>
+          </div>
+
+          {/* Right Slideshow (Bottom-Up) */}
+          <div className="absolute inset-0 z-10 slideshow slideshow-right right-0">
+            <Slider {...settingsRight} ref={sliderRightRef}>
+              <div className="item h-screen">
+                <div className="right-half">
+                  <img
+                    src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
+                    className="object-cover w-full h-full"
+                    alt="slide-4-reverse"
+                  />
+                </div>
+              </div>
+              <div className="item h-screen">
+                <div className="right-half">
+                  <img
+                    src="https://i.postimg.cc/X7CfJG1K/2.jpg"
+                    className="object-cover w-full h-full"
+                    alt="slide-1-reverse"
+                  />
+                </div>
+              </div>
+              <div className="item h-screen">
+                <div className="right-half">
+                  <img
+                    src="https://i.postimg.cc/WzW1pVyH/chips.png"
+                    className="object-cover w-full h-full"
+                    alt="slide-2-reverse"
+                  />
+                </div>
+              </div>
+              <div className="item h-screen">
+                <div className="right-half">
+                  <img
+                    src="https://i.postimg.cc/g2bv6z1C/4.jpg"
+                    className="object-cover w-full h-full"
+                    alt="slide-3-reverse"
+                  />
+                </div>
+              </div>
+            </Slider>
           </div>
         </div>
+      </div>
 
-        {/* Right Slideshow (Bottom-Up) */}
-        <div className="absolute inset-0 z-10 slideshow slideshow-right right-0">
-          <Slider {...settingsRight} ref={sliderRightRef}>
-            <div className="item h-screen">
-              <div className="right-half">
-                <img
-                  src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
-                  className="object-cover w-full h-full"
-                  alt="slide-4-reverse"
-                />
-              </div>
+      {/* Small device */}
+      <div className="bg-white relative z-[110]">
+        <div className="md:hidden mt-[550px]">
+          {" "}
+          {/* Ensures only small devices use this section */}
+          <Slider ref={sliderRef} {...smallSlider}>
+            <div className="item h-[450px]">
+              <img
+                src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
+                className=" h-full w-full"
+                alt="slide-1"
+              />
             </div>
-            <div className="item h-screen">
-              <div className="right-half">
-                <img
-                  src="https://i.postimg.cc/X7CfJG1K/2.jpg"
-                  className="object-cover w-full h-full"
-                  alt="slide-1-reverse"
-                />
-              </div>
+
+            <div className="item h-[450px]">
+              <img
+                src="https://i.postimg.cc/g2bv6z1C/4.jpg"
+                className="h-full w-full"
+                alt="slide-2"
+              />
             </div>
-            <div className="item h-screen">
-              <div className="right-half">
-                <img
-                  src="https://i.postimg.cc/WzW1pVyH/chips.png"
-                  className="object-cover w-full h-full"
-                  alt="slide-2-reverse"
-                />
-              </div>
+
+            <div className="item h-[450px]">
+              <img
+                src="https://i.postimg.cc/WzW1pVyH/chips.png"
+                className=" h-full w-full"
+                alt="slide-3"
+              />
             </div>
-            <div className="item h-screen">
-              <div className="right-half">
-                <img
-                  src="https://i.postimg.cc/g2bv6z1C/4.jpg"
-                  className="object-cover w-full h-full"
-                  alt="slide-3-reverse"
-                />
-              </div>
+
+            <div className="item h-[450px]">
+              <img
+                src="https://i.postimg.cc/X7CfJG1K/2.jpg"
+                className=" h-full w-full"
+                alt="slide-4"
+              />
             </div>
           </Slider>
+          {/* Custom Arrow for Small Devices */}
+          <div
+            className="absolute left-4 bottom-4 p-1.5 bg-white text-black rounded-full cursor-pointer"
+            onClick={handleNextClick}
+          >
+            <LiaLongArrowAltRightSolid className="text-4xl" />
+          </div>
         </div>
       </div>
     </div>

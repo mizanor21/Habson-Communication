@@ -6,7 +6,7 @@ const BotArmy = () => {
       <div className="">
         <div className="grid gap-5 mb-8 sm:grid-cols-1 md:grid-cols-2">
           <div className="order-last md:order-first">
-            <h1 className="text-xl font-bold mt-1 md:text-3Xl lg:text-5xl text-[#125b5c] mb-8">
+            <h1 className="text-2xl font-bold mt-1 md:text-3Xl lg:text-5xl text-[#125b5c] mb-8">
               Living Brand&apos;s Bot Army
             </h1>
             <p className="text-base">

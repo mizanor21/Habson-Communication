@@ -126,26 +126,28 @@ const BrandsCard2 = ({ brand2img, name, body }) => {
 
 const Brands = () => {
   return (
-    <div className="container mx-auto bg-white z-[9999] relative flex h-[300px] lg:h-[450px] w-full flex-col items-center justify-center overflow-hidden">
-      {/* Continuous Marquee */}
-      <div className="marquee-container">
-        <div className="marquee-content">
-          {duplicatedReviews.map((review, index) => (
-            <ReviewCard key={index} {...review} />
-          ))}
+    <div className="bg-white relative z-[110] rounded-b-[70px]">
+      <div className=" relative flex h-[300px] lg:h-[450px] w-full flex-col items-center justify-center overflow-hidden">
+        {/* Continuous Marquee */}
+        <div className="marquee-container">
+          <div className="marquee-content">
+            {duplicatedReviews.map((review, index) => (
+              <ReviewCard key={index} {...review} />
+            ))}
+          </div>
         </div>
-      </div>
-      {/* Reverse Marquee */}
-      <div className="marquee-container mt-10">
-        <div className="marquee-content reverse">
-          {duplicatedBrands2.map((brand2, index) => (
-            <BrandsCard2 key={index} {...brand2} />
-          ))}
+        {/* Reverse Marquee */}
+        <div className="marquee-container mt-10">
+          <div className="marquee-content reverse">
+            {duplicatedBrands2.map((brand2, index) => (
+              <BrandsCard2 key={index} {...brand2} />
+            ))}
+          </div>
         </div>
+        {/* Shadow Gradient on the sides */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
       </div>
-      {/* Shadow Gradient on the sides */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React from "react";
 
 const BlogDetails = () => {
   return (
-    <div>
+    <div className="bg-white relative z-[110] rounded-[70px] pb-10 lg:pb-20">
       <BlogDetail />
     </div>
   );
