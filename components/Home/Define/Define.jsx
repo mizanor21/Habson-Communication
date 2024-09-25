@@ -44,7 +44,7 @@ const Define = () => {
   };
 
   return (
-    <div className="bg-white font-thin  py-10 lg:py-[10%]  relative z-[9999]">
+    <div className="bg-white font-thin  py-10 lg:py-[10%]  relative z-[110]">
       <div className="flex px-[5%]">
         <div className="mx-3 ">
           <div className="flex justify-center items-center rounded-badge">
