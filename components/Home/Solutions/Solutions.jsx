@@ -148,9 +148,9 @@ import React, { useEffect, useState, useRef } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import "./solutions.css";
 
-const Card = ({ sections, section, index }) => {
+const Card = ({ section, index }) => {
   return (
-    <div className="flex overflow-scroll bg-white relative">
+    <div className="flex bg-white relative">
       <div
         key={index}
         className={`hover-container ${section?.id} h-screen border-r-2 hover:text-white group`}
@@ -236,77 +236,36 @@ const Solutions = () => {
   ];
 
   const [offset, setOffset] = useState(0);
-  const totalCards = 5; // Total number of cards
-  const visibleCards = 3; // Number of full cards visible
-  const cardWidth = 1200; // Width of each card (adjusted for your preference)
-  const cardMargin = 8; // Margin around each card (m-2 gives 8px margin)
-  const containerWidth = (cardWidth + cardMargin) * totalCards; // Total width of the card container
-  const screenWidth = window.innerWidth;
-  const maxOffset = -(containerWidth - screenWidth); // Maximum scroll value, adjusted to stop at the last card
+  //   const containerRef = useRef(null);
 
-  const targetOffset = useRef(0); // Ref to store the target offset for smoother transition
-  const isMoving = useRef(false); // To track whether the mouse is moving
-  const animationFrameId = useRef(null); // To store the requestAnimationFrame ID
+  const totalCards = sections.length;
+  //   const visibleCards = 3;
+  const cardWidth = 1200;
+  const cardMargin = 8;
+  const totalWidth = (cardWidth + cardMargin) * totalCards;
 
   const handleMouseMove = (e) => {
     const { clientX } = e;
     const screenWidth = window.innerWidth;
+    const progress = (0.38 * clientX) / screenWidth;
 
-    // Calculate the scroll range based on mouse position
-    const newOffset =
-      (clientX / screenWidth) *
-      (totalCards - visibleCards) *
-      -(cardWidth + cardMargin);
+    // Calculate the max scroll to stop when the last card is fully visible
+    const maxScroll = Math.min(
+      0,
+      screenWidth - totalWidth + (cardWidth + cardMargin) * 0.1
+    ); // Shows 3 full cards and half of the 4th
 
-    // Prevent scrolling past the last card
-    targetOffset.current = Math.max(maxOffset, Math.min(0, newOffset));
+    // Calculate the new offset and clamp it
+    const newOffset = Math.max(maxScroll, progress * maxScroll);
 
-    // Indicate that the mouse is moving
-    isMoving.current = true;
-
-    // Cancel any ongoing animation to avoid multiple frames being requested
-    if (animationFrameId.current) {
-      cancelAnimationFrame(animationFrameId.current);
-    }
-
-    // Start the animation
-    animate();
-  };
-
-  const animate = () => {
-    setOffset((prevOffset) => {
-      const diff = targetOffset.current - prevOffset;
-      if (Math.abs(diff) > 0.1) {
-        return prevOffset + diff * 0.05; // Smooth easing
-      } else {
-        return targetOffset.current; // Stop updating when close to target
-      }
-    });
-
-    if (isMoving.current) {
-      animationFrameId.current = requestAnimationFrame(animate);
-    }
+    setOffset(newOffset);
   };
 
   useEffect(() => {
-    let mouseStopTimeout;
-
-    const stopMoving = () => {
-      // Set mouse moving to false after a delay when mouse stops
-      mouseStopTimeout = setTimeout(() => {
-        isMoving.current = false;
-      }, 100); // Wait for 100ms to confirm the mouse has stopped
-    };
-
     window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mousemove", stopMoving);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mousemove", stopMoving);
-      if (mouseStopTimeout) {
-        clearTimeout(mouseStopTimeout);
-      }
     };
   }, []);
 
@@ -316,7 +275,7 @@ const Solutions = () => {
         className="flex transition-transform duration-300"
         style={{
           transform: `translateX(${offset}px)`,
-          width: `${containerWidth}px`, // Set the total width for the card container
+          width: `${totalWidth}px`,
         }}
       >
         {sections.map((section, index) => (

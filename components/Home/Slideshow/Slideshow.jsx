@@ -223,7 +223,7 @@ const Slideshow = () => {
           {/* Custom Arrow for Small Devices */}
           <div
             className="absolute left-4 bottom-4 p-1.5 bg-white text-black rounded-full cursor-pointer"
-            onClick={handleNextClick}
+            onClick={() => sliderRef.current.slickNext()} // Trigger the next slide
           >
             <LiaLongArrowAltRightSolid className="text-4xl" />
           </div>
