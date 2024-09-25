@@ -21,7 +21,6 @@ const IntroVideo = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   useEffect(() => {
     // Load the YouTube API script
     const tag = document.createElement("script");

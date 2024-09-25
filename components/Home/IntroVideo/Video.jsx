@@ -1,33 +1,60 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Video = () => {
+  const [isScrolledDown, setIsScrolledDown] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolledDown(true);
+      } else {
+        setIsScrolledDown(false);
+      }
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      // Clean up the event listener on component unmount
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const videoRef = useRef(null);
 
-  // Function to toggle play/pause on video click
+  // Function to toggle play/pause on click
   const handleVideoClick = () => {
     if (videoRef.current) {
       if (videoRef.current.paused) {
-        videoRef.current.play(); // Play if the video is paused
+        videoRef.current.play(); // Play the video if paused
       } else {
-        videoRef.current.pause(); // Pause if the video is playing
+        videoRef.current.pause(); // Pause the video if playing
       }
     }
   };
 
   return (
-    <div className="relative w-screen h-screen bg-black z-[110]">
-      <video
-        ref={videoRef}
-        className="absolute top-0 left-0 w-full h-full object-cover" // Fullscreen & responsive
-        autoPlay
-        loop
-        muted
-        onClick={handleVideoClick} // Toggle play/pause on click
+    <div className="relative bg-black z-[110]">
+      <div
+        className={`transition-all duration-500 ease-in-out mx-auto ${
+          isScrolledDown ? "w-full" : "w-[90%]"
+        }`}
+        style={{ height: "100vh" }} // Ensures the container fills the full height of the viewport
       >
-        <source src="/videos/intro.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        <video
+          ref={videoRef}
+          className="absolute top-0 left-0 w-full h-full object-cover" // Fullscreen & responsive
+          autoPlay
+          loop
+          muted
+          onClick={handleVideoClick} // Toggle play/pause on click
+        >
+          <source src="/videos/intro.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   );
 };

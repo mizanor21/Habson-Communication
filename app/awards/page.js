@@ -6,7 +6,7 @@ import { ImGoogle } from "react-icons/im";
 
 const Awards = () => {
   return (
-    <div className="px-[5%]">
+    <div className="">
       <HorizontalScrollCarousel />
     </div>
   );
@@ -24,9 +24,9 @@ const HorizontalScrollCarousel = () => {
     <>
       <section
         ref={targetRef}
-        className="hidden md:block bg-white relative z-[110] rounded-[70px] h-[300vh]   my-20"
+        className="hidden md:block bg-white relative z-[110] rounded-[70px] h-[300vh]   py-20"
       >
-        <h2 className="text-2xl md:text-4xl text-[#125b5c] font-bold ">
+        <h2 className="text-2xl md:text-4xl text-[#125b5c] font-bold text-center">
           Our Valuable Awards
         </h2>
         <div className="sticky top-0 flex  items-center overflow-hidden">

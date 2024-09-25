@@ -1,37 +1,37 @@
 "use client";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import arrowIcon from "@/public/assets/define/about-arrow.png";
 import Link from "next/link";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowLeft } from "react-icons/fa";
 
 const Define = () => {
-  const arrowRef = useRef(null);
-  const requestRef = useRef(null);
-  const mousePos = useRef({ x: 0, y: 0 });
+  const [angle, setAngle] = useState(0);
 
-  const handleMouseMove = (e) => {
-    mousePos.current = { x: e.clientX, y: e.clientY };
-  };
+  // Function to calculate angle between arrow and mouse
+  const calculateAngle = (event) => {
+    // Get the bounding box of the arrow container
+    const arrow = document.getElementById("arrow-container");
+    const rect = arrow.getBoundingClientRect();
+    const arrowCenterX = rect.left + rect.width / 2;
+    const arrowCenterY = rect.top + rect.height / 2;
 
-  const updateArrowRotation = () => {
-    const arrow = arrowRef.current;
-    if (arrow) {
-      const rect = arrow.getBoundingClientRect();
-      const arrowX = rect.left + rect.width / 2;
-      const arrowY = rect.top + rect.height / 2;
+    const deltaX = event.clientX - arrowCenterX;
+    const deltaY = event.clientY - arrowCenterY;
 
-      const angle =
-        Math.atan2(mousePos.current.y - arrowY, mousePos.current.x - arrowX) *
-        (90 / Math.PI);
-      arrow.style.transform = `rotate(${angle}deg)`;
-    }
-    requestRef.current = requestAnimationFrame(updateArrowRotation);
+    // Calculate the angle in radians and then convert to degrees
+    const rad = Math.atan2(deltaY, deltaX);
+    const deg = (rad * 180) / Math.PI;
+    setAngle(deg);
   };
 
   useEffect(() => {
-    requestRef.current = requestAnimationFrame(updateArrowRotation);
-    return () => cancelAnimationFrame(requestRef.current);
+    window.addEventListener("mousemove", calculateAngle);
+
+    return () => {
+      window.removeEventListener("mousemove", calculateAngle);
+    };
   }, []);
 
   const styles = {
@@ -46,7 +46,7 @@ const Define = () => {
   return (
     <div className="bg-white font-thin  py-10 lg:py-[10%]  relative z-[9999]">
       <div className="flex px-[5%]">
-        <div className="mx-3 " onMouseMove={handleMouseMove}>
+        <div className="mx-3 ">
           <div className="flex justify-center items-center rounded-badge">
             <div
               className="grid grid-cols-1 lg:grid-cols-3 gap-4"
@@ -57,12 +57,25 @@ const Define = () => {
                   What defines us
                 </h2>
                 <div className="flex">
-                  <Image
-                    src={arrowIcon}
-                    className="w-36 lg:w-64 transition-transform duration-300"
-                    alt=""
-                    ref={arrowRef}
-                  />
+                  <div className="relative w-[50%] h-auto flex px-8  items-center">
+                    <div
+                      id="arrow-container"
+                      className="bg-no-repeat flex justify-start items-center"
+                    >
+                      <div
+                        className=" w-[300px] transform origin-center"
+                        style={{ transform: `rotate(${angle + 90}deg)` }}
+                      >
+                        {/* <FaArrowLeft /> */}
+                        <Image
+                          width={400}
+                          height={500}
+                          src={arrowIcon}
+                          alt="icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="col-span-2">
