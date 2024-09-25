@@ -53,27 +53,27 @@
 //         </div>
 //       </sectionrelative>
 
-//       {/* Mobile */}
-//       <div className="md:hidden">
-//         <div className=" bg-white relative z-[9999] mt-8">
-//           {sections.map((section, sectionIndex) => (
-//             <div
-//               key={sectionIndex}
-//               className={`hover-container ${section?.id}   hover:text-white group`}
-//             >
-//               <div className="h-full md:flex items-center justify-center border-b border-black">
-//                 <div className="px-2">
-//                   <h3 className="text-xl font-bold text-black  group-hover:text-white transition-colors duration-300 mb-5 mt-2">
-//                     {section?.title}
-//                   </h3>
-//                   <p>{section?.content}</p>
-//                   <BsArrowRight className="text-[40px] my-6 bg-[#125b5c] p-2 rounded-full text-white" />
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
+// {/* Mobile */}
+// <div className="md:hidden">
+//   <div className=" bg-white relative z-[9999] mt-8">
+//     {sections.map((section, sectionIndex) => (
+//       <div
+//         key={sectionIndex}
+//         className={`hover-container ${section?.id}   hover:text-white group`}
+//       >
+//         <div className="h-full md:flex items-center justify-center border-b border-black">
+//           <div className="px-2">
+//             <h3 className="text-xl font-bold text-black  group-hover:text-white transition-colors duration-300 mb-5 mt-2">
+//               {section?.title}
+//             </h3>
+//             <p>{section?.content}</p>
+//             <BsArrowRight className="text-[40px] my-6 bg-[#125b5c] p-2 rounded-full text-white" />
+//           </div>
 //         </div>
 //       </div>
+//     ))}
+//   </div>
+// </div>
 //     </>
 //   );
 // };
@@ -155,7 +155,7 @@ const Card = ({ section, index }) => {
         key={index}
         className={`hover-container ${section?.id} h-screen border-r-2 hover:text-white group`}
       >
-        <div className="text-center w-[550px] h-full flex items-center justify-center">
+        <div className="text-center max-w-[550px] h-full flex items-center justify-center">
           <div className="px-5 lg:px-20">
             <h3 className="text-4xl  uppercase font-bold text-gray-300 group-hover:text-white transition-colors duration-300 mb-5">
               {section?.title}
@@ -270,19 +270,42 @@ const Solutions = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden h-screen flex relative z-[110] bg-white  py-20 md:block">
-      <div
-        className="flex transition-transform duration-300"
-        style={{
-          transform: `translateX(${offset}px)`,
-          width: `${totalWidth}px`,
-        }}
-      >
-        {sections.map((section, index) => (
-          <Card key={index} section={section} />
-        ))}
+    <>
+      <div className="overflow-hidden h-screen  relative z-[110] bg-white  py-20 hidden md:block">
+        <div
+          className="flex transition-transform duration-300"
+          style={{
+            transform: `translateX(${offset}px)`,
+            width: `${totalWidth}px`,
+          }}
+        >
+          {sections.map((section, index) => (
+            <Card key={index} section={section} />
+          ))}
+        </div>
       </div>
-    </div>
+      {/* Mobile */}
+      <div className="bg-white md:hidden">
+        <div className=" bg-white relative z-[110]">
+          {sections.map((section, sectionIndex) => (
+            <div
+              key={sectionIndex}
+              className={`hover-container ${section?.id}   hover:text-white group pt-10`}
+            >
+              <div className="h-full md:flex items-center justify-center border-b border-black">
+                <div className="px-4">
+                  <h3 className="text-xl font-bold text-black  group-hover:text-white transition-colors duration-300 mb-5 mt-2">
+                    {section?.title}
+                  </h3>
+                  <p>{section?.content}</p>
+                  <BsArrowRight className="text-[40px] my-6 bg-[#125b5c] p-2 rounded-full text-white" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 
