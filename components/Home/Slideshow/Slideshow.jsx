@@ -13,49 +13,49 @@ const Slideshow = () => {
   const sliderRightRef = useRef(null);
   const sliderRef = useRef(null); // Small device slider ref
 
-  useEffect(() => {
-    const handleMouseWheel = (e) => {
-      e.preventDefault();
-      if (e.deltaY > 0) {
-        // Scroll down
-        sliderLeftRef.current.slickNext();
-        sliderRightRef.current.slickPrev(); // Sync reverse slider
-      } else {
-        // Scroll up
-        sliderLeftRef.current.slickPrev();
-        sliderRightRef.current.slickNext(); // Sync reverse slider
-      }
-    };
-
-    // Add event listener for mouse wheel
-    window.addEventListener("wheel", handleMouseWheel);
-
-    return () => {
-      window.removeEventListener("wheel", handleMouseWheel);
-    };
-  }, []);
-
-  const handleNextSlide = () => {
-    sliderLeftRef.current.slickNext();
-    sliderRightRef.current.slickPrev(); // Sync reverse slider
-  };
-
-  const handlePrevSlide = () => {
-    sliderLeftRef.current.slickPrev();
-    sliderRightRef.current.slickNext(); // Sync reverse slider
-  };
-
-  // Handler for the small device slider arrow
-  const handleNextClick = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext(); // Move to next slide
-    } else {
-      console.log("Slider reference is not available");
-    }
-  };
-  //   const handleClick = () => {
-  //     handleNextSlide();
+  // useEffect(() => {
+  //   const handleMouseWheel = (e) => {
+  //     e.preventDefault();
+  //     if (e.deltaY > 0) {
+  //       // Scroll down
+  //       sliderLeftRef.current.slickNext();
+  //       sliderRightRef.current.slickPrev(); // Sync reverse slider
+  //     } else {
+  //       // Scroll up
+  //       sliderLeftRef.current.slickPrev();
+  //       sliderRightRef.current.slickNext(); // Sync reverse slider
+  //     }
   //   };
+
+  //   // Add event listener for mouse wheel
+  //   window.addEventListener("wheel", handleMouseWheel);
+
+  //   return () => {
+  //     window.removeEventListener("wheel", handleMouseWheel);
+  //   };
+  // }, []);
+
+  // const handleNextSlide = () => {
+  //   sliderLeftRef.current.slickNext();
+  //   sliderRightRef.current.slickPrev(); // Sync reverse slider
+  // };
+
+  // const handlePrevSlide = () => {
+  //   sliderLeftRef.current.slickPrev();
+  //   sliderRightRef.current.slickNext(); // Sync reverse slider
+  // };
+
+  // // Handler for the small device slider arrow
+  // const handleNextClick = () => {
+  //   if (sliderRef.current) {
+  //     sliderRef.current.slickNext(); // Move to next slide
+  //   } else {
+  //     console.log("Slider reference is not available");
+  //   }
+  // };
+  // //   const handleClick = () => {
+  // //     handleNextSlide();
+  // //   };
   const handleNextSlides = () => {
     if (sliderLeftRef.current && sliderRightRef.current) {
       console.log("Moving to next slide!");
@@ -67,7 +67,6 @@ const Slideshow = () => {
   };
 
   const handleClick = () => {
-    console.log("Button clicked!"); // Check if this logs when the button is clicked.
     handleNextSlides();
   };
 
