@@ -56,7 +56,7 @@ const HorizontalScrollCarousel = () => {
       </section>
 
       {/* Mobile */}
-      <div className="flex md:hidden">
+      <div className="md:hidden">
         <div className=" bg-white relative z-[9999] mt-8">
           {sections.map((section, sectionIndex) => (
             <div

@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      {/* <Video /> */}
-      <IntroVideo />
+      <Video />
+      {/* <IntroVideo /> */}
       <Elevate></Elevate>
       <Define />
       <Slideshow />
