@@ -38,14 +38,13 @@ const Video = () => {
   return (
     <div className="relative bg-black z-[110]">
       <div
-        className={`transition-all duration-500 ease-in-out mx-auto ${
+        className={`transition-all duration-500  lg:h-[100vh] ease-in-out mx-auto ${
           isScrolledDown ? "w-full" : "w-[90%]"
         }`}
-        style={{ height: "100vh" }} // Ensures the container fills the full height of the viewport
       >
         <video
           ref={videoRef}
-          className="absolute top-0 left-0 w-full h-full object-cover" // Fullscreen & responsive
+          className="absolute h-[100%] top-0 left-0 w-full md:h-full object-cover" // Fullscreen & responsive
           autoPlay
           loop
           muted

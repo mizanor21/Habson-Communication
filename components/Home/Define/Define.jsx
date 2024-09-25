@@ -41,19 +41,20 @@ const Define = () => {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     height: "30vh",
+    color: "#FFFFFF",
   };
 
   return (
     <div className="bg-white font-thin  py-10 lg:py-[10%]  relative z-[110]">
-      <div className="flex px-[5%]">
-        <div className="mx-3 ">
+      <div className="flex md:px-[5%]">
+        <div className="md:mx-3 ">
           <div className="flex justify-center items-center rounded-badge">
             <div
               className="grid grid-cols-1 lg:grid-cols-3 gap-4"
               style={styles}
             >
               <div className="col-span-1">
-                <h2 className="text-2xl lg:text-[50px] font-bold lg:pr-5 mb-2 text-[#185C5D]">
+                <h2 className="text-2xl mx-3 md:mx-0 lg:text-[50px] font-bold lg:pr-5 mb-2 text-[#185C5D]">
                   What defines us
                 </h2>
                 <div className="flex">
@@ -63,7 +64,7 @@ const Define = () => {
                       className="bg-no-repeat flex justify-start items-center"
                     >
                       <div
-                        className=" w-[300px] transform origin-center"
+                        className="w-[200px] lg:w-[300px] transform origin-center"
                         style={{ transform: `rotate(${angle + 90}deg)` }}
                       >
                         {/* <FaArrowLeft /> */}
@@ -78,12 +79,12 @@ const Define = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-2">
+              <div className="col-span-2 bg-white pb-5 mx-3 md:mx-0">
                 <p className="text-xl lg:text-3xl font-bold text-[#185C5D]">
                   We&apos;re brand architects, crafting narratives with
                   precision, fueled by innovation and seamless integration.
                 </p>
-                <p className="my-5 lg:my-12 text-base opacity-60 font-semibold tracking-wider">
+                <p className="my-5 lg:my-12 text-justify text-black md:text-base opacity-60 font-semibold tracking-wider">
                   “Living Brands” is fueled by an unquenchable drive to make
                   your brand a global force. We believe in the power of
                   collaboration, bringing together the best creative minds,
@@ -97,7 +98,7 @@ const Define = () => {
                     href="/careers"
                     className="bg-[#185C5D] btn hover:bg-[#1d7374] rounded-full px-8 py-4 mt-5 text-white"
                   >
-                    <span>Discover Our Dynamic Culture</span>
+                    <span> Discover Our Dynamic Culture</span>
                     <FaArrowRight />
                   </Link>
                 </div>
