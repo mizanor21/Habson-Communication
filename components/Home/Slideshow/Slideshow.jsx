@@ -3,10 +3,10 @@ import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import "./slideshow.css";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { BsArrowRight } from "react-icons/bs";
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
+import "./slideshow.css";
 
 const Slideshow = () => {
   const sliderLeftRef = useRef(null);
@@ -53,6 +53,23 @@ const Slideshow = () => {
       console.log("Slider reference is not available");
     }
   };
+  //   const handleClick = () => {
+  //     handleNextSlide();
+  //   };
+  const handleNextSlides = () => {
+    if (sliderLeftRef.current && sliderRightRef.current) {
+      console.log("Moving to next slide!");
+      sliderLeftRef.current.slickNext(); // Move to the next slide on the left
+      sliderRightRef.current.slickPrev(); // Move to the previous slide on the right
+    } else {
+      console.log("Slider refs are not available!");
+    }
+  };
+
+  const handleClick = () => {
+    console.log("Button clicked!"); // Check if this logs when the button is clicked.
+    handleNextSlides();
+  };
 
   const settingsLeft = {
     vertical: true,
@@ -85,7 +102,7 @@ const Slideshow = () => {
 
   return (
     <div>
-      <div className="hidden md:block">
+      <div className="relative hidden md:block">
         <div className="relative z-[110] h-screen w-screen overflow-hidden bg-[#110101] ">
           {/* Left Slideshow (Top-Down) */}
           <div className="absolute inset-0 z-10 slideshow slideshow-left">
@@ -130,15 +147,6 @@ const Slideshow = () => {
             </Slider>
 
             {/* Left Side Button */}
-            <div
-              className="absolute bottom-10  left-5 z-20"
-              onClick={handleNextSlide}
-            >
-              <BsArrowRight
-                className="text-3xl lg:text-6xl text-[125b5c] bg-white p-3 rounded-full cursor-pointer"
-                // Trigger next slide
-              />
-            </div>
           </div>
 
           {/* Right Slideshow (Bottom-Up) */}
@@ -183,6 +191,15 @@ const Slideshow = () => {
             </Slider>
           </div>
         </div>
+        <button
+          className="absolute bottom-10  left-5 z-[9999] cursor-pointer"
+          onClick={handleClick}
+        >
+          <BsArrowRight
+            className="text-3xl lg:text-6xl text-[125b5c] bg-white p-3 rounded-full "
+            // Trigger next slide
+          />
+        </button>
       </div>
 
       {/* Small device */}
