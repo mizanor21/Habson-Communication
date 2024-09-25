@@ -64,13 +64,13 @@ const Define = () => {
                       className="bg-no-repeat flex justify-start items-center"
                     >
                       <div
-                        className="w-[200px] lg:w-[300px] transform origin-center"
+                        className="w-[150px] md:w-[250px] transform origin-center"
                         style={{ transform: `rotate(${angle + 90}deg)` }}
                       >
                         {/* <FaArrowLeft /> */}
                         <Image
-                          width={400}
-                          height={500}
+                          width={300}
+                          height={400}
                           src={arrowIcon}
                           alt="icon"
                         />
