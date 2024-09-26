@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const CareerSection = () => {
@@ -9,9 +10,11 @@ const CareerSection = () => {
       <p className="text-xl tracking-tighter text-black mb-8">
         Showcasing the innovative spirit of Bangladesh on a global stage.
       </p>
-      <button className="inline-flex  px-20 py-3 bg-[#125b5c] text-white border border-[#125b5c] rounded-full text-md hover:bg-black hover:text-white transition-all">
-        See All Openings <span className="ml-2 text-2xl">→</span>
-      </button>
+      <Link href="/career-details">
+        <button className="inline-flex  px-20 py-3 bg-[#125b5c] text-white border border-[#125b5c] rounded-full text-md hover:bg-black hover:text-white transition-all">
+          See All Openings <span className="ml-2 text-2xl">→</span>
+        </button>
+      </Link>
     </div>
   );
 };
