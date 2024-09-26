@@ -258,28 +258,6 @@ const Items = () => {
       img: "https://i.postimg.cc/XNg2MVb3/ey-SLf-CX2-Vsk-HD.jpg",
     },
     {
-      id: 12,
-      category: "Daily Creativity",
-      thumbnail: "project-management-thumb.jpg",
-      title: "Children Day",
-      detailsTitle: "Children Day OVC _Seven Rings Cement",
-      services: [
-        {
-          serviceName: "Project Planning",
-          description: "Developing detailed plans to ensure project success.",
-        },
-        {
-          serviceName: "Agile Coaching",
-          description:
-            "Implementing Agile methodologies for better collaboration and faster delivery.",
-        },
-      ],
-      serviceDetails:
-        "Our project management services ensure timely delivery and exceed expectations through structured execution.",
-      industry: "Business",
-      img: "https://i.postimg.cc/NjPfhR6C/Gujn-Dntu-TI-HD.jpg",
-    },
-    {
       id: 13,
       category: "Daily Creativity",
       thumbnail: "software-dev-thumb.jpg",
