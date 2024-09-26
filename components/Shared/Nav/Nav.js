@@ -370,22 +370,45 @@ const Nav = () => {
 
       {isHoveredAbout && (
         <div
-          className="card-containers min-w-screen z-[115] mt-1"
+          className="card-containers min-w-screen  z-[115] mt-1 pr-[5%]"
           onMouseEnter={() => setIsHoveredAbout(true)}
           onMouseLeave={() => setIsHoveredAbout(false)}
         >
-          <div className="card_container bg-white mt-10 flex gap-5 px-[5%] pt-5 pb-10">
-            <div className="min-w-72">
-              <div className="py-10">
-                <h2 className="text-2xl lg:text-2xl font-medium hover:ml-2 duration-200  hover:text-gray-500 mb-5 lg:max-w-[800px]">
+          <div className="card_container bg-white h-[700px] mt-10 flex gap-5 px-[5%] pt-5 pb-10">
+            <div className="flex gap-16 py-10 items-start">
+              <div className="">
+                <h2 className="text-2xl text-justify lg:text-2xl font-medium hover:ml-2 duration-200 hover:text-gray-500 mb-5 lg:max-w-[400px]">
                   Living Brands & Habson&apos;s remarkable performance at the
                   Flame Awards Asia 2024, securing ten awards including five
                   golds, showcases their exceptional creativity and dedication
                   to excellence.
                 </h2>
               </div>
+
+              <div className="flex gap-4">
+                <video
+                  className="w-full h-full max-w-[600px] max-h-[600px] rounded-2xl"
+                  autoPlay
+                  loop
+                  muted
+                  height="700"
+                >
+                  <source src="/videos/about1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <video
+                  className="w-ful h-full max-w-[600px] max-h-[600px] rounded-2xl"
+                  autoPlay
+                  loop
+                  muted
+                  height="700"
+                >
+                  <source src="/videos/about2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
-            {AboutData.map((item, index) => (
+            {/* {AboutData.map((item, index) => (
               <Link
                 href={"/awards"}
                 key={index}
@@ -401,7 +424,7 @@ const Nav = () => {
                   />
                 </div>
               </Link>
-            ))}
+            ))} */}
           </div>
         </div>
       )}

@@ -39,14 +39,19 @@
     transition: all 0.3s ease;
 }
 
+.custom-video-height {
+    height: 700px;
+    /* Adjust height as needed */
+}
+
 .navber-links .link {
     text-decoration: none;
     color: inherit;
 }
 
-.navber-links ul li.active {
+/* .navber-links ul li.active {
     color: #ee4580
-}
+} */
 
 .navber-links ul li:hover {
     color: var(--color-orange);
