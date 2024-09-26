@@ -266,8 +266,13 @@ const Nav = () => {
             onMouseEnter={() => setIsHoveredSolutions(true)}
             onMouseLeave={() => setIsHoveredSolutions(false)}
           >
-            <p className="link">Solutions</p>
-            <RiArrowDropDownLine className="dropdown-icon" />
+            <p className="link group">Solutions</p>
+            {/* Add transition and transform to the icon */}
+            <RiArrowDropDownLine
+              className={`text-5xl dropdown-icon transform transition-transform duration-300 ease-in-out ${
+                isHoveredSolutions ? "rotate-180" : ""
+              } group-hover:rotate-180`}
+            />
           </li>
 
           <li
@@ -275,8 +280,12 @@ const Nav = () => {
             onMouseEnter={() => setIsHoveredAbout(true)}
             onMouseLeave={() => setIsHoveredAbout(false)}
           >
-            <p className="link">About</p>
-            <RiArrowDropDownLine className="dropdown-icon" />
+            <p className="link group">About</p>
+            <RiArrowDropDownLine
+              className={`text-5xl dropdown-icon transform transition-transform duration-300 ease-in-out ${
+                isHoveredAbout ? "rotate-180" : ""
+              } group-hover:rotate-180`}
+            />
           </li>
 
           <li
@@ -284,8 +293,12 @@ const Nav = () => {
             onMouseEnter={() => setIsHoveredResources(true)}
             onMouseLeave={() => setIsHoveredResources(false)}
           >
-            <p className="link">Resources</p>
-            <RiArrowDropDownLine className="dropdown-icon" />
+            <p className="link group">Resources</p>
+            <RiArrowDropDownLine
+              className={`text-5xl dropdown-icon transform transition-transform duration-300 ease-in-out ${
+                isHoveredResources ? "rotate-180" : ""
+              } group-hover:rotate-180`}
+            />
           </li>
 
           <li

@@ -21,6 +21,10 @@
     font-size: 14px;
 }
 
+div:has(Link:hover)>Link:not(:hover) {
+    opacity: .4;
+}
+
 .navber-links ul li {
     list-style: none;
     cursor: pointer;
@@ -33,7 +37,7 @@
 }
 
 .navber-links ul li.active {
-    color: blueviolet
+    color: #ee4580
 }
 
 .navber-links ul li:hover {
@@ -52,7 +56,7 @@
 }
 
 .navber-links ul .dropdown-icon {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 /* .navber .card_container {

@@ -56,7 +56,7 @@ const BrandSolutions = () => {
   ];
 
   return (
-    <section className=" px-[5%] py-12 bg-white relative z-[110] rounded-[70px]">
+    <section className="px-[5%] py-12 bg-white relative z-[110] rounded-[70px]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 lg:mb-20">
         {/* Left Side */}
         <div>
@@ -161,9 +161,8 @@ const BrandSolutions = () => {
 
               {open === index && (
                 <div className="py-2 text-black">
-                  {/* Dynamic content based on the selected item */}
                   {item.content}
-                </div>
+                  </div>
               )}
             </div>
           ))}

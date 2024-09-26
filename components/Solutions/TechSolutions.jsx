@@ -14,44 +14,51 @@ const TechSolutions = () => {
   // Array of items with dynamic titles and contents
   const data = [
     {
-      title: "Social Media Management",
+      title: "Customized Web Development",
       content:
-        "We create data-driven social media strategies that go beyond vanity metrics. By focusing on building genuine connections, we transform your online presence into a thriving community.",
+        "We create exceptional websites that drive results. Our portfolio includes successful projects for renowned brands like Transcom Beverages Limited, Pusti Home Chef, and OMG Ice Cream. We build agile, responsive platforms equipped with advanced features such as geo-targeting, live chat, community management, and e-commerce.",
     },
     {
-      title: "Content and Copywriting",
+      title: "Web Personalization",
       content:
-        "Our wordsmiths craft compelling, customer-centric content that drives results. We prioritize clarity, impact, and empathy over empty buzzwords.",
+        "We leverage advanced analytics and machine learning to deliver personalized experiences. By understanding individual visitor behavior, we tailor content and recommendations to meet specific needs, driving engagement and conversions.",
     },
     {
-      title: "Graphic Design and Illustration",
+      title: "UI/UX",
       content:
-        "In today's visual-first world, we create captivating content that grabs attention and embodies your brand's essence.",
+        "Our UI/UX experts create exceptional digital experiences backed by a deep understanding of user behavior. With insights from over 500 projects, we design and develop intuitive mobile apps and websites that drive engagement and loyalty. Our tech stack includes Web flow, WordPress, PHP, and ReactJS.",
     },
     {
-      title: "Video Editing and Animation",
+      title: "Search Engine Optimization",
       content:
-        "We create captivating 2D and 3D animations and video edits optimized for maximum social impact. Our team blends artistry and technology to craft visually stunning and engaging content that resonates with audiences, drives engagement, and delivers results.",
+        "We are committed to propelling your brand to the top of search engine results. Our expert team leverages cutting-edge tools and strategies to optimize your online visibility, drive organic traffic, and outperform competitors.",
     },
     {
-      title: "Film Production, AVs and Product Photography",
+      title: "CRM & ERP Solutions",
       content:
-        "Our in-house production studio offers a full spectrum of creative services, from script-to-screen. Our talented team of filmmakers, photographers, and editors produce a wide range of content, including feature films, commercials, brand films, and product photography.",
+        "Our robust CRM platform provides a holistic view of your customer journey, enabling personalized engagement and automated workflows. By tracking every interaction and automating communications, we drive customer loyalty and achieve business goals. We partner with industry leaders like Mo Engage,  Zoho, and HubSpot to deliver tailored solutions. </br> Similarly, our comprehensive ERP dashboard offers end-to-end business management. From social media to supply chain, we streamline operations, improve efficiency, and provide valuable insights to inform strategic decision-making.",
     },
     {
-      title: "Campaign Planning",
+      title: "E-Commerce",
       content:
-        "Beyond daily content, we specialize in creating unforgettable experiences. Our end-to-end digital services transform client visions into reality, exceeding expectations at every turn.",
+        " With over half of all purchases now made online, we're experts at optimizing your e-commerce strategy. Our partnerships with renowned e-commerce platforms enable us to identify the best channels, fulfillment options, and marketing tactics to drive sales growth.",
     },
     {
-      title: "Influencer Management & ORM",
+      title: "Email Marketing",
       content:
-        "We forge powerful partnerships with top-tier influencers and thought leaders to amplify your brand's reach and drive meaningful engagement. By leveraging their social influence, we create impactful campaigns that resonate with your target audience and boost brand recall. Our strong media relationships ensure widespread coverage and positive press for your brand. To protect and enhance your online reputation, our dedicated ORM team uses advanced listening tools and media contacts to manage online conversations effectively.",
+        "Email remains a powerful tool for driving conversions. We craft compelling email campaigns and newsletters that resonate with your target audience. By segmenting your audience and automating email workflows, we deliver personalized messages at the right time, nurturing leads and boosting sales. ",
     },
+
     {
-      title: "New Brand Launch and Rebranding",
+      title: "Marketing Automation",
       content:
-        "Our branding division crafts enduring brand identities. We delve deep into your business, understanding your audience and goals to develop a comprehensive brand ecosystem. From designing your brand’s logo to building a brand persona - this includes everything! ",
+        "We deliver scalable, personalized customer experiences across all touchpoints. Our robust automation platform orchestrates seamless communication journeys, from lead generation to post-purchase engagement. By leveraging data-driven insights and optimizing performance across email, SMS, web, social media, and search, we drive customer loyalty and maximize ROI. ",
+    },
+
+    {
+      title: "Chatbots",
+      content:
+        "Our AI-powered chatbots deliver exceptional customer experiences and drive business growth. By understanding and responding to user needs in real-time, our chatbots provide instant support, personalized recommendations, and valuable insights. These intelligent virtual assistants act as both customer service agents and sales advocates, enhancing brand engagement and driving conversions across websites, apps, social media, and WhatsApp. ",
     },
   ];
 
@@ -64,12 +71,12 @@ const TechSolutions = () => {
             Tech Solutions
           </h2>
           <p className="text-lg font-normal  text-black mb-10 text-justify">
-            From crafting compelling daily content to executing high-impact
-            flagship campaigns, we provide a comprehensive range of digital
-            services tailored to your unique business objectives. We combine
-            strategic thinking, creative design, engaging video production, and
-            dynamic animation to create a cohesive digital presence that drives
-            tangible results.
+            Our Digital Transformation team leverages cutting-edge technology to
+            build seamless customer journeys across all touchpoints. We create
+            integrated ecosystems spanning web, social, CRM, ERP, and
+            e-commerce, delivering personalized experiences that attract,
+            retain, and engage customers. Our custom platforms optimize every
+            interaction, driving growth and customer loyalty.
           </p>
           <p className="font-bold text-xl text-[#125b5c] mb-10">
             Proud to work with the biggest brands in India & Abroad
@@ -160,12 +167,13 @@ const TechSolutions = () => {
                 )}
               </button>
 
-              {open === index && (
-                <div className="py-2 text-black">
-                  {/* Dynamic content based on the selected item */}
-                  {item.content}
-                </div>
-              )}
+              <div
+                className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${
+                  open === index ? "max-h-96" : "max-h-0"
+                }`}
+              >
+                <div className="py-2 text-black">{item.content}</div>
+              </div>
             </div>
           ))}
         </div>
