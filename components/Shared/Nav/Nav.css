@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.bolod:has(li:hover)>li:not(:hover) {
+    opacity: .4;
+}
+
 .navber-links {
     display: flex;
     gap: 30px;
@@ -21,8 +25,12 @@
     font-size: 14px;
 }
 
-div:has(Link:hover)>Link:not(:hover) {
-    opacity: .4;
+.navber-links ul:hover li {
+    opacity: 0.4;
+}
+
+.navber-links ul li:hover {
+    opacity: 1 !important;
 }
 
 .navber-links ul li {

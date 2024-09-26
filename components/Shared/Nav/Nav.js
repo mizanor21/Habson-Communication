@@ -153,7 +153,7 @@ const Nav = () => {
                   </li>
                   {solutions && (
                     <div className="vetore">
-                      <ul>
+                      <ul className="bolod">
                         <li>
                           <Link
                             href={"/brand-solutions"}
@@ -251,7 +251,7 @@ const Nav = () => {
       </div>
 
       {/* Main Nav Links */}
-      <div className="navber-links text-[#125b5c]">
+      <div className="navber-links text-[#125b5c] ">
         <ul>
           <li
             onClick={() => setIsActive("/work")}

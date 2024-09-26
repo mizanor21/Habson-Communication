@@ -110,7 +110,7 @@ const Slideshow = () => {
                 <div className="left-half">
                   <img
                     src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
-                    className="object-cover w-full h-full"
+                    className=" w-full h-full"
                     alt="slide-1"
                   />
                 </div>
@@ -120,7 +120,7 @@ const Slideshow = () => {
                 <div className="left-half">
                   <img
                     src="https://i.postimg.cc/g2bv6z1C/4.jpg"
-                    className="object-cover w-full h-full"
+                    className=" w-full h-full"
                     alt="slide-2"
                   />
                 </div>
@@ -129,7 +129,7 @@ const Slideshow = () => {
                 <div className="left-half">
                   <img
                     src="https://i.postimg.cc/WzW1pVyH/chips.png"
-                    className="object-cover w-full h-full"
+                    className=" w-full h-full"
                     alt="slide-3"
                   />
                 </div>
@@ -137,8 +137,8 @@ const Slideshow = () => {
               <div className="item h-screen">
                 <div className="left-half">
                   <img
-                    src="https://i.postimg.cc/X7CfJG1K/2.jpg"
-                    className="object-cover w-full h-full"
+                    src="https://i.postimg.cc/NfPZh4JV/Living-brand-pic.png"
+                    className=" w-full h-full"
                     alt="slide-4"
                   />
                 </div>
@@ -155,7 +155,7 @@ const Slideshow = () => {
                 <div className="right-half">
                   <img
                     src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
-                    className="object-cover w-full h-full"
+                    className=" w-full h-full"
                     alt="slide-4-reverse"
                   />
                 </div>
@@ -163,8 +163,8 @@ const Slideshow = () => {
               <div className="item h-screen">
                 <div className="right-half">
                   <img
-                    src="https://i.postimg.cc/X7CfJG1K/2.jpg"
-                    className="object-cover w-full h-full"
+                    src="https://i.postimg.cc/NfPZh4JV/Living-brand-pic.png"
+                    className=" w-full h-full"
                     alt="slide-1-reverse"
                   />
                 </div>
@@ -173,7 +173,7 @@ const Slideshow = () => {
                 <div className="right-half">
                   <img
                     src="https://i.postimg.cc/WzW1pVyH/chips.png"
-                    className="object-cover w-full h-full"
+                    className=" w-full h-full"
                     alt="slide-2-reverse"
                   />
                 </div>
@@ -182,7 +182,7 @@ const Slideshow = () => {
                 <div className="right-half">
                   <img
                     src="https://i.postimg.cc/g2bv6z1C/4.jpg"
-                    className="object-cover w-full h-full"
+                    className=" w-full h-full"
                     alt="slide-3-reverse"
                   />
                 </div>
