@@ -1,5 +1,6 @@
 "use client";
 
+import CareerLastVideo from "@/components/Career/CareerLastVideo";
 import CareerSection from "@/components/Career/CareerSection";
 import VideoSection from "@/components/Career/VideoSection";
 import { motion, useTransform, useScroll } from "framer-motion";
@@ -12,6 +13,7 @@ const Example = () => {
         <CareerSection></CareerSection>
         <VideoSection></VideoSection>
         <HorizontalScrollCarousel />
+        <CareerLastVideo></CareerLastVideo>
       </div>
     </div>
   );
