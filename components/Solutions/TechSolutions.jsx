@@ -83,71 +83,71 @@ const TechSolutions = () => {
           </p>
           <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-16 md:gap-4 items-center mb-10 gap-y-5 px-7 md:px-0">
             {/* Media Logos */}
-            <Image
+            <img
               width={200}
               height={200}
-              src="https://i.postimg.cc/XYnP8q4S/l-1.png"
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/646742411d41344dd4fe9e4f_6.webp"
               alt="P&G"
-              className="h-20 object-contain saturate-0 hover:saturate-100"
+              className="h-20 w-44 object-contain saturate-0 hover:saturate-100"
             />
-            <Image
+            <img
               width={200}
               height={200}
-              src="https://i.postimg.cc/VLqTnnyW/l-10.png"
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477bd521f0ee28256a9fcd2_HubSpot-certified-partner-2-p-500.webp"
               alt="Glow & Lovely"
-              className="h-10 object-contain saturate-0 hover:saturate-100"
+              className="h-20 w-44 object-contain saturate-0 hover:saturate-100"
             />
-            <Image
+            <img
               width={200}
               height={200}
-              src="https://i.postimg.cc/RhfYPnW9/l-14.png"
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/64674240ce6535840fe75043_3.webp"
               alt="Jio"
-              className="h-20 object-contain saturate-0 hover:saturate-100"
+              className="h-20 w-44 object-contain saturate-0 hover:saturate-100"
             />
 
-            <Image
+            <img
               width={200}
               height={200}
-              src="https://i.postimg.cc/SQzHQHD5/l-13.png"
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/64674241bf45be36db12d2cb_5.webp"
               alt="Kotak"
-              className="h-10 object-contain saturate-0 hover:saturate-100"
+              className="h-20 w-44 object-contain saturate-0 hover:saturate-100"
             />
-            <Image
+            <img
               width={200}
               height={200}
-              src="https://i.postimg.cc/28RM1Tt5/l-12.png"
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/646742411d41344dd4fe9e5a_7.webp"
               alt="Garnier Men"
-              className="h-14 mb-5 object-contain saturate-0 hover:saturate-100"
+              className="h-20 w-44mb-5 object-contain saturate-0 hover:saturate-100"
             />
 
-            <Image
+            <img
               width={200}
               height={200}
-              src="https://i.postimg.cc/76jcMNYm/l-17.png"
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477bdd4ebdcee2b99b714e2_download-removebg-preview%20(1).png"
               alt="uno"
-              className="h-20 object-contain saturate-0 hover:saturate-100"
+              className="h-20 w-44 object-contain saturate-0 hover:saturate-100"
             />
-            <Image
+            <img
               width={200}
               height={200}
-              src="https://i.postimg.cc/mDPJHnRP/l-18.png"
+              src="hhttps://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477bd3023daf955a8fb94e0_phploho.png"
               alt="Godrej"
-              className="h-20 object-contain saturate-0 hover:saturate-100"
+              className="h-20 w-44 object-contain saturate-0 hover:saturate-100"
             />
-            <Image
+            <img
               width={200}
               height={200}
-              src="https://i.postimg.cc/HLZFjmGG/l-2.png"
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477be1b9ede7ec2c17b1590_pngwing.com-p-500.png"
               alt="Ashok Leyland"
-              className="h-20 object-contain saturate-0 hover:saturate-100"
+              className="h-20 w-44 object-contain saturate-0 hover:saturate-100"
             />
-            <Image
+            {/* <Image
               width={200}
               height={200}
               src="https://i.postimg.cc/BnCr9DMn/l-23.png"
               alt="domino's"
               className="h-20 object-contain saturate-0 hover:saturate-100"
-            />
+            /> */}
           </div>
         </div>
 

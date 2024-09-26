@@ -238,13 +238,15 @@ const Slideshow = () => {
             </div>
           </Slider>
 
-          {/* Custom Arrow for Small Devices */}
-          {/* <div
-            className="absolute left-4 bottom-4 p-1.5 bg-white text-black rounded-full cursor-pointer"
-            onClick={handleNextClick} // Trigger next slide
+          <button
+            className="absolute bottom-10  left-5 z-[9999] cursor-pointer"
+            onClick={handleClick}
           >
-            <LiaLongArrowAltRightSolid className="text-4xl" />
-          </div> */}
+            <BsArrowRight
+              className="text-5xl text-[125b5c] bg-white p-3 rounded-full "
+              // Trigger next slide
+            />
+          </button>
         </div>
       </div>
     </div>

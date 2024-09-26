@@ -28,27 +28,29 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <div>
-      <section ref={targetRef} className=" relative h-[800vh] bg-white my-20">
-        <div className="my-20">
-          <h1 className="text-[24px] font-bold text-center ">
-            Have you got what it takes to #CreateALivingBrands?
-          </h1>
-          <p className="text-[20px] font-normal text-center">
-            Check out our core principles. If they align with your values, do
-            apply..
-          </p>
-        </div>
-        <div className="sticky top-10 flex  items-center overflow-hidden">
-          <motion.div style={{ x }} className="flex gap-4">
-            {cards.map((card) => {
-              return <Card card={card} key={card.id} />;
-            })}
-          </motion.div>
-        </div>
-      </section>
+    <>
+      <div className="hidden md:block">
+        <section ref={targetRef} className=" relative h-[800vh] bg-white my-20">
+          <div className="my-20">
+            <h1 className="text-[24px] font-bold text-center ">
+              Have you got what it takes to #CreateALivingBrands?
+            </h1>
+            <p className="text-[20px] font-normal text-center">
+              Check out our core principles. If they align with your values, do
+              apply..
+            </p>
+          </div>
+          <div className="sticky top-10 flex  items-center overflow-hidden">
+            <motion.div style={{ x }} className="flex gap-4">
+              {cards.map((card) => {
+                return <Card card={card} key={card.id} />;
+              })}
+            </motion.div>
+          </div>
+        </section>
+      </div>
       {/* small device */}
-      <div className="md:hidden">
+      <div className="md:hidden mt-10">
         {cards.map((item, i) => (
           <div key={i}>
             <div>
@@ -69,7 +71,7 @@ const HorizontalScrollCarousel = () => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

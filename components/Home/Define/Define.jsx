@@ -64,7 +64,7 @@ const Define = () => {
                       className="bg-no-repeat flex justify-start items-center"
                     >
                       <div
-                        className="w-[150px] md:w-[250px] transform origin-center"
+                        className=" w-[150px] md:w-[250px] transform origin-center"
                         style={{ transform: `rotate(${angle + 90}deg)` }}
                       >
                         {/* <FaArrowLeft /> */}

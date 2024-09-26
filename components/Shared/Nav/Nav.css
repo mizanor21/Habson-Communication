@@ -4,9 +4,7 @@
     align-items: center;
 }
 
-.bolod:has(li:hover)>li:not(:hover) {
-    opacity: .4;
-}
+
 
 .navber-links {
     display: flex;
@@ -29,6 +27,7 @@
     opacity: 0.4;
 }
 
+
 .navber-links ul li:hover {
     opacity: 1 !important;
 }
@@ -38,6 +37,28 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+
+/* Apply hover effect to all h2 elements except the one being hovered */
+.solutions h2 {
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* When hovering over an h2 element, reduce the opacity of the other h2 elements */
+.solutions:hover h2 {
+    opacity: 0.4;
+    /* Reduce opacity of all h2s */
+}
+
+/* Keep the hovered h2 at full opacity */
+.solutions h2:hover {
+    opacity: 1 !important;
+}
+
+
+
 
 .custom-video-height {
     height: 700px;

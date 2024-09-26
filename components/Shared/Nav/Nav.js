@@ -325,7 +325,7 @@ const Nav = () => {
           onMouseLeave={() => setIsHoveredSolutions(false)}
         >
           <div className="card_container bg-white mt-10 flex gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
-            <div className="min-w-72">
+            <div className="min-w-72  solutions">
               <h2 className="mb-4">
                 <Link
                   href={"brand-solutions"}
@@ -337,7 +337,7 @@ const Nav = () => {
               <h2 className=" mb-4">
                 <Link
                   href={"media-solutions"}
-                  className="text-2xl lg:text-3xl font-bold hover:ml-2 duration-200 text-[#115c5c] hover:text-gray-500"
+                  className="text-2xl lg:text-3xl font-bold hover:ml-2 duration-200 text-[#115c5c] "
                 >
                   Media Solution
                 </Link>
@@ -345,7 +345,7 @@ const Nav = () => {
               <h2>
                 <Link
                   href={"tech-solutions"}
-                  className="text-2xl lg:text-3xl font-bold hover:ml-2 duration-200 text-[#115c5c] hover:text-gray-500"
+                  className="text-2xl lg:text-3xl font-bold hover:ml-2 duration-200 text-[#115c5c] "
                 >
                   Tech Solution
                 </Link>
@@ -377,7 +377,7 @@ const Nav = () => {
           <div className="card_container bg-white h-[700px] mt-10 flex gap-5 px-[5%] pt-5 pb-10">
             <div className="flex gap-16 py-10 items-start">
               <div className="">
-                <h2 className="text-2xl text-justify lg:text-2xl font-medium hover:ml-2 duration-200 hover:text-gray-500 mb-5 lg:max-w-[400px]">
+                <h2 className="text-2xl text-justify lg:text-2xl font-medium hover:ml-2 duration-200  mb-5 lg:max-w-[400px]">
                   Living Brands & Habson&apos;s remarkable performance at the
                   Flame Awards Asia 2024, securing ten awards including five
                   golds, showcases their exceptional creativity and dedication
