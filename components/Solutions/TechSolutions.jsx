@@ -161,7 +161,7 @@ const TechSolutions = () => {
               </button>
 
               <div
-                className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${
+                className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${
                   open === index ? "max-h-96" : "max-h-0"
                 }`}
               >

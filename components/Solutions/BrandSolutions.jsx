@@ -159,11 +159,13 @@ const BrandSolutions = () => {
                 )}
               </button>
 
-              {open === index && (
-                <div className="py-2 text-black">
-                  {item.content}
-                  </div>
-              )}
+              <div
+                className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${
+                  open === index ? "max-h-96" : "max-h-0"
+                }`}
+              >
+                <div className="py-2 text-black">{item.content}</div>
+              </div>
             </div>
           ))}
         </div>
