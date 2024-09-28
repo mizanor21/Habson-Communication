@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import Button from "../Custom/Button";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const CareerSection = () => {
   return (
@@ -11,9 +13,9 @@ const CareerSection = () => {
         Showcasing the innovative spirit of Bangladesh on a global stage.
       </p>
       <Link href="/career-details">
-        <button className="inline-flex  px-20 py-3 bg-[#125b5c] text-white border border-[#125b5c] rounded-full text-md hover:bg-black hover:text-white transition-all">
-          See All Openings <span className="ml-2 text-2xl">→</span>
-        </button>
+        <Button>
+          See All Openings <MdOutlineArrowRightAlt className="text-xl" />
+        </Button>
       </Link>
     </div>
   );
