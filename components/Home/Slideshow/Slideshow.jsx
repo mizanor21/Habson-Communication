@@ -203,7 +203,7 @@ const Slideshow = () => {
 
       {/* Small device */}
       <div className="bg-white relative z-[110]">
-        <div className="md:hidden mt-[550px]">
+        <div className="md:hidden">
           <Slider ref={sliderRef} {...smallSlider}>
             <div className="item h-[450px]">
               <img

@@ -12,7 +12,9 @@ const Work = () => {
         </h2>
         <hr />
         <div className="md:flex justify-end my-5 space-y-1 md:space-y-0">
-          <Button>Casestudy</Button>
+          <Button>
+            Casestudy <br />
+          </Button>
           <span className="divider divider-horizontal divider-start divider-neutral"></span>
           <Button>Daily Creativity</Button>
         </div>

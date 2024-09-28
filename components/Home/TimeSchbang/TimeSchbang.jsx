@@ -8,7 +8,7 @@ const TimeSchbang = () => {
 
   return (
     <div className="overflow-hidden whitespace-nowrap ">
-      <div className="flex items-center gap-5 pt-10 animate-marquee">
+      <div className="flex items-center gap-5 pt-0 lg:pt-10 animate-marquee">
         {items.map((_, index) => (
           <React.Fragment key={index}>
             <Image

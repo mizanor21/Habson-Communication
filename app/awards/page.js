@@ -24,7 +24,7 @@ const HorizontalScrollCarousel = () => {
     <>
       <section
         ref={targetRef}
-        className="hidden md:block bg-white relative z-[110] rounded-[70px] h-[300vh]   py-20"
+        className="hidden md:block bg-white relative z-[110] rounded-b-[50px] h-[300vh]   py-20"
       >
         <h2 className="text-2xl md:text-4xl text-[#125b5c] font-bold text-center">
           Our Valuable Awards
@@ -39,7 +39,7 @@ const HorizontalScrollCarousel = () => {
       </section>
 
       {/* mobile device */}
-      <div className="md:hidden bg-white">
+      <div className="md:hidden bg-white relative z-[110] px-[5%] py-10">
         {cards.map((item) => (
           <div key={""} id={item.id}>
             <img

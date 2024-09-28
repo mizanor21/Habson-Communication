@@ -12,16 +12,16 @@ const Elevate = () => {
     height: "", // Adjust based on your preference
   };
   return (
-    <div className="bg-white relative z-[110] pt-10">
+    <div className="bg-white relative z-[110] py-10">
       <div
         data-aos="fade-up"
-        className="lg:max-w-[1200px] lg:container lg:mx-auto mx-5 lg:pt-28"
+        className="lg:max-w-[1200px] lg:container lg:mx-auto px-[5%] md:px-0 lg:pt-28"
       >
         <div
           style={styles}
           className="flex justify-center items-center min-h-60 lg:h-[30vh] rounded-lg md:rounded-badge"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-[5%]">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-sans font-medium text-white lg:pr-5">
               Elevate Your Brand Today!
             </h2>

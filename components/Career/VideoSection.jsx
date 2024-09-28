@@ -17,7 +17,6 @@ const VideoSection = () => {
         className=" h-[100%] top-0 left-0 w-full md:h-full object-cover" // Fullscreen & responsive
         autoPlay
         loop
-        muted
       >
         <source src="/videos/career1.mp4" type="video/mp4" />
         Your browser does not support the video tag.

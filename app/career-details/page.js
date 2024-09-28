@@ -2,7 +2,7 @@ import React from "react";
 import "./careerdetails.css";
 const CareerDetails = () => {
   return (
-    <div className="career-details relative z-[110]">
+    <div className="career-details relative z-[110] py-12">
       <div className="flex mx-auto h-full justify-center items-center">
         <div>
           <p className="text-white font-bold text-center mb-2">

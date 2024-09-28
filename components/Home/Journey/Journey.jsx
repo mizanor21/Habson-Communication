@@ -20,7 +20,7 @@ const Journey = () => {
           style={styles}
           className="flex lg:max-w-[1200px] justify-center items-center min-h-60 lg:h-[40vh] rounded-lg md:rounded-badge"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-10 items-center py-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-[5%] items-center py-10">
             <div>
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-sans font-medium text-white">
                 Start Your Journey With Us Now

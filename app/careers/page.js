@@ -4,11 +4,12 @@ import CareerLastVideo from "@/components/Career/CareerLastVideo";
 import CareerSection from "@/components/Career/CareerSection";
 import VideoSection from "@/components/Career/VideoSection";
 import { motion, useTransform, useScroll } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 
 const Example = () => {
   return (
-    <div className="relative bg-white z-[110] rounded-[60px]">
+    <div className="relative bg-white z-[110] rounded-b-[20px] lg:rounded-b-[60px]">
       <div className="px-[5%] ">
         <CareerSection></CareerSection>
         <VideoSection></VideoSection>
@@ -30,7 +31,10 @@ const HorizontalScrollCarousel = () => {
   return (
     <>
       <div className="hidden md:block">
-        <section ref={targetRef} className=" relative h-[800vh] bg-white my-20">
+        <section
+          ref={targetRef}
+          className=" relative h-[700vh] bg-white py-10 lg:py-20"
+        >
           <div className="my-20">
             <h1 className="text-[24px] font-bold text-center ">
               Have you got what it takes to #CreateALivingBrands?
@@ -55,12 +59,12 @@ const HorizontalScrollCarousel = () => {
           <div key={i}>
             <div>
               <img
-                className="w-full h-[400px]"
+                className="w-full h-[350px]"
                 src={item.imageUrl}
                 alt={item.title}
               />
             </div>
-            <div className="mt-4 mb-14">
+            <div className="mt-4 mb-5">
               <div className="">
                 <h2 className="text-[22px] font-extrabold  text-[#185C5D]">
                   {item.title}
@@ -80,11 +84,13 @@ const Card = ({ card }) => {
     <div>
       <div
         key={card.id}
-        className=" relative  w-[500px] overflow-hidden border hover:-translate-y-5 duration-300 mt-5 shadow-lg bg-white  hover:bg-neutral-50"
+        className=" relative  w-[450px] h-[750px] overflow-hidden border hover:-translate-y-5 duration-300 mt-5 shadow-lg bg-white  hover:bg-neutral-50"
       >
         <div>
-          <img
-            className="w-full h-[500px] object-cover"
+          <Image
+            width={450}
+            height={400}
+            className="w-full h-[450px] object-cover"
             src={card.imageUrl}
             alt={card.title}
           />
