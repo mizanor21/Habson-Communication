@@ -67,52 +67,53 @@ const ContactUsRightPart = () => {
           Social Media Management
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Content Creation & Marketing
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Ad Film/Video Production{" "}
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          SEO
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Website Transformation{" "}
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Mobile App Development & UI/UX
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          CRM/Sales Pipeline Development{" "}
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Influencer Marketing{" "}
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          IP Creation
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Email & SMS Marketing Automation
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Integrated Campaigns
         </button>
-        <p className="text-xl mt-12">
-          Please select our closest preferred office for servicing you
-        </p>
+
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Performance Media
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Growth via Media Buying
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Social Listening & ORM
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Consumer & Market Research
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Integrated Campaigns
+        </button>
+        <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
+          Others
         </button>
 
         <label>
@@ -124,27 +125,28 @@ const ContactUsRightPart = () => {
           />
         </label>
         <p className="text-xl mt-12">How did you hear about us?</p>
+
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Referral
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Media & News
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          LinkedIn
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Instagram/Facebook
         </button>
 
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Emails/Newsletter
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Search
         </button>
         <button className="p-2 border rounded-full m-2 focus:outline-none focus:ring-0 focus:bg-[#B6B6B6]">
-          Social Media Management
+          Other Sources
         </button>
         <br />
         <button className="border py-2 px-24 rounded-full   hover:cursor-pointer   text-xl hover:bg-white hover:text-black border-black text-white  bg-[#125b5c] mt-5">
