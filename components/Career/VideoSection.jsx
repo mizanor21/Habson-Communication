@@ -1,22 +1,39 @@
-// import ReactPlayer from "react-player";
+import { useRef } from "react";
 
 const VideoSection = () => {
+  const [isFirstPlay, setIsFirstPlay] = useState(true);
+  const videoRef = useRef(null);
+
+  // Function to toggle play/pause on click
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      if (videoRef.current.paused) {
+        videoRef.current.play(); // Play the video if paused
+      } else {
+        videoRef.current.pause(); // Pause the video if playing
+      }
+    }
+  };
+
+  // Function to handle video end event
+  const handleVideoEnd = () => {
+    if (isFirstPlay) {
+      setIsFirstPlay(false); // Set flag that first play is done
+      videoRef.current.muted = false; // Unmute the video
+      videoRef.current.currentTime = 0; // Restart video from beginning
+      videoRef.current.play(); // Play video with sound
+    }
+  };
   return (
-    <div className="video-container w-full h-60 md:h-screen">
-      {/* <iframe
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/CUTNgE4NPPg?si=vlqpjX_W9PXgUfr3"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe> */}
+    <div className="w-full md:h-screen relative z-[110]">
       <video
-        className=" h-[100%] top-0 left-0 w-full md:h-full object-cover" // Fullscreen & responsive
+        ref={videoRef}
+        className="absolute h-[100%] top-0 left-0 w-full md:h-full object-cover"
         autoPlay
         loop
+        // muted={isFirstPlay} // Muted during the first play
+        onClick={handleVideoClick} // Toggle play/pause on click
+        onEnded={handleVideoEnd} // On first play end, restart with sound
       >
         <source src="/videos/career1.mp4" type="video/mp4" />
         Your browser does not support the video tag.

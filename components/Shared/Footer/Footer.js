@@ -67,9 +67,20 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <div className="py-5 text-white text-center font-[Inter]">
+        <small>
+          Design & Developed By {""}
+          <Link
+            href={"https://www.goinnovior.com/"}
+            target="_blank"
+            className="text-[#2aa747] hover:text-[#83c24f] font-bold animate-bounce"
+          >
+            Goinnovior Limited
+          </Link>
+        </small>
+      </div>
     </div>
   );
 };
 
 export default Footer;
-<p></p>;
