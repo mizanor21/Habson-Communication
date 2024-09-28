@@ -36,7 +36,7 @@ const Define = () => {
   }, []);
 
   return (
-    <div className="bg-white font-[Inter]  py-10 lg:py-[10%] relative z-[110]">
+    <div className="bg-white font-[Inter]  py-10 lg:py-[15%] relative z-[110]">
       <div className="flex md:px-[5%] bgDefine">
         <div className="md:mx-3 ">
           <div className="flex justify-center items-center rounded-badge ">

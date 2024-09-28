@@ -358,22 +358,24 @@ const Nav = () => {
           onMouseLeave={() => setIsHoveredAbout(false)}
         >
           <div className=" flex gap-5 bg-white h-[600px]  mt-10 px-[5%] pt-5 pb-10">
-            <div className="flex items-start gap-4">
-              <h2 className="text-2xl text-justify lg:text-2xl font-medium mr-14">
+            <div className="flex justify-between gap-4">
+              <h2 className="text-2xl text-justify lg:text-2xl max-w-[450px] font-medium mr-14">
                 Living Brands & Habson&apos;s remarkable performance at the
                 Flame Awards Asia 2024, securing ten awards including five
                 golds, showcases their exceptional creativity and dedication to
                 excellence.
               </h2>
 
-              <video className="rounded-2xl w-[600px]" autoPlay loop muted>
-                <source src="/videos/about1.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <video className="rounded-2xl w-[600px]" autoPlay loop muted>
-                <source src="/videos/about2.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <div className="flex gap-4">
+                <video className="rounded-2xl w-[600px]" autoPlay loop muted>
+                  <source src="/videos/about1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <video className="rounded-2xl w-[600px]" autoPlay loop muted>
+                  <source src="/videos/about2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
         </div>
