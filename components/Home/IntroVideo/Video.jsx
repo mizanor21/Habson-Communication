@@ -36,7 +36,7 @@ const Video = () => {
   };
 
   return (
-    <div className="relative bg-black z-[110]">
+    <div className="relative bg-black z-[110]" title="Play Reel">
       <div
         className={`transition-all duration-500  lg:h-[100vh] ease-in-out mx-auto ${
           isScrolledDown ? "w-full" : "w-[90%]"
@@ -46,7 +46,6 @@ const Video = () => {
           ref={videoRef}
           className="absolute h-[100%] top-0 left-0 w-full md:h-full object-cover" // Fullscreen & responsive
           autoPlay
-          controls
           loop
           onClick={handleVideoClick} // Toggle play/pause on click
         >

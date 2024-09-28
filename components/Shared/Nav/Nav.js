@@ -2,7 +2,7 @@
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoMenu } from "react-icons/io5";
 import { ImCancelCircle } from "react-icons/im";
-import { useState } from "react";
+import React, { useState } from "react";
 import "./Nav.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -303,11 +303,11 @@ const Nav = () => {
       {/* Dropdown services card section */}
       {isHoveredSolutions && (
         <div
-          className="card-containers min-w-screen z-[115] mt-1"
+          className="card-containers w-screen mt-1  z-[115]"
           onMouseEnter={() => setIsHoveredSolutions(true)}
           onMouseLeave={() => setIsHoveredSolutions(false)}
         >
-          <div className="card_container bg-white mt-10 flex gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
+          <div className="flex justify-between bg-white mt-10 gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
             <div className="min-w-72  solutions">
               <h2 className="mb-4">
                 <Link
@@ -334,58 +334,55 @@ const Nav = () => {
                 </Link>
               </h2>
             </div>
-            {solutionsData.map((item, index) => (
-              <Link href={"/work"} key={index} className="card cursor-pointer">
-                <div className="card_image">
-                  <Image
-                    className="rounded-2xl "
-                    src={item?.src}
-                    alt={index}
-                    width={700}
-                    height={500}
-                  />
-                </div>
-              </Link>
-            ))}
+            <React.Fragment>
+              {solutionsData.map((item, index) => (
+                <Link
+                  href={"/work"}
+                  key={index}
+                  className="card cursor-pointer "
+                >
+                  <div className="card_image">
+                    <Image
+                      className="rounded-2xl "
+                      src={item?.src}
+                      alt={index}
+                      width={700}
+                      height={500}
+                    />
+                  </div>
+                </Link>
+              ))}
+            </React.Fragment>
           </div>
         </div>
       )}
 
       {isHoveredAbout && (
         <div
-          className="card-containers min-w-screen   mt-1  z-[115]"
+          className="card-containers w-screen mt-1  z-[115]"
           onMouseEnter={() => setIsHoveredAbout(true)}
           onMouseLeave={() => setIsHoveredAbout(false)}
         >
           <div className=" flex gap-5 bg-white h-[600px]  mt-10 px-[5%] pt-5 pb-10">
-            <div className="flex justify-between gap-4">
-              <h2 className="text-2xl text-justify lg:text-2xl max-w-[450px] font-medium mr-14 pt-20">
+            <div className="flex items-start gap-4">
+              <h2 className="text-2xl min-w-80 max-w-[350px] text-justify lg:text-2xl font-medium mr-14">
                 Living Brands & Habson&apos;s remarkable performance at the
                 Flame Awards Asia 2024, securing ten awards including five
                 golds, showcases their exceptional creativity and dedication to
                 excellence.
               </h2>
-
-              <div className="flex gap-4">
-                <video
-                  className="rounded-2xl w-[600px] ring-offset-red-700h-[400]"
-                  autoPlay
-                  loop
-                  muted
-                >
+              <Link href={"/awards"}>
+                <video className="rounded-2xl w-[600px]" autoPlay loop muted>
                   <source src="/videos/about1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-                <video
-                  className="rounded-2xl w-[600px] ring-offset-red-700h-[400]"
-                  autoPlay
-                  loop
-                  muted
-                >
+              </Link>
+              <Link href={"/awards"}>
+                <video className="rounded-2xl w-[600px]" autoPlay loop muted>
                   <source src="/videos/about2.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -393,7 +390,7 @@ const Nav = () => {
 
       {isHoveredResources && (
         <div
-          className="card-containers min-w-screen z-[115] mt-1"
+          className="card-containers w-screen z-[115] mt-1"
           onMouseEnter={() => setIsHoveredResources(true)}
           onMouseLeave={() => setIsHoveredResources(false)}
         >
@@ -402,7 +399,7 @@ const Nav = () => {
               <h2 className="mb-4 ">
                 <Link
                   href={"/blogs"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] hover:text-gray-500"
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
                 >
                   Blogs
                 </Link>
@@ -410,7 +407,7 @@ const Nav = () => {
               <h2 className=" mb-4">
                 <Link
                   href={"the-edge"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] hover:text-gray-500"
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c]"
                 >
                   The Edge
                 </Link>

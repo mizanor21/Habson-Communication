@@ -36,7 +36,7 @@ const Define = () => {
   }, []);
 
   return (
-    <div className="bg-white font-[Inter]  py-10 lg:py-[15%] relative z-[110]">
+    <div className="hidden md:block font-[Inter]  py-10 lg:py-[15%] bg-white relative z-[110]">
       <div className="flex md:px-[5%] bgDefine">
         <div className="md:mx-3 ">
           <div className="flex justify-center items-center rounded-badge ">
@@ -45,7 +45,7 @@ const Define = () => {
                 <h2 className="text-2xl mx-3 md:mx-0 lg:text-[50px] font-bold lg:pr-5 mb-2 text-[#185C5D]">
                   What defines us
                 </h2>
-                <div className="flex">
+                <div className="hidden lg:flex">
                   <div className="relative w-[50%] h-auto flex px-8  items-center">
                     <div
                       id="arrow-container"
