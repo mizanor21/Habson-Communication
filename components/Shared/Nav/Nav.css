@@ -123,7 +123,7 @@
     display: none;
 }
 
-@keyframes customPulse {
+/* @keyframes customPulse {
 
 
     100% {
@@ -137,7 +137,7 @@
 
 .custom-pulse {
     animation: customPulse 1s infinite;
-}
+} */
 
 
 /* -------------- For Mobile device------------- */

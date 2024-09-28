@@ -70,7 +70,7 @@ const Nav = () => {
                 className="w-20"
                 alt="Living Brands logo"
               ></Image>
-              <h1 className="text-4xl custom-pulse font-bold mb-2 transform origin-center">
+              <h1 className="text-4xl animate-pulse font-bold mb-2 transform origin-center">
                 .
               </h1>
               <WordRotate
@@ -104,7 +104,7 @@ const Nav = () => {
                         className="w-20"
                         alt="Living Brands logo"
                       ></Image>
-                      <h1 className="text-4xl animate-pulse font-bold mb-3">
+                      <h1 className="text-4xl animate-pulse font-bold mb-2">
                         .
                       </h1>
                       <WordRotate
@@ -155,26 +155,17 @@ const Nav = () => {
                     <div className="vetore">
                       <ul className="bolod">
                         <li>
-                          <Link
-                            href={"/brand-solutions"}
-                            className="hover:ml-2 duration-200"
-                          >
+                          <Link href={"/brand-solutions"} className=" ">
                             Brand Solutions
                           </Link>
                         </li>
                         <li>
-                          <Link
-                            href={"/media-solutions"}
-                            className="hover:ml-2 duration-200"
-                          >
+                          <Link href={"/media-solutions"} className="">
                             Media Solutions
                           </Link>
                         </li>
                         <li>
-                          <Link
-                            href={"/tech-solutions"}
-                            className="hover:ml-2 duration-200"
-                          >
+                          <Link href={"/tech-solutions"} className="">
                             Tech Solutions
                           </Link>
                         </li>
@@ -194,10 +185,7 @@ const Nav = () => {
                     <div className="vetore">
                       <ul>
                         <li>
-                          <Link
-                            href={"/awards"}
-                            className="hover:ml-2 duration-200"
-                          >
+                          <Link href={"/awards"} className="">
                             Awards
                           </Link>
                         </li>
@@ -216,18 +204,12 @@ const Nav = () => {
                     <div className="vetore">
                       <ul>
                         <li>
-                          <Link
-                            href={"/blogs"}
-                            className="hover:ml-2 duration-200"
-                          >
+                          <Link href={"/blogs"} className="">
                             Blogs
                           </Link>
                         </li>
                         <li>
-                          <Link
-                            href={"/the-edge"}
-                            className="hover:ml-2 duration-200"
-                          >
+                          <Link href={"/the-edge"} className="">
                             The Edge
                           </Link>
                         </li>
@@ -329,7 +311,7 @@ const Nav = () => {
               <h2 className="mb-4">
                 <Link
                   href={"brand-solutions"}
-                  className="text-2xl lg:text-3xl font-bold hover:ml-2 duration-200 text-[#115c5c] hover:text-gray-500"
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c]"
                 >
                   Brand Solution
                 </Link>
@@ -337,7 +319,7 @@ const Nav = () => {
               <h2 className=" mb-4">
                 <Link
                   href={"media-solutions"}
-                  className="text-2xl lg:text-3xl font-bold hover:ml-2 duration-200 text-[#115c5c] "
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
                 >
                   Media Solution
                 </Link>
@@ -345,7 +327,7 @@ const Nav = () => {
               <h2>
                 <Link
                   href={"tech-solutions"}
-                  className="text-2xl lg:text-3xl font-bold hover:ml-2 duration-200 text-[#115c5c] "
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
                 >
                   Tech Solution
                 </Link>
@@ -375,9 +357,9 @@ const Nav = () => {
           onMouseLeave={() => setIsHoveredAbout(false)}
         >
           <div className="card_container bg-white h-[700px] mt-10 flex gap-5 px-[5%] pt-5 pb-10">
-            <div className="flex gap-16 py-10 items-start">
+            <div className="flex items-start gap-4">
               <div className="">
-                <h2 className="text-2xl text-justify lg:text-2xl font-medium hover:ml-2 duration-200  mb-5 lg:max-w-[400px]">
+                <h2 className="text-2xl text-justify lg:text-2xl font-medium   mb-5 lg:max-w-[400px]">
                   Living Brands & Habson&apos;s remarkable performance at the
                   Flame Awards Asia 2024, securing ten awards including five
                   golds, showcases their exceptional creativity and dedication
@@ -386,45 +368,16 @@ const Nav = () => {
               </div>
 
               <div className="flex gap-4">
-                <video
-                  className="w-full h-full max-w-[600px] max-h-[600px] rounded-2xl"
-                  autoPlay
-                  loop
-                  muted
-                  height="700"
-                >
+                <video className="rounded-2xl" autoPlay loop muted height="700">
                   <source src="/videos/about1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-                <video
-                  className="w-ful h-full max-w-[600px] max-h-[600px] rounded-2xl"
-                  autoPlay
-                  loop
-                  muted
-                  height="700"
-                >
+                <video className="rounded-2xl" autoPlay loop muted height="700">
                   <source src="/videos/about2.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
             </div>
-            {/* {AboutData.map((item, index) => (
-              <Link
-                href={"/awards"}
-                key={index}
-                className="card cursor-pointer ml-auto"
-              >
-                <div className="card_image ">
-                  <Image
-                    className="rounded-2xl h-[550px] "
-                    src={item?.src}
-                    alt={index}
-                    width={400}
-                    height={300}
-                  />
-                </div>
-              </Link>
-            ))} */}
           </div>
         </div>
       )}
@@ -440,7 +393,7 @@ const Nav = () => {
               <h2 className="mb-4 ">
                 <Link
                   href={"/blogs"}
-                  className="text-2xl lg:text-3xl font-bold hover:ml-2 duration-200 text-[#115c5c] hover:text-gray-500"
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] hover:text-gray-500"
                 >
                   Blogs
                 </Link>
@@ -448,7 +401,7 @@ const Nav = () => {
               <h2 className=" mb-4">
                 <Link
                   href={"the-edge"}
-                  className="text-2xl lg:text-3xl font-bold hover:ml-2 duration-200 text-[#115c5c] hover:text-gray-500"
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] hover:text-gray-500"
                 >
                   The Edge
                 </Link>

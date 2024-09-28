@@ -47,7 +47,6 @@ const Video = () => {
           className="absolute h-[100%] top-0 left-0 w-full md:h-full object-cover" // Fullscreen & responsive
           autoPlay
           loop
-          muted
           onClick={handleVideoClick} // Toggle play/pause on click
         >
           <source src="/videos/Intro.mp4" type="video/mp4" />
