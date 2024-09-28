@@ -1,0 +1,7 @@
+.bgDefine {
+    background-image: url(../../../public/assets/define/about-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25vh;
+}

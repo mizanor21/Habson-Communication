@@ -9,6 +9,7 @@ import Image from "next/image";
 import WordRotate from "@/components/magicui/word-rotate";
 import logo from "@/public/assets/logo/logo.png";
 import Button from "@/components/Custom/Button";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const Nav = () => {
   // State declarations
@@ -294,7 +295,7 @@ const Nav = () => {
         </ul>
         <Link href={"/contact"}>
           <Button>
-            Contact Us <span className="ml-2 text-2xl">→</span>
+            Contact Us <MdOutlineArrowRightAlt className="text-xl" />
           </Button>
         </Link>
       </div>
@@ -352,31 +353,27 @@ const Nav = () => {
 
       {isHoveredAbout && (
         <div
-          className="card-containers min-w-screen  z-[115] mt-1 pr-[5%]"
+          className="card-containers min-w-screen   mt-1  z-[115]"
           onMouseEnter={() => setIsHoveredAbout(true)}
           onMouseLeave={() => setIsHoveredAbout(false)}
         >
-          <div className="card_container bg-white h-[700px] mt-10 flex gap-5 px-[5%] pt-5 pb-10">
+          <div className=" flex gap-5 bg-white h-[600px]  mt-10 px-[5%] pt-5 pb-10">
             <div className="flex items-start gap-4">
-              <div className="">
-                <h2 className="text-2xl text-justify lg:text-2xl font-medium   mb-5 lg:max-w-[400px]">
-                  Living Brands & Habson&apos;s remarkable performance at the
-                  Flame Awards Asia 2024, securing ten awards including five
-                  golds, showcases their exceptional creativity and dedication
-                  to excellence.
-                </h2>
-              </div>
+              <h2 className="text-2xl text-justify lg:text-2xl font-medium mr-14">
+                Living Brands & Habson&apos;s remarkable performance at the
+                Flame Awards Asia 2024, securing ten awards including five
+                golds, showcases their exceptional creativity and dedication to
+                excellence.
+              </h2>
 
-              <div className="flex gap-4">
-                <video className="rounded-2xl" autoPlay loop muted height="700">
-                  <source src="/videos/about1.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <video className="rounded-2xl" autoPlay loop muted height="700">
-                  <source src="/videos/about2.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+              <video className="rounded-2xl w-[600px]" autoPlay loop muted>
+                <source src="/videos/about1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <video className="rounded-2xl w-[600px]" autoPlay loop muted>
+                <source src="/videos/about2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>

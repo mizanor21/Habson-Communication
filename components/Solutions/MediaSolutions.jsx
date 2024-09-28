@@ -54,21 +54,21 @@ const MediaSolutions = () => {
           </p>
           <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-16 md:gap-4 items-center mb-10 gap-y-5 px-7 md:px-0">
             {/* Media Logos */}
-            <img
+            <Image
               width={200}
               height={200}
               src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477c05f6f9e81c9d0f82322_62691149902f536a63a89ae2_Brigade-Web-Meta-Business-Partner-1-1.png"
               alt="P&G"
               className="h-20 w-32 object-contain saturate-0 hover:saturate-100"
             />
-            <img
+            <Image
               width={200}
               height={200}
               src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/646742411d41344dd4fe9e4f_6.webp"
               alt="Glow & Lovely"
               className="h-20 w-32 object-contain saturate-0 hover:saturate-100"
             />
-            <img
+            <Image
               width={200}
               height={200}
               src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/64674240ce6535840fe75043_3.webp"
@@ -76,14 +76,14 @@ const MediaSolutions = () => {
               className="h-20 w-32 object-contain saturate-0 hover:saturate-100"
             />
 
-            <img
+            <Image
               width={200}
               height={200}
               src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/646742411d41344dd4fe9e5a_7.webp"
               alt="Kotak"
               className="h-20 w-32 object-contain saturate-0 hover:saturate-100"
             />
-            <img
+            <Image
               width={200}
               height={200}
               src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477bd521f0ee28256a9fcd2_HubSpot-certified-partner-2-p-500.webp"
@@ -91,21 +91,21 @@ const MediaSolutions = () => {
               className="h-20 w-32 mb-5 object-contain saturate-0 hover:saturate-100"
             />
 
-            <img
+            <Image
               width={200}
               height={200}
               src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477c0fb107ad31b724643eb_629a40dc3e59ee069da94c82-p-500.png"
               alt="uno"
               className="h-20 w-32 object-contain saturate-0 hover:saturate-100"
             />
-            <img
+            <Image
               width={200}
               height={200}
               src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477bdd4ebdcee2b99b714e2_download-removebg-preview%20(1).png"
               alt="Godrej"
               className="h-20 w-32 object-contain saturate-0 hover:saturate-100"
             />
-            <img
+            <Image
               width={200}
               height={200}
               src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477c190c05b4c36d20363b0_SimilarWeb_logo.svg-p-500.webp"

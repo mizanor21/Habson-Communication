@@ -3,8 +3,9 @@ import { useRef, useEffect, useState } from "react";
 import arrowIcon from "@/public/assets/define/about-arrow.png";
 import Link from "next/link";
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa6";
-import { FaArrowLeft } from "react-icons/fa";
+import Button from "@/components/Custom/Button";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+import "./Define.css";
 
 const Define = () => {
   const [angle, setAngle] = useState(0);
@@ -34,25 +35,12 @@ const Define = () => {
     };
   }, []);
 
-  const styles = {
-    justifyContent: "center",
-    backgroundImage: `url(/assets/define/about-bg.png)`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    height: "30vh",
-    color: "#FFFFFF",
-  };
-
   return (
-    <div className="bg-white font-thin  py-10 lg:py-[10%]  relative z-[110]">
-      <div className="flex md:px-[5%]">
+    <div className="bg-white font-[Inter]  py-10 lg:py-[10%] relative z-[110]">
+      <div className="flex md:px-[5%] bgDefine">
         <div className="md:mx-3 ">
-          <div className="flex justify-center items-center rounded-badge">
-            <div
-              className="grid grid-cols-1 lg:grid-cols-3 gap-4"
-              style={styles}
-            >
+          <div className="flex justify-center items-center rounded-badge ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
               <div className="col-span-1">
                 <h2 className="text-2xl mx-3 md:mx-0 lg:text-[50px] font-bold lg:pr-5 mb-2 text-[#185C5D]">
                   What defines us
@@ -79,7 +67,7 @@ const Define = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-2 bg-white pb-5 mx-3 md:mx-0">
+              <div className="col-span-2 pb-5 mx-3 md:mx-0">
                 <p className="text-xl lg:text-3xl font-bold text-[#185C5D]">
                   We&apos;re brand architects, crafting narratives with
                   precision, fueled by innovation and seamless integration.
@@ -94,12 +82,11 @@ const Define = () => {
                   brand growth.
                 </p>
                 <div>
-                  <Link
-                    href="/careers"
-                    className="bg-[#185C5D] btn hover:bg-[#1d7374] rounded-full px-8 py-4 mt-5 text-white"
-                  >
-                    <span> Discover Our Dynamic Culture</span>
-                    <FaArrowRight />
+                  <Link href="/careers">
+                    <Button>
+                      Discover Our Dynamic Culture{" "}
+                      <MdOutlineArrowRightAlt className="text-xl" />
+                    </Button>
                   </Link>
                 </div>
               </div>

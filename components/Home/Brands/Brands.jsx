@@ -26,7 +26,7 @@ const reviews = [
     img: "https://i.postimg.cc/mDPJHnRP/l-18.png",
   },
   {
-    img: "https://i.postimg.cc/HLZFjmGG/l-2.png",
+    img: "https://i.postimg.cc/qRZLSq6S/Screenshot-from-2024-09-28-15-52-23-removebg-preview.png",
   },
   {
     img: "https://i.postimg.cc/HLsfpxh4/l-21.png",

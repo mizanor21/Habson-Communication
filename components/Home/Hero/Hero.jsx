@@ -1,5 +1,7 @@
 import Link from "next/link";
 import TimeSchbang from "../TimeSchbang/TimeSchbang";
+import Button from "@/components/Custom/Button";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
 const Hero = () => {
   return (
     <div className="sticky top-0 z-[110] bg-white">
@@ -23,9 +25,12 @@ const Hero = () => {
                     "https://www.google.com/maps/place/Living+Brands,+House+230+Road+16,+Dhaka+1212/data=!4m2!3m1!1s0x3755c700426d1655:0x8a70d2c34d6aae47?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjEzNS4xMDIYACDXggMqUSw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICQkQ%3D&g_st=aw"
                   }
                   target="_blank"
-                  className="bg-[#185C5D] hover:bg-white hover:text-black border rounded-full px-10 py-4 text-white"
+                  className=""
                 >
-                  Let&apos;s Talk
+                  <Button>
+                    Let&apos;s Talk{" "}
+                    <MdOutlineArrowRightAlt className="text-xl" />
+                  </Button>
                 </Link>
               </div>
             </div>
