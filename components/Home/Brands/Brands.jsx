@@ -126,7 +126,7 @@ const BrandsCard2 = ({ brand2img, name, body }) => {
 
 const Brands = () => {
   return (
-    <div className="bg-white relative z-[110] rounded-b-[70px]">
+    <div className="bg-white relative z-[110] rounded-b-[20px] lg:rounded-b-[60px]">
       <div className=" relative flex h-[300px] lg:h-[450px] w-full flex-col items-center justify-center overflow-hidden">
         {/* Continuous Marquee */}
         <div className="marquee-container">
