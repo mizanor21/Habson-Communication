@@ -72,10 +72,19 @@ const MediaSolutions = () => {
             <Image
               width={200}
               height={200}
+              src="https://i.postimg.cc/ZRGxLgdy/logo6.png"
+              alt="uno"
+              className="h-20 object-contain saturate-0 hover:saturate-100"
+            />
+
+            <Image
+              width={200}
+              height={200}
               src="https://i.postimg.cc/fWfRhPzz/Screenshot-from-2024-09-28-16-59-21.png"
               alt="Jio"
               className="h-20 object-contain saturate-0 hover:saturate-100"
             />
+
             <Image
               width={200}
               height={200}
@@ -83,15 +92,6 @@ const MediaSolutions = () => {
               alt="Kotak"
               className="h-20 object-contain saturate-0 hover:saturate-100"
             />
-
-            <Image
-              width={200}
-              height={200}
-              src="https://i.postimg.cc/ZRGxLgdy/logo6.png"
-              alt="Godrej"
-              className="h-20 object-contain saturate-0 hover:saturate-100"
-            />
-
             <Image
               width={200}
               height={200}
