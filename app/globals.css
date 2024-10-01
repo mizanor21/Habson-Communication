@@ -12,7 +12,11 @@
   color: white;
 }
 
-body,
-div {
+body {
   cursor: url(../public/assets/cursor/cursor.png), auto;
+}
+
+Link,
+video {
+  cursor: pointer;
 }
