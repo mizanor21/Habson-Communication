@@ -1,8 +1,46 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Items = () => {
+  const [hoveredId, setHoveredId] = useState(null); // To track the hovered card
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (event, id) => {
+    // Get the mouse position relative to the viewport
+    const offsetX = event.clientX;
+    const offsetY = event.clientY;
+
+    setPosition({
+      x: offsetX,
+      y: offsetY,
+    });
+
+    setHoveredId(id); // Show the View Case div when hovering
+  };
+
+  const handleMouseLeave = () => {
+    // Hide the small div when the mouse leaves the blue div
+    setHoveredId(null);
+  };
+
+  const scrollAnimation = {
+    position: "absolute",
+    whiteSpace: "nowrap",
+    animation: "scroll 2s linear infinite",
+  };
+
+  const keyframes = `
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  `;
   const items = [
     {
       id: 1,
@@ -352,7 +390,11 @@ const Items = () => {
     <div className="px[5%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-8 md:gap-y-20">
       {items.map((item) => (
         <Link key={item.id} href="/work-details">
-          <div>
+          <div
+            className="relative"
+            onMouseMove={(e) => handleMouseMove(e, item.id)} // Pass card's id
+            onMouseLeave={handleMouseLeave}
+          >
             <Image
               src={item.img}
               alt=""
@@ -366,6 +408,23 @@ const Items = () => {
             <p className="text-[20px] font-semibold opacity-80 md:text-[24px] mt-3">
               {item.detailsTitle}
             </p>
+            <style>{keyframes}</style>
+
+            {hoveredId === item.id && ( // Show the small div only if hoveredId matches the card id
+              <div
+                className="w-36 h-10 fixed z-[100]"
+                style={{
+                  top: `${position.y}px`,
+                  left: `${position.x}px`,
+                  pointerEvents: "none",
+                  transform: "translate(-50%, -50%)", // Center under the mouse
+                }}
+              >
+                <div className="bg-black text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                  <p style={scrollAnimation}>View Casestudy</p>
+                </div>
+              </div>
+            )}
           </div>
         </Link>
       ))}
