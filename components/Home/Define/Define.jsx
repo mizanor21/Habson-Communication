@@ -68,11 +68,11 @@ const Define = () => {
                 </div>
               </div>
               <div className="col-span-2 pb-5 mx-3 md:mx-0">
-                <p className="text-xl lg:text-3xl font-bold text-[#185C5D]">
+                <p className="text-xl lg:text-3xl font-bold text-[#185C5D] font-[Inter]">
                   We&apos;re brand architects, crafting narratives with
                   precision, fueled by innovation and seamless integration.
                 </p>
-                <p className="my-5 lg:my-16 text-justify text-black md:text-base opacity-60 font-semibold tracking-wider">
+                <p className="my-5 lg:my-20 text-justify text-black opacity-60 tracking-wider font-semibold  font-[Inter]">
                   “Living Brands” is fueled by an unquenchable drive to make
                   your brand a global force. We believe in the power of
                   collaboration, bringing together the best creative minds,
