@@ -7,7 +7,8 @@ import "./Nav.css";
 import Link from "next/link";
 import Image from "next/image";
 import WordRotate from "@/components/magicui/word-rotate";
-import logo from "@/public/assets/logo/logo.png";
+import logo from "@/public/assets/logo/livingMotion.gif";
+import logoSmall from "@/public/assets/logo/logo.png";
 import Button from "@/components/Custom/Button";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
@@ -68,10 +69,11 @@ const Nav = () => {
             <Link className=" flex items-end gap-1 text-[#125b5c]" href="/">
               <Image
                 src={logo}
-                className="w-20"
+                width={300}
+                height={300}
                 alt="Living Brands logo"
               ></Image>
-              <h1 className="text-4xl animate-pulse font-bold mb-2 transform origin-center">
+              {/* <h1 className="text-4xl animate-pulse font-bold mb-2 transform origin-center">
                 .
               </h1>
               <WordRotate
@@ -88,7 +90,7 @@ const Nav = () => {
                   "SEO",
                   "Chatbots",
                 ]}
-              />
+              /> */}
             </Link>
           </div>
           {on && (
@@ -101,7 +103,7 @@ const Nav = () => {
                       href="/"
                     >
                       <Image
-                        src={logo}
+                        src={logoSmall}
                         className="w-20"
                         alt="Living Brands logo"
                       ></Image>
