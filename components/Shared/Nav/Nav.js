@@ -377,7 +377,7 @@ const Nav = () => {
               </h2>
               <h2 className=" mb-4">
                 <Link
-                  href={"media-solutions"}
+                  href={"/we-works"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
                 >
                   How We Work
@@ -385,7 +385,7 @@ const Nav = () => {
               </h2>
               <h2 className=" mb-4">
                 <Link
-                  href={"tech-solutions"}
+                  href={"/partnership"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
                 >
                   Our Partnership
@@ -393,7 +393,7 @@ const Nav = () => {
               </h2>
               <h2 className=" mb-4">
                 <Link
-                  href={"tech-solutions"}
+                  href={"/achievements"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
                 >
                   Achievements
