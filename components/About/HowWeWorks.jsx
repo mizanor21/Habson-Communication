@@ -18,11 +18,11 @@ const HowWeWorks = () => {
             </div>
             <div className="mt-5 lg:mt-16 lg:pl-12">
               <p className="text-lg text-gray-700 mb-3">
-                &quot;Living Brands&quot; embodies brands that evolve and grow,
-                continuously connecting with people. Just like life, a brand
-                must adapt and stay relevant. At Living Brands, we unite
-                strategy, creativity, and technology to craft brands that are
-                more than just seen—they are experienced.
+                Living Brands embodies brands that evolve and grow, continuously
+                connecting with people. Just like life, a brand must adapt and
+                stay relevant. At Living Brands, we unite strategy, creativity,
+                and technology to craft brands that are more than just seen—they
+                are experienced.
               </p>
               <p className="text-lg text-gray-700 mb-3">
                 Our fully integrated marketing solutions bring together
