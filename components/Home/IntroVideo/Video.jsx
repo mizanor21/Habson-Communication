@@ -3,26 +3,14 @@ import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 
 const Video = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [isVisible, setIsVisible] = useState(false); // State to control visibility
+  const [position, setPosition] = useState({ x: null, y: null });
 
   const handleMouseMove = (event) => {
-    const boundingRect = event.currentTarget.getBoundingClientRect();
-    const offsetX = event.clientX - boundingRect.left;
-    const offsetY = event.clientY - boundingRect.top;
-
+    const rect = event.currentTarget.getBoundingClientRect();
     setPosition({
-      x: Math.max(0, Math.min(offsetX, boundingRect.width - 144)),
-      y: Math.max(0, Math.min(offsetY, boundingRect.height - 37)),
+      x: event.clientX - rect.left, // Adjust based on parent div's left position
+      y: event.clientY - rect.top, // Adjust based on parent div's top position
     });
-
-    // Make the small div visible when inside the blue div
-    setIsVisible(true);
-  };
-
-  const handleMouseLeave = () => {
-    // Hide the small div when the mouse leaves the blue div
-    setIsVisible(false);
   };
 
   const scrollAnimation = {
@@ -87,24 +75,22 @@ const Video = () => {
 
   return (
     <div
-      className="relative bg-black z-[110] h-screen "
+      className="relative bg-black z-[110] h-screen overflow-hidden"
       onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
     >
       <style>{keyframes}</style>
 
-      {isVisible && ( // Render the small div only if isVisible is true
-        <div
-          className="w-36 h-10 absolute"
-          style={{ top: position.y - 37, left: position.x - 72 }} // Center the div around the mouse
-        >
-          <div className="bg-black text-white z-[110] overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
-            {/* Scrolling text with inline styles */}
-            <p style={scrollAnimation}>View Case</p>
-          </div>
+      <div
+        className="w-44 h-10 absolute z-[999] border border-gray-700 rounded-full"
+        style={{ top: position.y - 50, left: position.x - 90 }}
+      >
+        <div className="bg-[#125b5c] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+          {/* Scrolling text with inline styles */}
+          <Link href={""} className="" style={scrollAnimation}>
+            Play Reel Play Reel
+          </Link>
         </div>
-      )}
-
+      </div>
       <div
         className={`transition-all duration-500 lg:h-[100vh] ease-in-out mx-auto 
         }`}
