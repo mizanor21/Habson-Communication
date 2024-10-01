@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 
 const Video = () => {
-  const [position, setPosition] = useState({ x: screen, y: screen });
+  const [position, setPosition] = useState({ x: null, y: null });
 
   const handleMouseMove = (event) => {
     const rect = event.currentTarget.getBoundingClientRect();
