@@ -13,49 +13,50 @@ const Slideshow = () => {
   const sliderRightRef = useRef(null);
   const sliderRef = useRef(null); // Small device slider ref
 
-  // useEffect(() => {
-  //   const handleMouseWheel = (e) => {
-  //     e.preventDefault();
-  //     if (e.deltaY > 0) {
-  //       // Scroll down
-  //       sliderLeftRef.current.slickNext();
-  //       sliderRightRef.current.slickPrev(); // Sync reverse slider
-  //     } else {
-  //       // Scroll up
-  //       sliderLeftRef.current.slickPrev();
-  //       sliderRightRef.current.slickNext(); // Sync reverse slider
-  //     }
-  //   };
+  useEffect(() => {
+    const handleMouseWheel = (e) => {
+      e.preventDefault();
+      if (e.deltaY > 0) {
+        // Scroll down
+        sliderLeftRef.current.slickNext();
+        sliderRightRef.current.slickPrev(); // Sync reverse slider
+      }
+      // else {
+      //   // Scroll up
+      //   sliderLeftRef.current.slickPrev();
+      //   sliderRightRef.current.slickNext(); // Sync reverse slider
+      // }
+    };
 
-  //   // Add event listener for mouse wheel
-  //   window.addEventListener("wheel", handleMouseWheel);
+    // Add event listener for mouse wheel
+    window.addEventListener("wheel", handleMouseWheel);
 
-  //   return () => {
-  //     window.removeEventListener("wheel", handleMouseWheel);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("wheel", handleMouseWheel);
+    };
+  }, []);
 
-  // const handleNextSlide = () => {
-  //   sliderLeftRef.current.slickNext();
-  //   sliderRightRef.current.slickPrev(); // Sync reverse slider
-  // };
+  const handleNextSlide = () => {
+    sliderLeftRef.current.slickNext();
+    sliderRightRef.current.slickPrev(); // Sync reverse slider
+  };
 
-  // const handlePrevSlide = () => {
-  //   sliderLeftRef.current.slickPrev();
-  //   sliderRightRef.current.slickNext(); // Sync reverse slider
-  // };
+  const handlePrevSlide = () => {
+    sliderLeftRef.current.slickPrev();
+    sliderRightRef.current.slickNext(); // Sync reverse slider
+  };
 
-  // // Handler for the small device slider arrow
-  // const handleNextClick = () => {
-  //   if (sliderRef.current) {
-  //     sliderRef.current.slickNext(); // Move to next slide
-  //   } else {
-  //     console.log("Slider reference is not available");
-  //   }
-  // };
-  // //   const handleClick = () => {
-  // //     handleNextSlide();
-  // //   };
+  // Handler for the small device slider arrow
+  const handleNextClick = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext(); // Move to next slide
+    } else {
+      console.log("Slider reference is not available");
+    }
+  };
+  const handleClickMobile = () => {
+    handleNextSlide();
+  };
   const handleNextSlides = () => {
     if (sliderLeftRef.current && sliderRightRef.current) {
       console.log("Moving to next slide!");
@@ -109,7 +110,7 @@ const Slideshow = () => {
               <div className="item h-screen">
                 <div className="left-half">
                   <img
-                    src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
+                    src="https://i.postimg.cc/TPGkHm0d/OMG-1.png"
                     className=" w-full h-full"
                     alt="slide-1"
                   />
@@ -137,7 +138,7 @@ const Slideshow = () => {
               <div className="item h-screen">
                 <div className="left-half">
                   <img
-                    src="https://i.postimg.cc/NfPZh4JV/Living-brand-pic.png"
+                    src="https://i.postimg.cc/B6VSW5xy/ad5.png"
                     className=" w-full h-full"
                     alt="slide-4"
                   />
@@ -147,6 +148,7 @@ const Slideshow = () => {
 
             {/* Left Side Button */}
           </div>
+          {/* https://i.postimg.cc/D0xHwd2S/honey.png */}
 
           {/* Right Slideshow (Bottom-Up) */}
           <div className="absolute inset-0 z-10 slideshow slideshow-right right-0">
@@ -154,7 +156,7 @@ const Slideshow = () => {
               <div className="item h-screen">
                 <div className="right-half">
                   <img
-                    src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
+                    src="https://i.postimg.cc/TPGkHm0d/OMG-1.png"
                     className=" w-full h-full"
                     alt="slide-4-reverse"
                   />
@@ -163,7 +165,7 @@ const Slideshow = () => {
               <div className="item h-screen">
                 <div className="right-half">
                   <img
-                    src="https://i.postimg.cc/NfPZh4JV/Living-brand-pic.png"
+                    src="https://i.postimg.cc/B6VSW5xy/ad5.png"
                     className=" w-full h-full"
                     alt="slide-1-reverse"
                   />
@@ -207,7 +209,7 @@ const Slideshow = () => {
           <Slider ref={sliderRef} {...smallSlider}>
             <div className="item h-[450px]">
               <img
-                src="https://i.postimg.cc/TPv19Qx1/mark-active-school.jpg"
+                src="https://i.postimg.cc/TPGkHm0d/OMG-1.png"
                 className="h-full w-full"
                 alt="slide-1"
               />
@@ -240,7 +242,7 @@ const Slideshow = () => {
 
           <button
             className="absolute bottom-10  left-5 z-[9999] cursor-pointer"
-            onClick={handleClick}
+            onClick={handleClickMobile}
           >
             <BsArrowRight
               className="text-5xl text-[125b5c] bg-white p-3 rounded-full "
