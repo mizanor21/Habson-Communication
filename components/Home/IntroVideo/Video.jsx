@@ -1,7 +1,34 @@
 "use client";
+import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 
 const Video = () => {
+  const [position, setPosition] = useState({ x: screen, y: screen });
+
+  const handleMouseMove = (event) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    setPosition({
+      x: event.clientX - rect.left, // Adjust based on parent div's left position
+      y: event.clientY - rect.top, // Adjust based on parent div's top position
+    });
+  };
+
+  const scrollAnimation = {
+    position: "absolute",
+    whiteSpace: "nowrap",
+    animation: "scroll 2s linear infinite",
+  };
+
+  const keyframes = `
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  `;
   const [isScrolledDown, setIsScrolledDown] = useState(false);
   const [isFirstPlay, setIsFirstPlay] = useState(true); // Track first play
 
@@ -47,10 +74,25 @@ const Video = () => {
   };
 
   return (
-    <div className="relative bg-black z-[110]" title="Play Reel">
+    <div
+      className="relative bg-black z-[110] h-screen overflow-hidden"
+      onMouseMove={handleMouseMove}
+    >
+      <style>{keyframes}</style>
+
       <div
-        className={`transition-all duration-500 lg:h-[100vh] ease-in-out mx-auto ${
-          isScrolledDown ? "w-full" : "w-[90%]"
+        className="w-44 h-10 absolute z-[999] border border-gray-700 rounded-full"
+        style={{ top: position.y - 50, left: position.x - 90 }}
+      >
+        <div className="bg-[#125b5c] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+          {/* Scrolling text with inline styles */}
+          <Link href={""} className="" style={scrollAnimation}>
+            Play Reel Play Reel
+          </Link>
+        </div>
+      </div>
+      <div
+        className={`transition-all duration-500 lg:h-[100vh] ease-in-out mx-auto 
         }`}
       >
         <video
