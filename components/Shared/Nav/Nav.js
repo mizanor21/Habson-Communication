@@ -363,14 +363,50 @@ const Nav = () => {
           onMouseEnter={() => setIsHoveredAbout(true)}
           onMouseLeave={() => setIsHoveredAbout(false)}
         >
-          <div className=" flex gap-5 bg-white h-[600px]  mt-10 px-[5%] pt-5 pb-10">
-            <div className="flex items-start gap-4">
-              <h2 className="text-2xl min-w-80 max-w-[350px] text-justify lg:text-2xl font-medium mr-14">
-                Living Brands & Habson&apos;s remarkable performance at the
-                Flame Awards Asia 2024, securing ten awards including five
-                golds, showcases their exceptional creativity and dedication to
-                excellence.
+          <div className="flex justify-between bg-white mt-10 gap-5 px-[5%] pt-5 pb-10 lg:pb-64">
+            <div className="min-w-72  solutions">
+              <h2 className="mb-4">
+                <Link
+                  href={"brand-solutions"}
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c]"
+                >
+                  Who We Are
+                </Link>
               </h2>
+              <h2 className=" mb-4">
+                <Link
+                  href={"media-solutions"}
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                >
+                  How We Work
+                </Link>
+              </h2>
+              <h2 className=" mb-4">
+                <Link
+                  href={"tech-solutions"}
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                >
+                  Our Partnership
+                </Link>
+              </h2>
+              <h2 className=" mb-4">
+                <Link
+                  href={"tech-solutions"}
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                >
+                  Achievements
+                </Link>
+              </h2>
+              <h2 className=" mb-4">
+                <Link
+                  href={"tech-solutions"}
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                >
+                  Meet The Team
+                </Link>
+              </h2>
+            </div>
+            <div className="flex gap-5">
               <Link href={"/awards"}>
                 <video className="rounded-2xl w-[600px]" autoPlay loop muted>
                   <source src="/videos/about1.mp4" type="video/mp4" />
@@ -387,6 +423,62 @@ const Nav = () => {
           </div>
         </div>
       )}
+
+      {/* {isHoveredAbout && (
+        <div
+          className="card-containers w-screen mt-1  z-[115]"
+          onMouseEnter={() => setIsHoveredAbout(true)}
+          onMouseLeave={() => setIsHoveredAbout(false)}
+        >
+          <div className="flex justify-between bg-white mt-10 gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
+            <div className="min-w-72  solutions">
+              <h2 className="mb-4">
+                <Link
+                  href={"brand-solutions"}
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c]"
+                >
+                  Brand Solution
+                </Link>
+              </h2>
+              <h2 className=" mb-4">
+                <Link
+                  href={"media-solutions"}
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                >
+                  Media Solution
+                </Link>
+              </h2>
+              <h2>
+                <Link
+                  href={"tech-solutions"}
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                >
+                  Tech Solution
+                </Link>
+              </h2>
+            </div>
+            <React.Fragment>
+              {solutionsData.map((item, index) => (
+                <Link
+                  href={"/work"}
+                  key={index}
+                  className="card cursor-pointer "
+                >
+                  <div className="card_image">
+                    <Image
+                      className="rounded-2xl "
+                      src={item?.src}
+                      alt={index}
+                      width={700}
+                      height={500}
+                    />
+                  </div>
+                </Link>
+              ))}
+            </React.Fragment>
+          </div>
+        </div>
+      )} */}
 
       {isHoveredResources && (
         <div

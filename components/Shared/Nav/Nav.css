@@ -70,9 +70,9 @@
     color: inherit;
 }
 
-/* .navber-links ul li.active {
+.navber-links ul li.active {
     color: #ee4580
-} */
+}
 
 .navber-links ul li:hover {
     color: var(--color-orange);

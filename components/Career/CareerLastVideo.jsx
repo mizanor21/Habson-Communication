@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+"use client";
+import React, { useRef, useState } from "react";
 
 const CareerLastVideo = () => {
   const [isFirstPlay, setIsFirstPlay] = useState(true);

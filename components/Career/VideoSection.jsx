@@ -1,4 +1,5 @@
-import { useRef } from "react";
+"use client";
+import { useRef, useState } from "react";
 
 const VideoSection = () => {
   const [isFirstPlay, setIsFirstPlay] = useState(true);
