@@ -17,6 +17,9 @@ module.exports = {
     //   },
     // },
     extend: {
+      transitionDuration: {
+        2000: "2000ms",
+      },
       // Extend Tailwind with additional gradients
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

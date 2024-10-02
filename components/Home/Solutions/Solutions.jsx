@@ -128,7 +128,7 @@ const Solutions = () => {
     <>
       <div className="overflow-hidden h-screen  relative z-[110] bg-white  py-20 hidden md:block">
         <div
-          className="flex transition-transform duration-300"
+          className="flex transition-all duration-[5000ms] ease-out"
           style={{
             transform: `translateX(${offset}px)`,
             width: `${totalWidth}px`,

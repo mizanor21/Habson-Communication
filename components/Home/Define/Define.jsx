@@ -82,7 +82,7 @@ const Define = () => {
                   digital marketing, crafting impactful campaigns that ignite
                   brand growth.
                 </p>
-                <div className="">
+                <div>
                   <Link href="/careers">
                     <Button>
                       Discover Our Dynamic Culture{" "}
