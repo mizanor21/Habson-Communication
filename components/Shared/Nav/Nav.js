@@ -22,6 +22,7 @@ const Nav = () => {
   const [isHoveredAbout, setIsHoveredAbout] = useState(false);
   const [isHoveredResources, setIsHoveredResources] = useState(false);
   const [isActive, setIsActive] = useState("");
+  const [innerActive, setInnerActive] = useState("");
 
   // Toggle functions
   const toggleSolutions = () => setSolutions(!solutions);
@@ -32,6 +33,10 @@ const Nav = () => {
   // Navigation handlers
   const handleNavigation = (path) => {
     setIsActive(path);
+    toggleOn();
+  };
+  const handleNavigations = (path) => {
+    setInnerActive(path);
     toggleOn();
   };
 
@@ -241,8 +246,10 @@ const Nav = () => {
       <div className="navber-links text-[#125b5c] ">
         <ul>
           <li
-            onClick={() => setIsActive("/work")}
-            className={`${isActive === "/work" && "active"}`}
+            onClick={() => handleNavigations("/work")}
+            className={`${
+              innerActive == "/work" ? "actives" : "text-[#115c5c]"
+            }`}
           >
             <Link href="/work" className="link">
               Work
@@ -289,8 +296,10 @@ const Nav = () => {
           </li>
 
           <li
-            onClick={() => setIsActive("/careers")}
-            className={`${isActive === "/careers" && "active"}`}
+            onClick={() => handleNavigations("/careers")}
+            className={`${
+              innerActive == "/careers" ? "actives" : "text-[#115c5c]"
+            }`}
           >
             <Link href="/careers" className="link">
               Careers
@@ -314,28 +323,49 @@ const Nav = () => {
         >
           <div className="flex justify-between bg-white mt-10 gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
             <div className="min-w-72  solutions">
-              <h2 className="mb-4">
+              <h2
+                onClick={() => handleNavigations("/brand-solutions")}
+                className={`${
+                  innerActive == "/brand-solutions"
+                    ? "actives"
+                    : "text-[#115c5c]"
+                } mb-4`}
+              >
                 <Link
                   href={"brand-solutions"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c]"
+                  className="text-2xl lg:text-3xl font-bold "
                   onClick={() => setIsHoveredSolutions(false)}
                 >
                   Brand Solution
                 </Link>
               </h2>
-              <h2 className=" mb-4">
+              <h2
+                onClick={() => handleNavigations("/media-solutions")}
+                className={`${
+                  innerActive == "/media-solutions"
+                    ? "actives"
+                    : "text-[#115c5c]"
+                } mb-4`}
+              >
                 <Link
                   href={"media-solutions"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  className="text-2xl lg:text-3xl font-bold "
                   onClick={() => setIsHoveredSolutions(false)}
                 >
                   Media Solution
                 </Link>
               </h2>
-              <h2>
+              <h2
+                onClick={() => handleNavigations("/tech-solutions")}
+                className={`${
+                  innerActive == "/tech-solutions"
+                    ? "actives"
+                    : "text-[#115c5c]"
+                } mb-4`}
+              >
                 <Link
                   href={"tech-solutions"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] transition-transform duration-1000 ease-out"
+                  className="text-2xl lg:text-3xl font-bold  transition-transform duration-1000 ease-out"
                   onClick={() => setIsHoveredSolutions(false)}
                 >
                   Tech Solution
@@ -374,46 +404,73 @@ const Nav = () => {
         >
           <div className="flex justify-between bg-white mt-10 gap-5 px-[5%] pt-5 pb-10 lg:pb-64">
             <div className="min-w-72  solutions">
-              <h2 className="mb-4">
+              <h2
+                onClick={() => handleNavigations("/who-we-are")}
+                className={`${
+                  innerActive == "/who-we-are" ? "actives" : "text-[#115c5c]"
+                } mb-4`}
+              >
                 <Link
                   href={"/who-we-are"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c]"
+                  className="text-2xl lg:text-3xl font-bold  "
                   onClick={() => setIsHoveredAbout(false)}
                 >
                   Who We Are
                 </Link>
               </h2>
-              <h2 className=" mb-4">
+              <h2
+                onClick={() => handleNavigations("/we-works")}
+                className={`${
+                  innerActive == "/we-works" ? "actives" : "text-[#115c5c]"
+                } mb-4`}
+              >
                 <Link
                   href={"we-works"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  className="text-2xl lg:text-3xl font-bold   "
                   onClick={() => setIsHoveredAbout(false)}
                 >
                   How We Work
                 </Link>
               </h2>
-              <h2 className=" mb-4">
+              <h2
+                onClick={() => handleNavigations("/partnership")}
+                className={`${
+                  innerActive == "/partnership" ? "actives" : "text-[#115c5c]"
+                } mb-4`}
+              >
                 <Link
                   href={"partnership"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  className="text-2xl lg:text-3xl font-bold   "
                   onClick={() => setIsHoveredAbout(false)}
                 >
                   Our Partnership
                 </Link>
               </h2>
-              <h2 className=" mb-4">
+              <h2
+                onClick={() => handleNavigations("/achievements")}
+                className={`${
+                  innerActive == "/achievements" ? "actives" : "text-[#115c5c]"
+                } mb-4`}
+              >
                 <Link
                   href={"achievements"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  className="text-2xl lg:text-3xl font-bold   "
                   onClick={() => setIsHoveredAbout(false)}
                 >
                   Achievements
                 </Link>
               </h2>
-              <h2 className=" mb-4">
+              <h2
+                onClick={() => handleNavigations("/tech-solutions")}
+                className={`${
+                  innerActive == "/tech-solutions"
+                    ? "actives"
+                    : "text-[#115c5c]"
+                } mb-4`}
+              >
                 <Link
                   href={"tech-solutions"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  className="text-2xl lg:text-3xl font-bold  "
                   onClick={() => setIsHoveredAbout(false)}
                 >
                   Meet The Team
@@ -465,19 +522,29 @@ const Nav = () => {
         >
           <div className="card_container bg-white mt-10 flex gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
             <div className="min-w-72 ">
-              <h2 className="mb-4 ">
+              <h2
+                onClick={() => handleNavigations("/blogs")}
+                className={`${
+                  innerActive == "/blogs" ? "actives" : "text-[#115c5c]"
+                } mb-4`}
+              >
                 <Link
                   href={"/blogs"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  className="text-2xl lg:text-3xl font-bold   "
                   onClick={() => setIsHoveredResources(false)}
                 >
                   Blogs
                 </Link>
               </h2>
-              <h2 className=" mb-4">
+              <h2
+                onClick={() => handleNavigations("/the-edge")}
+                className={`${
+                  innerActive == "/the-edge" ? "actives" : "text-[#115c5c]"
+                } mb-4`}
+              >
                 <Link
                   href={"the-edge"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c]"
+                  className="text-2xl lg:text-3xl font-bold  "
                   onClick={() => setIsHoveredResources(false)}
                 >
                   The Edge
