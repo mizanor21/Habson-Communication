@@ -43,11 +43,12 @@ const MediaSolutions = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#125b5c] font-bold mb-10">
             Media Solutions
           </h2>
-          <p className="text-lg font-normal  text-black mb-10">
+          <p className="text-lg font-normal  text-black mb-5">
             Our Media Sciences department specializes in implementing and
             managing paid marketing strategies to increase your brand awareness,
             market share and business revenue.
           </p>
+          <hr className="h-[3px] bg-black mb-5 max-w-52" />
           <p className="font-bold text-xl text-[#125b5c] mb-10">
             Proud to be collaborating with media industry leaders to power
             growth for brands!

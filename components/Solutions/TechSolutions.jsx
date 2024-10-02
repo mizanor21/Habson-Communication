@@ -70,7 +70,7 @@ const TechSolutions = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#125b5c] font-bold mb-10">
             Tech Solutions
           </h2>
-          <p className="text-lg font-normal  text-black mb-10 text-justify">
+          <p className="text-lg font-normal  text-black mb-5 text-justify">
             Our Digital Transformation team leverages cutting-edge technology to
             build seamless customer journeys across all touchpoints. We create
             integrated ecosystems spanning web, social, CRM, ERP, and
@@ -78,6 +78,7 @@ const TechSolutions = () => {
             retain, and engage customers. Our custom platforms optimize every
             interaction, driving growth and customer loyalty.
           </p>
+          <hr className="h-[3px] bg-black mb-5 max-w-52" />
           <p className="font-bold text-xl text-[#125b5c] mb-10">
             Proud to work with the biggest brands in India & Abroad
           </p>
