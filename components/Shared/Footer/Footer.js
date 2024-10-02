@@ -20,11 +20,12 @@ const Footer = () => {
         />
       </footer>
       <footer className="footer block lg:flex lg:justify-between border-t border-gray-400 px-10 py-4 text-white justify-center items-center">
-        <div className="flex justify-center items-center gap-2 text-3xl">
+        <div className="flex justify-center items-center gap-4 text-3xl">
           <Link
             href="https://www.facebook.com/Livingbrands.co"
             target="_blank"
             rel="noopener noreferrer"
+            className="transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-blue-600"
           >
             <FaFacebook />
           </Link>
@@ -32,6 +33,7 @@ const Footer = () => {
             href="https://www.instagram.com/livingbrands.co/"
             target="_blank"
             rel="noopener noreferrer"
+            className="transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-pink-500"
           >
             <FaInstagramSquare />
           </Link>
@@ -39,6 +41,7 @@ const Footer = () => {
             href="https://www.youtube.com/@LivingBrandsBD/videos"
             target="_blank"
             rel="noopener noreferrer"
+            className="transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-red-600"
           >
             <FaYoutube />
           </Link>
@@ -46,6 +49,7 @@ const Footer = () => {
             href="https://www.linkedin.com/company/livingbrandsbyhabson/"
             target="_blank"
             rel="noopener noreferrer"
+            className="transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-blue-700"
           >
             <FaLinkedin />
           </Link>
