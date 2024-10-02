@@ -63,7 +63,7 @@ const BrandSolutions = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#125b5c] font-bold mb-7 md:mb-10">
             Brand Solutions
           </h2>
-          <p className="text-lg font-normal  text-black mb-10 text-justify">
+          <p className="text-lg font-normal  text-black mb-5 text-justify">
             From crafting compelling daily content to executing high-impact
             flagship campaigns, we provide a comprehensive range of digital
             services tailored to your unique business objectives. We combine
@@ -71,6 +71,7 @@ const BrandSolutions = () => {
             dynamic animation to create a cohesive digital presence that drives
             tangible results.
           </p>
+          <hr className="h-[3px] bg-black mb-5 max-w-52" />
           <p className="font-bold text-xl text-[#125b5c] mb-10">
             Proud to work with the biggest brands in India & Abroad
           </p>
@@ -164,7 +165,7 @@ const BrandSolutions = () => {
                   open === index ? "max-h-96" : "max-h-0"
                 }`}
               >
-                <div className="py-2 text-black">{item.content}</div>
+                <div className="py-2 text-black pb-7">{item.content}</div>
               </div>
             </div>
           ))}

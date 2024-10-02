@@ -165,7 +165,7 @@ const TechSolutions = () => {
                   open === index ? "max-h-96" : "max-h-0"
                 }`}
               >
-                <div className="py-2 text-black">{item.content}</div>
+                <div className="py-2 text-black pb-7">{item.content}</div>
               </div>
             </div>
           ))}
