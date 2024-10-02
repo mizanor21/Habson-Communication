@@ -38,12 +38,12 @@ const ButtonEffect = ({ children }) => {
 
   return (
     <div
-      className="flex gap-2 items-center relative w-full rounded-full max-w-xs mx-auto py-3 px-8 text-center text-lg text-[#115c5c] border-2 border-[#115c5c] overflow-hidden transition-colors duration-300 ease-in-out hover:text-white"
+      className="btn-posnawr relative block flex items-center gap-2 w-full rounded-full max-w-xs mx-auto py-3 px-8 text-center text-lg text-[#115c5c] border-2 border-[#115c5c] overflow-hidden transition-colors duration-300 ease-in-out hover:text-white"
       href="#"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {children} <MdOutlineArrowRightAlt className="text-2xl" />
+      {children} <MdOutlineArrowRightAlt className="text-xl" />
       <span
         className="absolute block bg-[#115c5c] rounded-full transition-all ease-in-out duration-700 -z-10"
         style={{ width: "0", height: "0", transform: "translate(-50%, -50%)" }}
