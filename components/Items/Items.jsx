@@ -400,7 +400,7 @@ const Items = () => {
               alt=""
               width={600}
               height={100}
-              className="rounded-xl h-68"
+              className="rounded-xl"
             />
             <h2 className="text-md lg:text-lg font-extrabold mt-3">
               {item.title}
