@@ -4,7 +4,7 @@ const HowWeWorks = () => {
   return (
     <div className="relative z-[110] bg-white pb-10 lg:pb-20 font-[Inter]">
       <div className="text-justify">
-        <h1 className="text-3xl font-bold text-[#125B5C] py-[5%] lg:py-[95px] mb-8 md:text-3xl lg:text-5xl">
+        <h1 className="text-3xl font-bold text-[#125B5C] py-[5%] lg:py-[80px] mb-8 md:text-3xl lg:text-5xl">
           Let&apos;s Make Your Brand Live. Choose Living Brands.
         </h1>
         <hr className="w-full text-gray-400" />
