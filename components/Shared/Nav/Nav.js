@@ -317,7 +317,7 @@ const Nav = () => {
       {/* Dropdown services card section */}
       {isHoveredSolutions && (
         <div
-          className="card-containers w-screen mt-1  z-[115]"
+          className="card-containers w-screen z-[115]"
           onMouseEnter={() => setIsHoveredSolutions(true)}
           onMouseLeave={() => setIsHoveredSolutions(false)}
         >

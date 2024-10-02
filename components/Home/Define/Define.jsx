@@ -6,6 +6,7 @@ import Image from "next/image";
 import Button from "@/components/Custom/Button";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import "./Define.css";
+import ButtonEffect from "@/app/button/page";
 
 const Define = () => {
   const [angle, setAngle] = useState(0);
@@ -81,12 +82,13 @@ const Define = () => {
                   digital marketing, crafting impactful campaigns that ignite
                   brand growth.
                 </p>
-                <div>
+                <div className="">
                   <Link href="/careers">
                     <Button>
                       Discover Our Dynamic Culture{" "}
                       <MdOutlineArrowRightAlt className="text-xl" />
                     </Button>
+                    {/* <ButtonEffect>Discover Our Dynamic Culture</ButtonEffect> */}
                   </Link>
                 </div>
               </div>

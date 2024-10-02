@@ -22,7 +22,9 @@ const WhoWeAre = () => {
           {/* <button className="border hidden md:block p-3 px-14 rounded-full overflow-hidden transition-transform duration-300 text-sm hover:bg-white hover:text-black border-black text-white bg-[#125b5c] mt-5">
             Access Living Brand&apos;s Bots →
           </button> */}
-          <ButtonEffect>Access Living Brand&apos;s Bots</ButtonEffect>
+          <div className="max-w-md">
+            <ButtonEffect>Access Living Brand&apos;s Bots</ButtonEffect>
+          </div>
         </div>
         <div className="order-first md:order-last flex justify-center items-center">
           <video className="rounded-2xl lg:w-[800px]" autoPlay loop muted>

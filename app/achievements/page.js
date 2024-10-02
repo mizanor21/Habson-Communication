@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonEffect from "../button/page";
 
 const Achievement = () => {
   return (
