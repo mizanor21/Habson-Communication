@@ -113,7 +113,7 @@ const Nav = () => {
                         .
                       </h1>
                       <WordRotate
-                        className="text-sm md:text-lg font-bold p-0 m-0 w-full"
+                        className="text-sm md:text-lg font-bold p-0 m-0 w-full duration-1000"
                         words={[
                           "Brands",
                           "Tech",
