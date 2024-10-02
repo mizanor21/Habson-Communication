@@ -17,11 +17,9 @@ const Card = ({ section, index }) => {
               {section?.title}
             </h3>
             <p className="carousel-p hidden-on-hover">{section?.content}</p>
-            <Link href={`${section?.path}`}>
-              <div className="flex justify-center pt-5 lg:pt-20">
-                <BsArrowRight className="text-2xl lg:text-5xl carousel-p text-[#125b5c] p-2 hidden-on-hover  bg-white rounded-full" />
-              </div>
-            </Link>
+            <div className="flex justify-center pt-5 lg:pt-20">
+              <BsArrowRight className="text-2xl lg:text-5xl carousel-p text-[#125b5c] p-2 hidden-on-hover  bg-white rounded-full" />
+            </div>
           </div>
         </div>
       </div>
@@ -86,7 +84,7 @@ const Solutions = () => {
       id: "slide-9",
       title: "Films & Production",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, libero. Molestias quaerat, facilis laboriosam aut tempora ab quidem? Ullam nemo quis facilis nostrum sint maxime doloremque consequatur vero assumenda distinctio!",
+        "Driving impactful engagement, our social media solutions are crafted to amplify brand presence and foster genuine connections. From content creation to community management, we tailor strategies with creative finesse and utilize data-driven insights to navigate the digital landscape, achieving tangible results and lasting influence.",
     },
     {
       id: "slide-10",
@@ -141,7 +139,9 @@ const Solutions = () => {
           }}
         >
           {sections.map((section, index) => (
-            <Card key={index} section={section} />
+            <Link href={`${section?.path}`} key={index}>
+              <Card section={section} />
+            </Link>
           ))}
         </div>
       </div>
@@ -151,7 +151,7 @@ const Solutions = () => {
           {sections.map((section, sectionIndex) => (
             <div
               key={sectionIndex}
-              className={`hover-container ${section?.id}   hover:text-white group pt-10`}
+              className={`hover-container ${section?.id} hover:text-white group pt-10`}
             >
               <div className="h-full md:flex items-center justify-center border-b border-black">
                 <div className="px-4">

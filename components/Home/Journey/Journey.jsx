@@ -12,10 +12,7 @@ const Journey = () => {
   };
   return (
     <div className="bg-white relative z-[110]">
-      <div
-        data-aos="fade-up"
-        className=" flex justify-center items-center px-[5%] py-10 "
-      >
+      <div className=" flex justify-center items-center px-[5%] py-10 lg:pt-36">
         <div
           style={styles}
           className="flex lg:max-w-[1200px] justify-center items-center min-h-60 lg:h-[40vh] rounded-lg md:rounded-badge"
