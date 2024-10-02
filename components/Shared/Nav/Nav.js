@@ -10,6 +10,7 @@ import WordRotate from "@/components/magicui/word-rotate";
 import logo from "@/public/assets/logo/logo.png";
 import Button from "@/components/Custom/Button";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
+import ButtonEffect from "@/app/button/page";
 
 const Nav = () => {
   // State declarations
@@ -296,10 +297,11 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-        <Link href={"/contact"}>
-          <Button>
+        <Link href={"/contact"} className="flex">
+          {/* <Button>
             Contact Us <MdOutlineArrowRightAlt className="text-xl" />
-          </Button>
+          </Button> */}
+          <ButtonEffect>Contact Us</ButtonEffect>
         </Link>
       </div>
 

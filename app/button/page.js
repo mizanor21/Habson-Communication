@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const ButtonPosnawr = ({ children }) => {
   useEffect(() => {
@@ -37,14 +38,14 @@ const ButtonPosnawr = ({ children }) => {
 
   return (
     <div
-      className="btn-posnawr relative block w-full rounded-full max-w-xs mx-auto py-3 px-6 text-center text-lg text-[#00abec] border-2 border-[#00abec] overflow-hidden transition-colors duration-300 ease-in-out hover:text-white"
+      className="flex gap-2 items-center relative w-full rounded-full max-w-xs mx-auto py-3 px-8 text-center text-lg text-[#115c5c] border-2 border-[#115c5c] overflow-hidden transition-colors duration-300 ease-in-out hover:text-white"
       href="#"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {children}
+      {children} <MdOutlineArrowRightAlt className="text-2xl" />
       <span
-        className="absolute block bg-[#00abec] rounded-full transition-all ease-in-out duration-700 -z-10"
+        className="absolute block bg-[#115c5c] rounded-full transition-all ease-in-out duration-700 -z-10"
         style={{ width: "0", height: "0", transform: "translate(-50%, -50%)" }}
       ></span>
     </div>
