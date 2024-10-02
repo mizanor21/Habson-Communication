@@ -259,6 +259,7 @@ const Nav = () => {
             className={`dropdown ${isActive === "/solutions" ? "active" : ""}`}
             onMouseEnter={() => setIsHoveredSolutions(true)}
             onMouseLeave={() => setIsHoveredSolutions(false)}
+            onClick={() => setIsHoveredSolutions(false)}
           >
             <p className="link group">Solutions</p>
             {/* Add transition and transform to the icon */}
@@ -273,6 +274,7 @@ const Nav = () => {
             className={`dropdown ${isActive === "/about" ? "active" : ""}`}
             onMouseEnter={() => setIsHoveredAbout(true)}
             onMouseLeave={() => setIsHoveredAbout(false)}
+            onClick={() => setIsHoveredAbout(false)}
           >
             <p className="link group">About</p>
             <RiArrowDropDownLine
@@ -286,6 +288,7 @@ const Nav = () => {
             className={`dropdown ${isActive === "/resources" ? "active" : ""}`}
             onMouseEnter={() => setIsHoveredResources(true)}
             onMouseLeave={() => setIsHoveredResources(false)}
+            onClick={() => setIsHoveredResources(false)}
           >
             <p className="link group">Resources</p>
             <RiArrowDropDownLine
