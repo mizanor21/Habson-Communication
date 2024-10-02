@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
-const ButtonPosnawr = ({ children }) => {
+const ButtonEffect = ({ children }) => {
   useEffect(() => {
     const buttons = document.querySelectorAll(".btn-posnawr");
 
@@ -52,4 +52,4 @@ const ButtonPosnawr = ({ children }) => {
   );
 };
 
-export default ButtonPosnawr;
+export default ButtonEffect;
