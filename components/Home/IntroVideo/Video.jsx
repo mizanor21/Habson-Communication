@@ -4,6 +4,18 @@ import React, { useState, useEffect, useRef } from "react";
 
 const Video = () => {
   const [position, setPosition] = useState({ x: null, y: null });
+  const [isFirstVisit, setIsFirstVisit] = useState(true); // Track first visit
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    // Check if the user has visited before
+    const hasVisited = localStorage.getItem("hasVisited");
+    if (hasVisited) {
+      setIsFirstVisit(false); // Not the first visit
+    } else {
+      localStorage.setItem("hasVisited", "true"); // Mark as visited
+    }
+  }, []);
 
   const handleMouseMove = (event) => {
     const rect = event.currentTarget.getBoundingClientRect();
@@ -29,30 +41,7 @@ const Video = () => {
       }
     }
   `;
-  const [isScrolledDown, setIsScrolledDown] = useState(false);
-  const [isFirstPlay, setIsFirstPlay] = useState(true); // Track first play
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolledDown(true);
-      } else {
-        setIsScrolledDown(false);
-      }
-    };
-
-    // Attach the scroll event listener
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      // Clean up the event listener on component unmount
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const videoRef = useRef(null);
-
-  // Function to toggle play/pause on click
   const handleVideoClick = () => {
     if (videoRef.current) {
       if (videoRef.current.paused) {
@@ -60,16 +49,6 @@ const Video = () => {
       } else {
         videoRef.current.pause(); // Pause the video if playing
       }
-    }
-  };
-
-  // Function to handle video end event
-  const handleVideoEnd = () => {
-    if (isFirstPlay) {
-      setIsFirstPlay(false); // Set flag that first play is done
-      videoRef.current.muted = false; // Unmute the video
-      videoRef.current.currentTime = 0; // Restart video from beginning
-      videoRef.current.play(); // Play video with sound
     }
   };
 
@@ -91,18 +70,17 @@ const Video = () => {
           </Link>
         </div>
       </div>
-      <div
-        className={`transition-all duration-500 lg:h-[100vh] ease-in-out mx-auto 
-        }`}
-      >
+      <div className="transition-all duration-500 lg:h-[100vh] ease-in-out mx-auto">
         <video
           ref={videoRef}
           className="absolute h-[100%] top-0 left-0 w-full md:h-full object-cover"
           autoPlay
+          playsInline
           loop
-          // muted={isFirstPlay} // Muted during the first play
+          preload="auto" // Preload video to reduce lag
+          muted={isFirstVisit} // Muted only on the first visit
           onClick={handleVideoClick} // Toggle play/pause on click
-          onEnded={handleVideoEnd} // On first play end, restart with sound
+          poster="/images/loading.jpg" // Poster image while video loads
         >
           <source src="/videos/Intro.mp4" type="video/mp4" />
           Your browser does not support the video tag.
