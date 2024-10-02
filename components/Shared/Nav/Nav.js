@@ -316,6 +316,7 @@ const Nav = () => {
                 <Link
                   href={"brand-solutions"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c]"
+                  onClick={() => setIsHoveredSolutions(false)}
                 >
                   Brand Solution
                 </Link>
@@ -324,6 +325,7 @@ const Nav = () => {
                 <Link
                   href={"media-solutions"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  onClick={() => setIsHoveredSolutions(false)}
                 >
                   Media Solution
                 </Link>
@@ -331,7 +333,8 @@ const Nav = () => {
               <h2>
                 <Link
                   href={"tech-solutions"}
-                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  className="text-2xl lg:text-3xl font-bold  text-[#115c5c] transition-transform duration-1000 ease-out"
+                  onClick={() => setIsHoveredSolutions(false)}
                 >
                   Tech Solution
                 </Link>
@@ -343,6 +346,7 @@ const Nav = () => {
                   href={"/work"}
                   key={index}
                   className="card cursor-pointer "
+                  onClick={() => isHoveredSolutions(false)}
                 >
                   <div className="card_image">
                     <Image
@@ -370,32 +374,36 @@ const Nav = () => {
             <div className="min-w-72  solutions">
               <h2 className="mb-4">
                 <Link
-                  href={"brand-solutions"}
+                  href={"/who-we-are"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c]"
+                  onClick={() => setIsHoveredAbout(false)}
                 >
                   Who We Are
                 </Link>
               </h2>
               <h2 className=" mb-4">
                 <Link
-                  href={"media-solutions"}
+                  href={"we-works"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  onClick={() => setIsHoveredAbout(false)}
                 >
                   How We Work
                 </Link>
               </h2>
               <h2 className=" mb-4">
                 <Link
-                  href={"tech-solutions"}
+                  href={"partnership"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  onClick={() => setIsHoveredAbout(false)}
                 >
                   Our Partnership
                 </Link>
               </h2>
               <h2 className=" mb-4">
                 <Link
-                  href={"tech-solutions"}
+                  href={"achievements"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  onClick={() => setIsHoveredAbout(false)}
                 >
                   Achievements
                 </Link>
@@ -404,6 +412,7 @@ const Nav = () => {
                 <Link
                   href={"tech-solutions"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  onClick={() => setIsHoveredAbout(false)}
                 >
                   Meet The Team
                 </Link>
@@ -448,7 +457,7 @@ const Nav = () => {
 
       {isHoveredResources && (
         <div
-          className="card-containers w-screen z-[115] mt-1"
+          className="card-containers w-screen z-[115] mt-1 border-b-2"
           onMouseEnter={() => setIsHoveredResources(true)}
           onMouseLeave={() => setIsHoveredResources(false)}
         >
@@ -458,6 +467,7 @@ const Nav = () => {
                 <Link
                   href={"/blogs"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c] "
+                  onClick={() => setIsHoveredResources(false)}
                 >
                   Blogs
                 </Link>
@@ -466,6 +476,7 @@ const Nav = () => {
                 <Link
                   href={"the-edge"}
                   className="text-2xl lg:text-3xl font-bold  text-[#115c5c]"
+                  onClick={() => setIsHoveredResources(false)}
                 >
                   The Edge
                 </Link>
@@ -480,6 +491,7 @@ const Nav = () => {
                     alt={index}
                     width={700}
                     height={500}
+                    onClick={() => setIsHoveredResources(false)}
                   />
                 </div>
               </Link>
