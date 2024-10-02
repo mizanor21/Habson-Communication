@@ -157,8 +157,8 @@ const Nav = () => {
                     </div>
                   </li>
                   {solutions && (
-                    <div className="vetore">
-                      <ul className="bolod">
+                    <div className="itemHover">
+                      <ul>
                         <li>
                           <Link href={"/brand-solutions"} className=" ">
                             Brand Solutions
@@ -187,7 +187,7 @@ const Nav = () => {
                     </div>
                   </li>
                   {about && (
-                    <div className="vetore">
+                    <div className="itemHover">
                       <ul>
                         <li>
                           <Link href={"/awards"} className="">
@@ -206,7 +206,7 @@ const Nav = () => {
                     </div>
                   </li>
                   {resources && (
-                    <div className="vetore">
+                    <div className="itemHover">
                       <ul>
                         <li>
                           <Link href={"/blogs"} className="">
@@ -459,7 +459,7 @@ const Nav = () => {
 
       {isHoveredResources && (
         <div
-          className="card-containers w-screen z-[115] mt-1 border-b-2"
+          className="card-containers w-screen z-[115] mt-1"
           onMouseEnter={() => setIsHoveredResources(true)}
           onMouseLeave={() => setIsHoveredResources(false)}
         >
