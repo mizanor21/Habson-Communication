@@ -38,7 +38,7 @@ const ButtonEffect = ({ children }) => {
 
   return (
     <div
-      className="btn-posnawr relative block flex items-center gap-2 w-full rounded-full max-w-xs mx-auto py-3 px-8 text-center text-lg text-[#115c5c] border-2 border-[#115c5c] overflow-hidden transition-colors duration-300 ease-in-out hover:text-white"
+      className="btn-posnawr relative flex justify-center items-center gap-2 w-full rounded-full max-w-md  py-3 px-8 text-center text-lg text-[#115c5c] border-2 border-[#115c5c] overflow-hidden transition-colors duration-300 ease-in-out hover:text-white"
       href="#"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

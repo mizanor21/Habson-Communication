@@ -30,12 +30,9 @@ const HorizontalScrollCarousel = () => {
   return (
     <>
       <div className="hidden md:block">
-        <section
-          ref={targetRef}
-          className=" relative h-[700vh] bg-white py-10 lg:py-20"
-        >
-          <div className="">
-            <h1 className="text-[24px] font-bold text-center ">
+        <section ref={targetRef} className=" relative h-[700vh] bg-white">
+          <div className="pb-12">
+            <h1 className="text-[24px] font-bold text-center text-[#125b5c]">
               Have you got what it takes to #CreateALivingBrands?
             </h1>
             <p className="text-[20px] font-normal text-center">

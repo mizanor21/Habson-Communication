@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonEffect from "../button/page";
 
 const WhoWeAre = () => {
   return (
@@ -17,6 +18,11 @@ const WhoWeAre = () => {
             boundaries to ignite lasting growth and elevate your brand&apos;s
             presence in the market.
           </p>
+          <br />
+          {/* <button className="border hidden md:block p-3 px-14 rounded-full overflow-hidden transition-transform duration-300 text-sm hover:bg-white hover:text-black border-black text-white bg-[#125b5c] mt-5">
+            Access Living Brand&apos;s Bots →
+          </button> */}
+          <ButtonEffect>Access Living Brand&apos;s Bots</ButtonEffect>
         </div>
         <div className="order-first md:order-last flex justify-center items-center">
           <video className="rounded-2xl lg:w-[800px]" autoPlay loop muted>
@@ -31,7 +37,7 @@ const WhoWeAre = () => {
         loop
         muted
       >
-        <source src="/videos/about1.mp4" type="video/mp4" />
+        <source src="/videos/about2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
