@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect } from "react";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
@@ -7,17 +8,24 @@ const ButtonEffect = ({ children }) => {
     const buttons = document.querySelectorAll(".btn-posnawr");
 
     buttons.forEach((button) => {
-      ["mouseenter", "mouseout"].forEach((evt) => {
-        button.addEventListener(evt, (e) => {
-          let parentOffset = button.getBoundingClientRect(),
-            relX = e.pageX - parentOffset.left,
-            relY = e.pageY - parentOffset.top;
+      button.addEventListener("mouseenter", (e) => {
+        let parentOffset = button.getBoundingClientRect();
+        let relX = e.clientX - parentOffset.left;
+        let relY = e.clientY - parentOffset.top;
 
-          const span = button.getElementsByTagName("span");
+        const span = button.querySelector("span");
+        span.style.top = relY + "px";
+        span.style.left = relX + "px";
+      });
 
-          span[0].style.top = relY + "px";
-          span[0].style.left = relX + "px";
-        });
+      button.addEventListener("mouseout", (e) => {
+        let parentOffset = button.getBoundingClientRect();
+        let relX = e.clientX - parentOffset.left;
+        let relY = e.clientY - parentOffset.top;
+
+        const span = button.querySelector("span");
+        span.style.top = relY + "px";
+        span.style.left = relX + "px";
       });
     });
   }, []);
@@ -38,15 +46,20 @@ const ButtonEffect = ({ children }) => {
 
   return (
     <div
-      className="btn-posnawr relative flex justify-center items-center gap-2 rounded-full  py-3 px-8 text-center text-lg text-[#115c5c] border-2 border-[#115c5c] overflow-hidden transition-colors duration-300 ease-in-out hover:text-white"
-      href="#"
+      className="btn-posnawr relative flex justify-center items-center gap-2 rounded-full py-3 px-8 text-center text-lg text-[#115c5c] border-2 border-[#115c5c] overflow-hidden transition-colors duration-300 ease-in-out hover:text-white"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       {children} <MdOutlineArrowRightAlt className="text-xl" />
       <span
         className="absolute block bg-[#115c5c] rounded-full transition-all ease-in-out duration-700 -z-10"
-        style={{ transform: "translate(-50%, -50%)" }}
+        style={{
+          width: "0",
+          height: "0",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
       ></span>
     </div>
   );

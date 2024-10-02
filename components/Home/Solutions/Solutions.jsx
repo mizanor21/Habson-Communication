@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import "./solutions.css";
+import Link from "next/link";
 
 const Card = ({ section, index }) => {
   return (
@@ -16,9 +17,11 @@ const Card = ({ section, index }) => {
               {section?.title}
             </h3>
             <p className="carousel-p hidden-on-hover">{section?.content}</p>
-            <div className="flex justify-center pt-5 lg:pt-20">
-              <BsArrowRight className="text-2xl lg:text-5xl carousel-p text-[#125b5c] p-2 hidden-on-hover  bg-white rounded-full" />
-            </div>
+            <Link href={`${section?.path}`}>
+              <div className="flex justify-center pt-5 lg:pt-20">
+                <BsArrowRight className="text-2xl lg:text-5xl carousel-p text-[#125b5c] p-2 hidden-on-hover  bg-white rounded-full" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -30,12 +33,14 @@ const Solutions = () => {
   const sections = [
     {
       id: "slide-1",
+      path: "/brand-solutions",
       title: "Brand Strategy",
       content:
         "We specialize in crafting brand strategies that breathe life into brands, infusing them with purpose, differentiation, and resonance. Our approach leverages the essence of each brand to drive meaningful connections and sustainable growth.",
     },
     {
       id: "slide-2",
+      path: "/media-solutions",
       title: "Media Buying Strategy",
       content:
         "The media buying strategy we employ leverages data-driven insights to maximize brand impact across diverse channels. Through meticulous targeting and strategic placement, we optimize ROI and foster meaningful engagement, ensuring brands stand out amidst the ever-evolving media landscape.",
@@ -48,6 +53,7 @@ const Solutions = () => {
     },
     {
       id: "slide-4",
+      path: "/tech-solutions",
       title: "Tech Innovation",
       content:
         "Tech innovation fuels our passion. We're dedicated to pioneering solutions that redefine possibilities. Through relentless exploration and collaboration, we push boundaries to shape the future of technology and empower meaningful progress in diverse sectors.",
