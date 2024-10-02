@@ -3,7 +3,7 @@ import React from "react";
 const BlogDetail = () => {
   return (
     <div className="font-[Inter] px-[5%]">
-      <div className="lg:px-[15%]">
+      <div className="lg:px-[10%]">
         <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold pt-28 pb-5 text-[#125b5c]">
           Why Bother with Employer Branding?
         </h1>
@@ -55,7 +55,7 @@ const BlogDetail = () => {
               className="object-cover  w-full h-60 md:h-[660px] justify-center rounded-3xl "
             ></img>
 
-            <div className="mt-10 px-2 ">
+            <div className="mt-14 lg:px-[10%] ">
               <ul className=" space-y-8 mb-8">
                 <li>
                   Everyone knows who a{" "}

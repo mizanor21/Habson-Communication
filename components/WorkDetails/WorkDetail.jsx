@@ -11,7 +11,7 @@ const WorkDetail = () => {
       </div>
       <div className="mt-20 mb-20 min-h-screen">
         <img
-          className="h-full w-full rounded-tl-3xl rounded-tr-3xl "
+          className="h-full w-full rounded-3xl rounded-tr-3xl "
           src="https://i.postimg.cc/K88zzWnM/1.jpg"
         />
       </div>
@@ -19,8 +19,8 @@ const WorkDetail = () => {
       <div className="flex justify-between mb-20">
         <div className=" w-[30%] flex flex-col gap-10">
           <div className="flex flex-col gap-4">
-            <h1 className="font-bold text-4xl text-[#125b5c]">Services</h1>
-            <ul className="list-none space-y-4 text-lg">
+            <h1 className="font-bold text-3xl text-[#125b5c]">Services</h1>
+            <ul className="list-none space-y-4 text-[16px]">
               <li className="cursor-pointer">Film & Video</li>
               <li className="cursor-pointer">
                 Research, Data & Analytics Solutions
@@ -30,27 +30,21 @@ const WorkDetail = () => {
               <li className="cursor-pointer">Brand Solutions</li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4">
-            <h1 className="font-bold text-4xl text-[#125b5c]">Industry</h1>
-            <ul className="list-none space-y-4 text-lg">
-              <li className="cursor-pointer">Other Industries</li>
-            </ul>
-          </div>
         </div>
 
         <div className=" w-[70%]">
-          <p className="text-lg leading-snug">
+          <small className="text-[16px] leading-snug">
             Pusti Chigura Rice brings you something truly special! We&apos;re
             thrilled to present our latest campaign featuring the glamorous
-            Nusrat Faria, who’s here to make your Eid celebrations even more
-            delightful. <br />
+            Nusrat Faria, who&apos;s here to make your Eid celebrations even
+            more delightful. <br />
             <br /> In this exclusive OVC (Online Video Commercial), Nusrat
             Faria, a beloved actress and style icon, invites you to share your
             very own Eid special recipes made with Pusti Chigura Rice. <br />{" "}
             <br /> Whether it’s a family favorite passed down through
             generations or a modern twist on a classic dish, we want to see what
             makes your Eid spread extraordinary!
-          </p>{" "}
+          </small>{" "}
           <br />
         </div>
       </div>
