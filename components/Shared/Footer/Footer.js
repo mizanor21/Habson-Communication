@@ -62,7 +62,7 @@ const Footer = () => {
             target="_blanck"
             className="flex items-center gap-2"
           >
-            <HiLocationMarker className="text-[26px]" /> Hosue: 230, New D.O.H.S
+            <HiLocationMarker className="text-[26px]" /> House: 230, New D.O.H.S
             Lake Road, Lane-16, Mohakhali, Dhaka-1206.
           </Link>
           <div className=" flex items-center  gap-2">
