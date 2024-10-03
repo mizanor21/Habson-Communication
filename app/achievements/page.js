@@ -38,9 +38,12 @@ const Achievement = () => {
             media, attracted a competitive pool of entries from across the
             continent.
           </p>
-          <button className="border hidden md:block p-3 px-14 rounded-full overflow-hidden transition-transform duration-300 text-sm hover:bg-white hover:text-black border-black text-white bg-[#125b5c] mt-5">
+          {/* <button className="border hidden md:block p-3 px-14 rounded-full overflow-hidden transition-transform duration-300 text-sm hover:bg-white hover:text-black border-black text-white bg-[#125b5c] mt-5">
             Access Living Brand&apos;s Bots →
-          </button>
+          </button> */}
+          <div className="max-w-sm mt-10">
+            <ButtonEffect>Access Living Brand&apos;s Bots</ButtonEffect>
+          </div>
         </div>
         <div className="order-first md:order-last flex justify-center items-center">
           <img
@@ -50,7 +53,7 @@ const Achievement = () => {
           />
         </div>
       </div>
-      <div className="grid gap-5 mb-8 sm:grid-cols-1 md:grid-cols-2 px-[5%] ">
+      <div className="grid gap-16 mb-8 sm:grid-cols-1 md:grid-cols-2 px-[5%] ">
         <div className="order-first md:order-last flex justify-center items-center">
           <img
             src="https://i.postimg.cc/65D5bPWK/achievement1.png"
@@ -94,9 +97,12 @@ const Achievement = () => {
               campaigns.
             </p>
 
-            <button className="border hidden md:block p-3 px-14 rounded-full overflow-hidden transition-transform duration-300 text-sm hover:bg-white hover:text-black border-black text-white bg-[#125b5c] mt-5">
+            {/* <button className="border hidden md:block p-3 px-14 rounded-full overflow-hidden transition-transform duration-300 text-sm hover:bg-white hover:text-black border-black text-white bg-[#125b5c] mt-5">
               Access Living Brand&apos;s Bots →
-            </button>
+            </button> */}
+            <div className="max-w-sm mt-10">
+              <ButtonEffect>Access Living Brand&apos;s Bots</ButtonEffect>
+            </div>
           </div>
         </div>
       </div>

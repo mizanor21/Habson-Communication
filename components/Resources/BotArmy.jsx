@@ -1,3 +1,4 @@
+import ButtonEffect from "@/app/button/page";
 import React from "react";
 
 const BotArmy = () => {
@@ -29,9 +30,9 @@ const BotArmy = () => {
               Fascinated by the possibilities? We&apos;re inviting you to take
               them for a spin now!
             </p>
-            <button className="border hidden md:block p-3 px-14 rounded-full overflow-hidden transition-transform duration-300 text-sm hover:bg-white hover:text-black border-black text-white bg-[#125b5c] mt-5">
-              Access Living Brand&apos;s Bots →
-            </button>
+            <div className="max-w-sm mt-10">
+              <ButtonEffect>Access Living Brand&apos;s Glossary</ButtonEffect>
+            </div>
           </div>
           <div className="order-first md:order-last flex justify-center items-center">
             <img

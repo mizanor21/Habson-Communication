@@ -1,3 +1,4 @@
+import ButtonEffect from "@/app/button/page";
 import React from "react";
 
 const MarketingGlossary = () => {
@@ -33,9 +34,12 @@ const MarketingGlossary = () => {
               SEO, paid media, video editing, animation and more.
             </p>
 
-            <button className="border  hidden md:block p-3 px-14 rounded-full overflow-hidden transition-transform duration-300 hover:cursor-pointer   text-sm hover:bg-white hover:text-black border-black text-white  bg-[#125b5c] mt-5">
+            {/* <button className="border  hidden md:block p-3 px-14 rounded-full overflow-hidden transition-transform duration-300 hover:cursor-pointer   text-sm hover:bg-white hover:text-black border-black text-white  bg-[#125b5c] mt-5">
               Access Living Brand&apos;s Glossary →
-            </button>
+            </button> */}
+            <div className="max-w-sm mt-10">
+              <ButtonEffect>Access Living Brand&apos;s Glossary</ButtonEffect>
+            </div>
           </div>
         </div>
       </div>
