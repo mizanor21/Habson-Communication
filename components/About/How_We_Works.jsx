@@ -4,17 +4,17 @@ const HowWeWorks = () => {
   return (
     <div className="relative z-[110] bg-white pb-10 lg:pb-20 font-[Inter]">
       <div className="text-justify">
-        <h1 className="text-3xl font-bold text-[#125B5C] py-[5%] lg:py-[80px] mb-8 md:text-3xl lg:text-5xl">
+        <h1 className="text-3xl font-bold text-[#125B5C] py-[5%] lg:pt-[80px] lg:pb-[60px] md:text-3xl lg:text-5xl">
           Let&apos;s Make Your Brand Live. Choose Living Brands.
         </h1>
         <hr className="w-full text-gray-400" />
         <div>
-          <div className="lg:flex lg:justify-between lg:items-start">
+          <div className="lg:flex ">
             <div className="mt-5 lg:mt-16">
-              <h2 className="text-xl lg:text-2xl font-bold text-[#125B5C]">
+              <p className="text-xl lg:text-2xl font-bold text-[#125B5C]">
                 On A Mission to Showcase The Finest of Bangladeshi Creative
                 Talent to The World!
-              </h2>
+              </p>
             </div>
             <div className="mt-5 lg:mt-16 lg:pl-24">
               <p className="text-md mb-8">

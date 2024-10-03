@@ -4,7 +4,7 @@ import ButtonEffect from "../button/page";
 const Achievement = () => {
   return (
     <div className="bg-white relative z-[110] grid grid-cols-1 lg:gap-y-20 py-10 lg:py-20">
-      <div className="grid gap-5 mb-8 sm:grid-cols-1 md:grid-cols-2 px-[5%] items-center">
+      <div className="grid gap-5 mb-8 sm:grid-cols-1 md:grid-cols-2 px-[5%]">
         <div className="order-last md:order-first">
           <h1 className="text-2xl font-bold mt-1 md:text-3Xl lg:text-5xl text-[#125b5c] mb-8">
             Flames Awards Asia 2024

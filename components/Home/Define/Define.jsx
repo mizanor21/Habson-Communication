@@ -88,7 +88,12 @@ const Define = () => {
                       Discover Our Dynamic Culture{" "}
                       <MdOutlineArrowRightAlt className="text-xl" />
                     </Button> */}
-                    <ButtonEffect>Discover Our Dynamic Culture</ButtonEffect>
+                    <ButtonEffect>
+                      <span className="flex gap-2">
+                        Discover Our Dynamic Culture{" "}
+                        <MdOutlineArrowRightAlt className="text-xl" />
+                      </span>
+                    </ButtonEffect>
                   </Link>
                 </div>
               </div>

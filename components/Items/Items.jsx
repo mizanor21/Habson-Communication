@@ -405,7 +405,7 @@ const Items = () => {
             <h2 className="text-md lg:text-lg font-extrabold mt-3">
               {item.title}
             </h2>
-            <p className="text-[20px] font-semibold opacity-80 md:text-[24px] mt-3">
+            <p className="text-[16px] md:text-[20px] mt-3">
               {item.detailsTitle}
             </p>
             <style>{keyframes}</style>

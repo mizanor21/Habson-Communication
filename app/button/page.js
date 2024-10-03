@@ -62,7 +62,6 @@ const ButtonEffect = ({ children }) => {
       ></span>
       <span className="relative z-20 flex items-center gap-2">
         <span className="text-sm">{children}</span>
-        <MdOutlineArrowRightAlt className="text-xl" />
       </span>
     </div>
   );

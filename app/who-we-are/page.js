@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonEffect from "../button/page";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const WhoWeAre = () => {
   return (
@@ -23,7 +24,12 @@ const WhoWeAre = () => {
             Access Living Brand&apos;s Bots →
           </button> */}
           <div className="max-w-md">
-            <ButtonEffect>Access Living Brand&apos;s Bots</ButtonEffect>
+            <ButtonEffect>
+              <span className="flex gap-2">
+                Access Living Brand&apos;s Bots{" "}
+                <MdOutlineArrowRightAlt className="text-xl" />
+              </span>
+            </ButtonEffect>
           </div>
         </div>
         <div className="order-first md:order-last flex justify-center items-center">

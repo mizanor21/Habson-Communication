@@ -309,11 +309,21 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-        <Link href={"/contact"} className="flex">
+        <Link
+          href={"/contact"}
+          onClick={() => handleNavigations("/contact")}
+          className={`${
+            innerActive == "/contact" ? "actives" : "text-[#115c5c]"
+          } mb-4`}
+        >
           {/* <Button>
             Contact Us <MdOutlineArrowRightAlt className="text-xl" />
           </Button> */}
-          <ButtonEffect>Contact Us</ButtonEffect>
+          <ButtonEffect>
+            <span className="flex gap-[6px]">
+              Contact Us <MdOutlineArrowRightAlt className="text-xl" />
+            </span>
+          </ButtonEffect>
         </Link>
       </div>
 

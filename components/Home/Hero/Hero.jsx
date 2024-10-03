@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import TimeSchbang from "../TimeSchbang/TimeSchbang";
 import ButtonEffect from "@/app/button/page";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const Hero = () => {
   const [isSticky, setIsSticky] = useState(true);
@@ -56,7 +57,12 @@ const Hero = () => {
                   target="_blank"
                   className="max-w-md"
                 >
-                  <ButtonEffect>Let&apos;s Talk</ButtonEffect>
+                  <ButtonEffect>
+                    <span className="flex gap-2">
+                      Let&apos;s Talk{" "}
+                      <MdOutlineArrowRightAlt className="text-xl" />
+                    </span>
+                  </ButtonEffect>
                 </Link>
               </div>
             </div>

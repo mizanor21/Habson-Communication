@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Button from "../Custom/Button";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
+import ButtonEffect from "@/app/button/page";
 
 const CareerSection = () => {
   return (
@@ -13,9 +14,12 @@ const CareerSection = () => {
         Showcasing the innovative spirit of Bangladesh on a global stage.
       </p>
       <Link href="/career-details">
-        <Button>
+        {/* <Button>
           See All Openings <MdOutlineArrowRightAlt className="text-xl" />
-        </Button>
+        </Button> */}
+        <div className="max-w-sm">
+          <ButtonEffect>See All Openings</ButtonEffect>
+        </div>
       </Link>
     </div>
   );
