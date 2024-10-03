@@ -161,7 +161,7 @@ const Slideshow = () => {
               <div className="item h-screen">
                 <div className="right-half">
                   <img
-                    src="https://i.postimg.cc/TPGkHm0d/OMG-1.png"
+                    src="https://i.postimg.cc/fyNKNTPF/OMG-1.png"
                     className=" w-full h-full"
                     alt="slide-4-reverse"
                   />
