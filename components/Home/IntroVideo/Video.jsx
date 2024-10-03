@@ -55,7 +55,7 @@ const Video = () => {
 
   return (
     <div
-      className="relative bg-black z-[110] h-screen overflow-hidden"
+      className="relative bg-black z-[110] h-60 lg:h-screen overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       <style>{keyframes}</style>

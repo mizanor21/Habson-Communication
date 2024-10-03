@@ -29,7 +29,7 @@ const CareerLastVideo = () => {
     <div className="w-full md:h-screen relative z-[110] pb-10 lg:pb-20">
       <video
         ref={videoRef}
-        className="absolute h-[100%] top-0 left-0 w-full md:h-full object-cover"
+        className="absolute h-[100%] top-0 left-0 w-full md:h-full object-cover pb-10 lg:pb-20"
         autoPlay
         loop
         // muted={isFirstPlay} // Muted during the first play

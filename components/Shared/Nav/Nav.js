@@ -200,9 +200,74 @@ const Nav = () => {
                   {about && (
                     <div className="itemHover">
                       <ul>
-                        <li>
-                          <Link href={"/awards"} className="">
-                            Awards
+                        <li
+                          onClick={() => handleNavigations("/who-we-are")}
+                          className={`${
+                            innerActive == "/who-we-are" ? "actives" : ""
+                          } mb-4`}
+                        >
+                          <Link
+                            href={"/who-we-are"}
+                            className=""
+                            onClick={() => setIsHoveredAbout(false)}
+                          >
+                            Who We Are
+                          </Link>
+                        </li>
+                        <li
+                          onClick={() => handleNavigations("/we-works")}
+                          className={`${
+                            innerActive == "/we-works" ? "actives" : ""
+                          } mb-4`}
+                        >
+                          <Link
+                            href={"we-works"}
+                            className=" "
+                            onClick={() => setIsHoveredAbout(false)}
+                          >
+                            How We Work
+                          </Link>
+                        </li>
+                        <li
+                          onClick={() => handleNavigations("/partnership")}
+                          className={`${
+                            innerActive == "/partnership" ? "actives" : ""
+                          } mb-4`}
+                        >
+                          <Link
+                            href={"partnership"}
+                            className=" "
+                            onClick={() => setIsHoveredAbout(false)}
+                          >
+                            Our Partnership
+                          </Link>
+                        </li>
+                        <li
+                          onClick={() => handleNavigations("/achievements")}
+                          className={`${
+                            innerActive == "/achievements" ? "actives" : ""
+                          } mb-4`}
+                        >
+                          <Link
+                            href={"achievements"}
+                            className=" "
+                            onClick={() => setIsHoveredAbout(false)}
+                          >
+                            Achievements
+                          </Link>
+                        </li>
+                        <li
+                          onClick={() => handleNavigations("/meet-our-team")}
+                          className={`${
+                            innerActive == "/meet-our-team" ? "actives" : ""
+                          } mb-4`}
+                        >
+                          <Link
+                            href={"meet-our-team"}
+                            className=""
+                            onClick={() => setIsHoveredAbout(false)}
+                          >
+                            Meet The Team
                           </Link>
                         </li>
                       </ul>
@@ -242,6 +307,19 @@ const Nav = () => {
                     </Link>
                   </li>
                 </ul>
+                <Link
+                  href={"/contact"}
+                  onClick={() => handleNavigations("/contact")}
+                  className={`mt-10 ${
+                    innerActive == "/contact" ? "actives" : "text-[#115c5c]"
+                  } mb-4`}
+                >
+                  <ButtonEffect>
+                    <span className="flex gap-[6px]">
+                      Contact Us <MdOutlineArrowRightAlt className="text-xl" />
+                    </span>
+                  </ButtonEffect>
+                </Link>
               </div>
             </div>
           )}

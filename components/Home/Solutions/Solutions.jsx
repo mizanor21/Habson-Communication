@@ -147,7 +147,7 @@ const Solutions = () => {
       </div>
       {/* Mobile */}
       <div className="bg-white md:hidden">
-        <div className=" bg-white relative z-[110]">
+        <div className=" bg-white px-[5%] relative z-[110]">
           {sections.map((section, sectionIndex) => (
             <div
               key={sectionIndex}
@@ -158,7 +158,7 @@ const Solutions = () => {
                   <h3 className="text-xl font-bold text-black  group-hover:text-white transition-colors duration-300 mb-5 mt-2">
                     {section?.title}
                   </h3>
-                  <p>{section?.content}</p>
+                  <p className="text-justify">{section?.content}</p>
                   <BsArrowRight className="text-[40px] my-6 bg-[#125b5c] p-2 rounded-full text-white" />
                 </div>
               </div>

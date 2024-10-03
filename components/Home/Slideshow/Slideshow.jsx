@@ -1,11 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
+import { BsArrowRight } from "react-icons/bs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import { FaCircleArrowRight } from "react-icons/fa6";
-import { BsArrowRight } from "react-icons/bs";
-import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 import "./slideshow.css";
 
 const Slideshow = () => {
@@ -54,9 +52,16 @@ const Slideshow = () => {
       console.log("Slider reference is not available");
     }
   };
+
+  // Handler for the small device slider arrow
   const handleClickMobile = () => {
-    handleNextSlide();
+    if (sliderRef.current) {
+      sliderRef.current.slickNext(); // Move to next slide
+    } else {
+      console.log("Slider reference is not available");
+    }
   };
+
   const handleNextSlides = () => {
     if (sliderLeftRef.current && sliderRightRef.current) {
       console.log("Moving to next slide!");
@@ -110,7 +115,7 @@ const Slideshow = () => {
               <div className="item h-screen">
                 <div className="left-half">
                   <img
-                    src="https://i.postimg.cc/TPGkHm0d/OMG-1.png"
+                    src="https://i.postimg.cc/fyNKNTPF/OMG-1.png"
                     className=" w-full h-full"
                     alt="slide-1"
                   />
@@ -209,7 +214,7 @@ const Slideshow = () => {
           <Slider ref={sliderRef} {...smallSlider}>
             <div className="item h-[450px]">
               <img
-                src="https://i.postimg.cc/TPGkHm0d/OMG-1.png"
+                src="https://i.postimg.cc/fyNKNTPF/OMG-1.png"
                 className="h-full w-full"
                 alt="slide-1"
               />
@@ -241,13 +246,10 @@ const Slideshow = () => {
           </Slider>
 
           <button
-            className="absolute bottom-10  left-5 z-[9999] cursor-pointer"
+            className="absolute bottom-10 left-5 z-[9999] cursor-pointer"
             onClick={handleClickMobile}
           >
-            <BsArrowRight
-              className="text-5xl text-[125b5c] bg-white p-3 rounded-full "
-              // Trigger next slide
-            />
+            <BsArrowRight className="text-5xl text-[#125b5c] bg-white p-3 rounded-full " />
           </button>
         </div>
       </div>

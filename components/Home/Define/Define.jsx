@@ -38,7 +38,7 @@ const Define = () => {
 
   return (
     <div className="font-[Inter]  py-10 lg:py-[10%] bg-white relative z-[110]">
-      <div className="flex md:px-[5%] bgDefine">
+      <div className="flex px-[5%] bgDefine">
         <div className="md:mx-3 ">
           <div className="flex justify-center items-center rounded-badge ">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
