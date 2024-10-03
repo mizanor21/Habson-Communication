@@ -50,7 +50,7 @@ const Hero = () => {
                   brand to life.
                 </p>
               </div>
-              <div className="mt-2 lg:mt-5 max-w-52">
+              <div className="mt-2 lg:mt-5 max-w-52 ">
                 <Link
                   href="https://www.google.com/maps/place/Living+Brands,+House+230+Road+16,+Dhaka+1212/data=!4m2!3m1!1s0x3755c700426d1655:0x8a70d2c34d6aae47?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjEzNS4xMDIYACDXggMqUSw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICQkQ%3D&g_st=aw"
                   target="_blank"

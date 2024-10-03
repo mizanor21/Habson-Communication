@@ -46,13 +46,12 @@ const ButtonEffect = ({ children }) => {
 
   return (
     <div
-      className="btn-posnawr relative flex justify-center items-center gap-2 rounded-full py-3 px-8 text-center text-lg text-[#115c5c] border-2 border-[#115c5c] overflow-hidden transition-colors duration-300 ease-in-out hover:text-white"
+      className="btn-posnawr relative flex justify-center items-center gap-2 rounded-full py-3 px-8 text-center text-lg text-white border-2 border-transparent hover:border-[#115c5c] bg-[#115c5c] hover:text-[#115c5c] z-[20] overflow-hidden transition-colors duration-300 ease-in-out"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {children} <MdOutlineArrowRightAlt className="text-xl" />
       <span
-        className="absolute block bg-[#115c5c] rounded-full transition-all ease-in-out duration-700 -z-10"
+        className="absolute block bg-white rounded-full transition-all ease-in-out duration-700 z-0"
         style={{
           width: "0",
           height: "0",
@@ -61,6 +60,10 @@ const ButtonEffect = ({ children }) => {
           transform: "translate(-50%, -50%)",
         }}
       ></span>
+      <span className="relative z-20 flex items-center gap-2">
+        <span className="text-sm">{children}</span>
+        <MdOutlineArrowRightAlt className="text-xl" />
+      </span>
     </div>
   );
 };

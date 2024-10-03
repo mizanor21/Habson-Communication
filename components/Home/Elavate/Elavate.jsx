@@ -1,7 +1,7 @@
-import ButtonEffect from "@/app/button/page";
-import Button from "@/components/Custom/Button";
+"use client";
 import Link from "next/link";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
+import React, { useEffect } from "react";
 
 const Elevate = () => {
   const styles = {
@@ -11,6 +11,46 @@ const Elevate = () => {
     backgroundSize: "cover", // Adjust based on your preference
     backgroundPosition: "center",
     height: "", // Adjust based on your preference
+  };
+
+  useEffect(() => {
+    const buttons = document.querySelectorAll(".btn-posnawr");
+
+    buttons.forEach((button) => {
+      button.addEventListener("mouseenter", (e) => {
+        let parentOffset = button.getBoundingClientRect();
+        let relX = e.clientX - parentOffset.left;
+        let relY = e.clientY - parentOffset.top;
+
+        const span = button.querySelector("span");
+        span.style.top = relY + "px";
+        span.style.left = relX + "px";
+      });
+
+      button.addEventListener("mouseout", (e) => {
+        let parentOffset = button.getBoundingClientRect();
+        let relX = e.clientX - parentOffset.left;
+        let relY = e.clientY - parentOffset.top;
+
+        const span = button.querySelector("span");
+        span.style.top = relY + "px";
+        span.style.left = relX + "px";
+      });
+    });
+  }, []);
+
+  const handleMouseEnter = (e) => {
+    const span = e.currentTarget.querySelector("span");
+    span.style.width = "225%";
+    span.style.height = "562.5px";
+    span.style.transition = "width 0.6s ease, height 0.6s ease"; // Smooth expansion
+  };
+
+  const handleMouseLeave = (e) => {
+    const span = e.currentTarget.querySelector("span");
+    span.style.width = "0";
+    span.style.height = "0";
+    span.style.transition = "width 0.6s ease, height 0.6s ease"; // Smooth shrinking
   };
   return (
     <div className="bg-white relative z-[110] py-10">
@@ -38,10 +78,26 @@ const Elevate = () => {
                   }
                   target="_blank"
                 >
-                  <Button>
-                    Book A Call <MdOutlineArrowRightAlt className="text-xl" />
-                  </Button>
-                  {/* <ButtonEffect>Book A Call</ButtonEffect> */}
+                  <div
+                    className="btn-posnawr max-w-[250px] relative flex justify-center items-center gap-2 rounded-full py-[10px] px-8 text-center text-lg text-[#115c5c] border-2 border-transparent hover:border-white bg-white hover:text-white z-[20] overflow-hidden transition-colors duration-300 ease-in-out"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <span
+                      className="absolute block bg-[#115c5c] rounded-full transition-all ease-in-out duration-700 z-0"
+                      style={{
+                        width: "0",
+                        height: "0",
+                        top: "50%",
+                        left: "50%",
+                        transform: "translate(-50%, -50%)",
+                      }}
+                    ></span>
+                    <span className="relative z-20 flex items-center gap-2">
+                      <span className="text-sm">Book A Call</span>
+                      <MdOutlineArrowRightAlt className="text-xl" />
+                    </span>
+                  </div>
                 </Link>
               </div>
             </div>
