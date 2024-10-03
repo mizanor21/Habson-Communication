@@ -36,7 +36,7 @@ const BotArmy = () => {
           </div>
           <div className="order-first md:order-last flex justify-center items-center">
             <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6478760b33e012154432678c_the%20Edge-Bots-p-1080.png"
+              src="https://i.postimg.cc/vmVgb88X/the-edge-1.png"
               alt="Img"
               className="rounded-lg "
             />

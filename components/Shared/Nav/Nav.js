@@ -69,7 +69,7 @@ const Nav = () => {
   ];
 
   return (
-    <div className="navber pd px-[5%] lg:mt-2">
+    <div className="navber pd px-[5%] lg:pt-2">
       {/* Logo and side menu */}
       <div className="navber-logo z-[115]">
         <div className="">
@@ -243,7 +243,7 @@ const Nav = () => {
       </div>
 
       {/* Main Nav Links */}
-      <div className="navber-links text-[#125b5c] ">
+      <div className="navber-links text-[#125b5c]">
         <ul>
           <li
             onClick={() => handleNavigations("/work")}
@@ -255,8 +255,11 @@ const Nav = () => {
               Work
             </Link>
           </li>
+
           <li
-            className={`dropdown ${isActive === "/solutions" ? "active" : ""}`}
+            className={`dropdown hoverArea h-10 ${
+              isActive === "/solutions" ? "active" : ""
+            }`}
             onMouseEnter={() => setIsHoveredSolutions(true)}
             onMouseLeave={() => setIsHoveredSolutions(false)}
             onClick={() => setIsHoveredSolutions(false)}
@@ -308,23 +311,23 @@ const Nav = () => {
               Careers
             </Link>
           </li>
-        </ul>
-        <Link
-          href={"/contact"}
-          onClick={() => handleNavigations("/contact")}
-          className={`${
-            innerActive == "/contact" ? "actives" : "text-[#115c5c]"
-          } mb-4`}
-        >
-          {/* <Button>
+          <Link
+            href={"/contact"}
+            onClick={() => handleNavigations("/contact")}
+            className={`mt-14 ${
+              innerActive == "/contact" ? "actives" : "text-[#115c5c]"
+            } mb-4`}
+          >
+            {/* <Button>
             Contact Us <MdOutlineArrowRightAlt className="text-xl" />
           </Button> */}
-          <ButtonEffect>
-            <span className="flex gap-[6px]">
-              Contact Us <MdOutlineArrowRightAlt className="text-xl" />
-            </span>
-          </ButtonEffect>
-        </Link>
+            <ButtonEffect>
+              <span className="flex gap-[6px]">
+                Contact Us <MdOutlineArrowRightAlt className="text-xl" />
+              </span>
+            </ButtonEffect>
+          </Link>
+        </ul>
       </div>
 
       {/* Dropdown services card section */}
@@ -411,7 +414,7 @@ const Nav = () => {
 
       {isHoveredAbout && (
         <div
-          className="card-containers w-screen mt-1  z-[115]"
+          className="card-containers w-screen pt-1  z-[115]"
           onMouseEnter={() => setIsHoveredAbout(true)}
           onMouseLeave={() => setIsHoveredAbout(false)}
         >

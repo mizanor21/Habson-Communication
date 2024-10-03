@@ -4,10 +4,14 @@ import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const WhoWeAre = () => {
   return (
-    <div className="bg-white relative z-[110] grid grid-cols-1 lg:gap-y-20 py-10 lg:py-20">
-      <div className="grid gap-5 mb-8 sm:grid-cols-1 md:grid-cols-2 px-[5%]">
+    <div className="bg-white relative z-[110] grid grid-cols-1 px-[5%]">
+      <h1 className="text-3xl font-bold text-[#125B5C] py-[5%] lg:pt-[80px] lg:pb-[60px] md:text-3xl lg:text-5xl">
+        We bring the whole Living Brands.
+      </h1>
+      <hr className="w-full text-black bg-gray-400 h-[2px]" />
+      <div className="grid gap-5 mb-8 sm:grid-cols-1 md:grid-cols-2 mt-10 lg:mt-20">
         <div className="order-last md:order-first">
-          <h1 className="text-2xl font-bold mt-1 md:text-3Xl lg:text-5xl text-[#125b5c] mb-8">
+          <h1 className="text-2xl font-bold mt-1 md:text-3Xl text-[#125b5c] mb-8">
             Who We Are
           </h1>
           <p className="text-base  text-justify">
@@ -40,7 +44,7 @@ const WhoWeAre = () => {
         </div>
       </div>
       <video
-        className="rounded-2xl lg:w-[100%] lg:h-[100%] px-[5%] "
+        className="rounded-2xl lg:w-[100%] lg:h-[100%] pb-10 lg:pb-20"
         autoPlay
         loop
         muted

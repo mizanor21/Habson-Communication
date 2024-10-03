@@ -106,6 +106,35 @@ const Achievement = () => {
           </div>
         </div>
       </div>
+      <div className="grid gap-5 mb-8 sm:grid-cols-1 md:grid-cols-2 px-[5%]">
+        <div className="order-last md:order-first">
+          <h1 className="text-2xl font-bold mt-1 md:text-3Xl lg:text-5xl text-[#125b5c] mb-8">
+            Commwards 2022
+          </h1>
+          <p className="text-justify">
+            At Commwards 2022, a recognition in the &apos;Outdoor&apos; category
+            for the successful launch of the PUMA Dhanmondi Store. Commwards,
+            organized by Bangladesh Brand Forum, is a prestigious platform that
+            recognizes and celebrates excellence in the field of communications
+            in Bangladesh. The Commwards recognition not only validates the
+            success of the PUMA Dhanmondi Store launch but also showcases the
+            agency&apos;s expertise in outdoor advertising. This achievement
+            serves as an inspiration for other brands and agencies to leverage
+            outdoor advertising as a powerful tool to reach and engage their
+            target audience.
+          </p>
+          <div className="max-w-sm mt-10">
+            <ButtonEffect>Access Living Brand&apos;s Bots</ButtonEffect>
+          </div>
+        </div>
+        {/* <div className="order-first md:order-last flex justify-center items-center">
+          <img
+            src="https://i.postimg.cc/ydkH14dY/award.jpg"
+            alt="Img"
+            className="rounded-lg "
+          />
+        </div> */}
+      </div>
     </div>
   );
 };

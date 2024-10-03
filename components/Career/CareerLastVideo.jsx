@@ -33,6 +33,7 @@ const CareerLastVideo = () => {
         autoPlay
         loop
         // muted={isFirstPlay} // Muted during the first play
+        muted
         onClick={handleVideoClick} // Toggle play/pause on click
         onEnded={handleVideoEnd} // On first play end, restart with sound
       >

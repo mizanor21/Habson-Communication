@@ -1,4 +1,6 @@
+import ButtonEffect from "@/app/button/page";
 import React from "react";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const ContactUsRightPart = () => {
   return (
@@ -149,9 +151,18 @@ const ContactUsRightPart = () => {
           Other Sources
         </button>
         <br />
-        <button className="border py-2 px-24 rounded-full   hover:cursor-pointer   text-xl hover:bg-white hover:text-black border-black text-white  bg-[#125b5c] mt-5">
+        {/* <button className="border py-2 px-24 rounded-full   hover:cursor-pointer   text-xl hover:bg-white hover:text-black border-black text-white  bg-[#125b5c] mt-5">
           Submit
-        </button>
+        </button> */}
+
+        <div className="max-w-md pt-10">
+          <ButtonEffect>
+            <span className="flex gap-[6px]">
+              Submit
+              <MdOutlineArrowRightAlt className="text-xl" />
+            </span>
+          </ButtonEffect>
+        </div>
       </div>
     </div>
   );

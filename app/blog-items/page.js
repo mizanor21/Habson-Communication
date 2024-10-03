@@ -142,29 +142,6 @@ const BlogItems = () => {
       img: "https://i.postimg.cc/bY0MS8Bq/ml-Ef-Da-X-W4-M-HD.jpg",
     },
     {
-      id: 7,
-      category: "Casestudy",
-      thumbnail: "ecommerce-thumb.jpg",
-      title: "Digital",
-      detailsTitle: "Disruption on the Digital Strages",
-      services: [
-        {
-          serviceName: "Store Development",
-          description:
-            "Creating user-friendly and scalable online stores tailored to your needs.",
-        },
-        {
-          serviceName: "Payment Integration",
-          description:
-            "Secure payment gateway integration for seamless transactions.",
-        },
-      ],
-      serviceDetails:
-        "We deliver feature-rich e-commerce platforms designed to scale with your business growth.",
-      industry: "Retail",
-      img: "https://i.postimg.cc/XNg2MVb3/ey-SLf-CX2-Vsk-HD.jpg",
-    },
-    {
       id: 8,
       category: "Casestudy",
       thumbnail: "content-creation-thumb.jpg",
@@ -256,28 +233,6 @@ const BlogItems = () => {
         "We deliver feature-rich e-commerce platforms designed to scale with your business growth.",
       industry: "Retail",
       img: "https://i.postimg.cc/XNg2MVb3/ey-SLf-CX2-Vsk-HD.jpg",
-    },
-    {
-      id: 12,
-      category: "Daily Creativity",
-      thumbnail: "project-management-thumb.jpg",
-      title: "Children Day",
-      detailsTitle: "Children Day OVC _Seven Rings Cement",
-      services: [
-        {
-          serviceName: "Project Planning",
-          description: "Developing detailed plans to ensure project success.",
-        },
-        {
-          serviceName: "Agile Coaching",
-          description:
-            "Implementing Agile methodologies for better collaboration and faster delivery.",
-        },
-      ],
-      serviceDetails:
-        "Our project management services ensure timely delivery and exceed expectations through structured execution.",
-      industry: "Business",
-      img: "https://i.postimg.cc/NjPfhR6C/Gujn-Dntu-TI-HD.jpg",
     },
     {
       id: 13,

@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    /* gap: 60px; */
     color: var(--color-violet);
     font-weight: 600;
     font-size: 14px;
@@ -38,6 +38,7 @@
     transition: all 0.3s ease;
 }
 
+.hoverArea:hover {}
 
 /* Apply hover effect to all h2 elements except the one being hovered */
 .solutions h2 {
@@ -78,13 +79,6 @@
     color: #ee4580
 }
 
-.navber-links ul li:hover {
-    color: var(--color-orange);
-}
-
-.navber-links ul li.active:hover {
-    color: var(--color-green);
-}
 
 .navber-links ul .dropdown {
     display: flex;
@@ -114,6 +108,12 @@
 
 .navber .card-containers:hover {
     top: 60px;
+}
+
+.navber-links>ul li {
+    padding: 0px 26px !important;
+    display: block;
+    margin-top: 40px;
 }
 
 .navber .navber-menu {
@@ -260,8 +260,10 @@
         justify-content: center;
         align-items: center;
         font-size: 25px;
-        transition: all 0.3s ease;
+        transition: all 0.2s ease-in-out;
     }
+
+
 
     .side-menu-top-menu:hover {
         background-color: var(--color-orange);
