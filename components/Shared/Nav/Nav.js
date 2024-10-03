@@ -74,7 +74,13 @@ const Nav = () => {
       <div className="navber-logo z-[115]">
         <div className="">
           <div className="w-[100%]">
-            <Link className=" flex items-end gap-1 text-[#125b5c]" href="/">
+            <Link
+              onClick={() => handleNavigations("/")}
+              className={`flex items-end gap-1 text-[#125b5c] ${
+                innerActive == "/" ? "actives" : "text-[#115c5c]"
+              } mb-4`}
+              href="/"
+            >
               <Image
                 src={logo}
                 className="w-20"
@@ -477,15 +483,13 @@ const Nav = () => {
                 </Link>
               </h2>
               <h2
-                onClick={() => handleNavigations("/tech-solutions")}
+                onClick={() => handleNavigations("/meet-our-team")}
                 className={`${
-                  innerActive == "/tech-solutions"
-                    ? "actives"
-                    : "text-[#115c5c]"
+                  innerActive == "/meet-our-team" ? "actives" : "text-[#115c5c]"
                 } mb-4`}
               >
                 <Link
-                  href={"tech-solutions"}
+                  href={"meet-our-team"}
                   className="text-2xl lg:text-3xl font-bold  "
                   onClick={() => setIsHoveredAbout(false)}
                 >
