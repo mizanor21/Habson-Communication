@@ -69,7 +69,7 @@ const Nav = () => {
   ];
 
   return (
-    <div className="navber pd px-[5%] lg:pt-2">
+    <div className="navber cursor-pointer pd px-[5%] lg:pt-2">
       {/* Logo and side menu */}
       <div className="navber-logo z-[115]">
         <div className="">
@@ -341,14 +341,14 @@ const Nav = () => {
           </li>
 
           <li
-            className={`dropdown hoverArea h-10 ${
+            className={`dropdown cursor-pointer hoverArea h-10 ${
               isActive === "/solutions" ? "active" : ""
             }`}
             onMouseEnter={() => setIsHoveredSolutions(true)}
             onMouseLeave={() => setIsHoveredSolutions(false)}
             onClick={() => setIsHoveredSolutions(false)}
           >
-            <p className="link group">Solutions</p>
+            <p className="link group ">Solutions</p>
             {/* Add transition and transform to the icon */}
             <RiArrowDropDownLine
               className={`text-5xl dropdown-icon transform transition-transform duration-300 ease-in-out ${
@@ -358,7 +358,9 @@ const Nav = () => {
           </li>
 
           <li
-            className={`dropdown ${isActive === "/about" ? "active" : ""}`}
+            className={`dropdown cursor-pointer ${
+              isActive === "/about" ? "active" : ""
+            }`}
             onMouseEnter={() => setIsHoveredAbout(true)}
             onMouseLeave={() => setIsHoveredAbout(false)}
             onClick={() => setIsHoveredAbout(false)}
@@ -372,7 +374,9 @@ const Nav = () => {
           </li>
 
           <li
-            className={`dropdown ${isActive === "/resources" ? "active" : ""}`}
+            className={`dropdown cursor-pointer ${
+              isActive === "/resources" ? "active" : ""
+            }`}
             onMouseEnter={() => setIsHoveredResources(true)}
             onMouseLeave={() => setIsHoveredResources(false)}
             onClick={() => setIsHoveredResources(false)}
@@ -596,13 +600,13 @@ const Nav = () => {
                   key={index}
                   className="card cursor-pointer "
                 >
-                  <div className="card_image">
+                  <div className="card_image ">
                     <Image
-                      className="rounded-2xl h-[390px]"
+                      className="rounded-2xl md:h-[270px] lg:h-[330px]"
                       src={item?.src}
                       alt={index}
                       width={700}
-                      height={100}
+                      height={300}
                     />
                   </div>
                 </Link>

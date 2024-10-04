@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 60px; */
+    gap: 60px;
     color: var(--color-violet);
     font-weight: 600;
     font-size: 14px;
@@ -91,15 +91,9 @@
     font-size: 35px;
 }
 
-/* .navber .card_container {
-    margin-top: 18px;
-    padding: 50px 140px;
-    background-color: white;
-} */
-
 .navber .card-containers {
     position: absolute;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.7s cubic-bezier(0.4, 0, 1, 1), all 0.7s cubic-bezier(0, 0, 0.2, 1);
     top: -200px;
     overflow: hidden;
     left: 0;
@@ -111,8 +105,9 @@
 }
 
 .navber-links>ul li {
-    padding: 0px 26px !important;
-    display: block;
+    /* margin-right: 0px 26px !important; */
+    /* padding: 0px 26px !important; */
+    /* display: block; */
     margin-top: 40px;
 }
 
