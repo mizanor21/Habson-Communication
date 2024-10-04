@@ -37,7 +37,7 @@ const Define = () => {
   }, []);
 
   return (
-    <div className="font-[Inter]  py-10 lg:py-[10%] bg-white relative z-[110]">
+    <div className="font-sora  py-10 lg:py-[10%] bg-white relative z-[110]">
       <div className="flex px-[5%] bgDefine">
         <div className="md:mx-3 ">
           <div className="flex justify-center items-center rounded-badge ">
@@ -69,11 +69,11 @@ const Define = () => {
                 </div>
               </div>
               <div className="col-span-2 pb-5 mx-3 md:mx-0">
-                <p className="text-xl lg:text-3xl font-bold text-[#185C5D] font-[Inter]">
+                <p className="text-xl lg:text-3xl font-bold text-[#185C5D] ">
                   We&apos;re brand architects, crafting narratives with
                   precision, fueled by innovation and seamless integration.
                 </p>
-                <p className="my-5 lg:my-24 text-justify text-black opacity-60 tracking-wider font-semibold  font-[Inter]">
+                <p className="my-5 lg:my-24 text-justify text-black opacity-60 tracking-wider font-semibold  ">
                   “Living Brands” is fueled by an unquenchable drive to make
                   your brand a global force. We believe in the power of
                   collaboration, bringing together the best creative minds,

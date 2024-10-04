@@ -62,6 +62,11 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        sora: ["Sora", "sans-serif"], // Add your preferred font family here. Make sure it's installed on your system. If not, you can install it using npm: npm install --save-dev @fontsource/sora-sans-jp-ui-fonts
+        // Add more font families as needed.
+      },
+      // font-family: "Sora", system-ui;
     },
   },
   // DaisyUI configuration for themes

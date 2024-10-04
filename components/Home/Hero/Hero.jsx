@@ -35,14 +35,14 @@ const Hero = () => {
         isSticky
           ? "translate-y-0 opacity-100"
           : "-translate-y-5 opacity-0 pointer-events-none"
-      } transition-all duration-500 ease-in-out sticky top-0 z-[110] bg-white`}
+      } transition-all duration-500 ease-in-out sticky top-0 z-[110] bg-white font-sora`}
     >
       <div className="lg:container lg:mx-auto px-[5%] py-[4%]">
         <div className="px-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="flex flex-col items-center justify-between lg:flex-row">
             <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
               <div className="max-w-xl mb-6">
-                <h2 className="mb-6 font-extrabold tracking-tight text-[#185C5D] text-3xl sm:leading-none lg:text-6xl">
+                <h2 className="mb-6 text-3xl sm:leading-none lg:text-[60px] font-[700] tracking-tight text-[#185C5D] ">
                   Spark Something Real. Live Your Brands with Us.
                 </h2>
                 <p className="text-gray-500 text-lg my-[44px] font-semibold md:mt-0">
