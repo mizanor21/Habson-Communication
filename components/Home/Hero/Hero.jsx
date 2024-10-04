@@ -45,7 +45,7 @@ const Hero = () => {
                 <h2 className="mb-6 text-3xl sm:leading-none lg:text-[60px] font-[700] tracking-tight text-[#185C5D] ">
                   Spark Something Real. Live Your Brands with Us.
                 </h2>
-                <p className="text-gray-500 text-lg my-[44px] font-semibold md:mt-0">
+                <p className="text-[20px] my-[44px] font-[400] md:mt-0">
                   We ignite emotions, tell captivating stories, create campaigns
                   that resonate, and drive real results. Let&apos;s bring your
                   brand to life.

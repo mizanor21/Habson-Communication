@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const ButtonEffect = ({ children }) => {
   useEffect(() => {
@@ -60,7 +59,7 @@ const ButtonEffect = ({ children }) => {
           transform: "translate(-50%, -50%)",
         }}
       ></span>
-      <span className="relative z-20 flex items-center gap-2">
+      <span className="relative z-20 font-[500] flex items-center gap-2">
         <span className="text-sm">{children}</span>
       </span>
     </div>
