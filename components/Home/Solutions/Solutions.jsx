@@ -6,17 +6,19 @@ import Link from "next/link";
 
 const Card = ({ section, index }) => {
   return (
-    <div className="flex bg-white relative">
+    <div className="flex bg-white relative font-sora">
       <div
         key={index}
         className={`hover-container ${section?.id} h-screen border-r-2 hover:text-white group`}
       >
         <div className="text-center max-w-[500px] h-full flex items-center justify-center">
           <div className="px-5 lg:px-16">
-            <h3 className="text-4xl  uppercase font-bold text-gray-300 group-hover:text-white transition-colors duration-300 mb-5">
+            <h3 className="text-[60px] font-[600] leading-[84px] text-gray-300 group-hover:text-white transition-colors duration-300 mb-5">
               {section?.title}
             </h3>
-            <p className="carousel-p hidden-on-hover">{section?.content}</p>
+            <p className="carousel-p text-[16px] font-[500] leading-[22px] text-gray-50 hidden-on-hover">
+              {section?.content}
+            </p>
             <div className="flex justify-center pt-5 lg:pt-20">
               <BsArrowRight className="text-2xl lg:text-5xl carousel-p text-[#125b5c] p-2 hidden-on-hover  bg-white rounded-full" />
             </div>
@@ -132,7 +134,7 @@ const Solutions = () => {
     <>
       <div className="overflow-hidden h-screen  relative z-[110] bg-white hidden md:block">
         <div
-          className="flex transition-all duration-[5000ms] ease-out"
+          className="flex transition-all duration-2000 ease-out"
           style={{
             transform: `translateX(${offset}px)`,
             width: `${totalWidth}px`,
@@ -155,7 +157,7 @@ const Solutions = () => {
             >
               <div className="h-full md:flex items-center justify-center border-b border-black">
                 <div className="px-4">
-                  <h3 className="text-xl font-bold text-black  group-hover:text-white transition-colors duration-300 mb-5 mt-2">
+                  <h3 className="text-xl font-[600] text-black  group-hover:text-white transition-colors duration-300 mb-5 mt-2">
                     {section?.title}
                   </h3>
                   <p className="text-justify">{section?.content}</p>

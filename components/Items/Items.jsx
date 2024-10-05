@@ -420,7 +420,7 @@ const Items = () => {
                   transform: "translate(-50%, -50%)", // Center under the mouse
                 }}
               >
-                <div className="bg-black text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                <div className="bg-[#125b5c] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
                   <p style={scrollAnimation}>View Casestudy</p>
                 </div>
               </div>

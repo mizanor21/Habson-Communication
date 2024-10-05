@@ -53,21 +53,18 @@ const Elevate = () => {
     span.style.transition = "width 0.6s ease, height 0.6s ease"; // Smooth shrinking
   };
   return (
-    <div className="bg-white relative z-[110] py-10">
-      <div
-        data-aos="fade-up"
-        className="lg:max-w-[1200px] lg:container lg:mx-auto px-[5%] md:px-0 lg:pt-28"
-      >
+    <div className="bg-white relative z-[110] pt-10 lg:pt-20 font-sora">
+      <div className="lg:max-w-[1200px] lg:container lg:mx-auto px-[5%] md:px-0 lg:pt-12">
         <div
           style={styles}
           className="flex justify-center items-center min-h-60 lg:h-[30vh] rounded-lg md:rounded-badge"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-[5%]">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-sans font-medium text-white lg:pr-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center p-[5%]">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium text-white lg:pr-5">
               Elevate Your Brand Today!
             </h2>
             <div>
-              <p className="text-white">
+              <p className="text-white text-[20px] font-[400] ">
                 Ready to transform your digital presence? Let&apos;s create
                 magic together! book our services now!
               </p>

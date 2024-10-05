@@ -37,13 +37,13 @@ const Define = () => {
   }, []);
 
   return (
-    <div className="font-sora  py-10 lg:py-[10%] bg-white relative z-[110]">
+    <div className="font-sora  py-10 lg:py-[8%] bg-white relative z-[110]">
       <div className="flex px-[5%] bgDefine">
         <div className="md:mx-3 ">
           <div className="flex justify-center items-center rounded-badge ">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
               <div className="col-span-1">
-                <h2 className="text-2xl mx-3 md:mx-0 lg:text-[50px] font-bold lg:pr-5 mb-2 text-[#185C5D]">
+                <h2 className="text-2xl mx-3 md:mx-0 lg:text-[54px] font-bold lg:pr-5 mb-2 text-[#185C5D]">
                   What defines us
                 </h2>
                 <div className="hidden lg:flex">
@@ -69,11 +69,11 @@ const Define = () => {
                 </div>
               </div>
               <div className="col-span-2 pb-5 mx-3 md:mx-0">
-                <p className="text-xl lg:text-3xl font-bold text-[#185C5D] ">
+                <p className="text-xl lg:text-[30px] font-bold text-[#185C5D] leading-[42px]">
                   We&apos;re brand architects, crafting narratives with
                   precision, fueled by innovation and seamless integration.
                 </p>
-                <p className="my-5 lg:my-24 text-justify text-black opacity-60 tracking-wider font-semibold  ">
+                <p className="my-5 lg:my-16 text-justify text-black opacity-50 tracking-wider text-[18px] font-[500] leading-[30px] ">
                   “Living Brands” is fueled by an unquenchable drive to make
                   your brand a global force. We believe in the power of
                   collaboration, bringing together the best creative minds,
@@ -82,12 +82,8 @@ const Define = () => {
                   digital marketing, crafting impactful campaigns that ignite
                   brand growth.
                 </p>
-                <div className="max-w-md">
+                <div className="lg:max-w-md">
                   <Link href="/careers">
-                    {/* <Button>
-                      Discover Our Dynamic Culture{" "}
-                      <MdOutlineArrowRightAlt className="text-xl" />
-                    </Button> */}
                     <ButtonEffect>
                       <span className="flex gap-2">
                         Discover Our Dynamic Culture{" "}

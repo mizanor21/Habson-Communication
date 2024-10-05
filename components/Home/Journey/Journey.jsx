@@ -51,7 +51,7 @@ const Journey = () => {
     span.style.transition = "width 0.6s ease, height 0.6s ease"; // Smooth shrinking
   };
   return (
-    <div className="bg-white relative z-[110]">
+    <div className="bg-white relative z-[110] font-sora">
       <div className=" flex justify-center items-center px-[5%] py-10 lg:pt-36">
         <div
           style={styles}
@@ -59,7 +59,7 @@ const Journey = () => {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-[5%] items-center py-10">
             <div>
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-sans font-medium text-white">
+              <h2 className="text-2xl md:text-4xl lg:text-[51px] font-[500] leading-[51px] text-white">
                 Start Your Journey With Us Now
               </h2>
 
@@ -70,9 +70,6 @@ const Journey = () => {
                   }
                   target="_blank"
                 >
-                  {/* <Button className="text-white">
-                    Start Now <MdOutlineArrowRightAlt className="text-xl" />
-                  </Button> */}
                   <div
                     className="btn-posnawr max-w-[250px] relative flex justify-center items-center gap-2 rounded-full py-[10px] px-8 text-center text-lg text-[#115c5c] border-2 border-transparent hover:border-white bg-white hover:text-white z-[20] overflow-hidden transition-colors duration-300 ease-in-out"
                     onMouseEnter={handleMouseEnter}
@@ -96,7 +93,7 @@ const Journey = () => {
                 </Link>
               </div>
             </div>
-            <h2 className="text-4xl lg:text-6xl font-sans font-medium text-white lg:px-20">
+            <h2 className="text-4xl lg:text-6xl font-medium text-white lg:px-20">
               <img
                 className="w-44 md:max-w-60 mt-5 md:mt-5 "
                 src="https://i.postimg.cc/fRhTM844/cta-round.png"

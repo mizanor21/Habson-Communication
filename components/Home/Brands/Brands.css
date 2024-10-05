@@ -7,7 +7,7 @@
 .marquee-content {
     display: flex;
     flex-wrap: nowrap;
-    animation: scroll 20s linear infinite;
+    animation: scroll 35s linear infinite;
 }
 
 .marquee-content.reverse {

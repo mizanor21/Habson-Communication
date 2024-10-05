@@ -19,8 +19,6 @@
     justify-content: center;
     gap: 60px;
     color: var(--color-violet);
-    font-weight: 600;
-    font-size: 14px;
 }
 
 .navber-links ul:hover li {

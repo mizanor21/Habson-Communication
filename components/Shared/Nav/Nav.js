@@ -90,7 +90,7 @@ const Nav = () => {
                 .
               </h1>
               <WordRotate
-                className="text-sm md:text-lg font-bold p-0 m-0 w-full"
+                className="text-sm md:text-lg font-bold p-0 m-0 w-full -duration-1000"
                 words={[
                   "Brands",
                   "Tech",
@@ -124,7 +124,7 @@ const Nav = () => {
                         .
                       </h1>
                       <WordRotate
-                        className="text-sm md:text-lg font-bold p-0 m-0 w-full duration-1000"
+                        className="text-sm md:text-lg font-bold p-0 m-0 w-full duration-500"
                         words={[
                           "Brands",
                           "Tech",
@@ -144,7 +144,7 @@ const Nav = () => {
                     className="side-menu-top-menu text-black"
                     onClick={toggleOn}
                   >
-                    <ImCancelCircle />
+                    <ImCancelCircle className="text-black" />
                   </div>
                 </div>
 
@@ -327,7 +327,7 @@ const Nav = () => {
       </div>
 
       {/* Main Nav Links */}
-      <div className="navber-links text-[#125b5c]">
+      <div className="navber-links text-[#125b5c] font-sora font-[500] text-[14px]">
         <ul>
           <li
             onClick={() => handleNavigations("/work")}
